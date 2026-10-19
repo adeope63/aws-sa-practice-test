@@ -1,0 +1,2799 @@
+1. Which AWS service allows you to create a virtual private network that extends an on-premises network into the AWS cloud?
+A. Amazon VPC Peering
+B. AWS VPN
+C. AWS Direct Connect
+D. Amazon Route 53
+Answer: B
+
+2. In a VPC, what component allows for inbound and outbound traffic control at the subnet level?
+A. Network ACL
+B. Security Group
+C. NAT Gateway
+D. Internet Gateway
+Answer: A
+
+3. What is the primary purpose of an AWS Identity and Access Management (IAM) role?
+A. To provide persistent credentials for users
+B. To allow services to interact securely without using credentials
+C. To define virtual private network routes
+D. To enable detailed billing reports
+Answer: B
+
+4. How can you ensure that sensitive data stored in Amazon S3 is encrypted at rest?
+A. Use AWS Shield
+B. Enable Server-Side Encryption (SSE) on S3
+C. Use an Internet Gateway
+D. Create a VPC Peering connection
+Answer: B
+
+5. Which service helps mitigate DDoS attacks on AWS resources?
+A. AWS Trusted Advisor
+B. AWS Config
+C. AWS Shield
+D. Amazon SNS
+Answer: C
+
+6. You want to allow only specific IAM users to access an S3 bucket. What is the best way to control this access?
+A. Enable MFA Delete on the bucket
+B. Create a bucket policy that grants access to those users
+C. Create a NAT Gateway to restrict access
+D. Use VPC Endpoints
+Answer: B
+
+7. Which feature allows secure access to AWS resources without requiring a public IP address?
+A. NAT Instance
+B. VPC Peering
+C. AWS Direct Connect
+D. VPC Endpoint
+Answer: D
+
+8. How can you restrict specific IP addresses from accessing your Amazon EC2 instance?
+A. Modify the Network ACLs
+B. Create an Elastic IP for the instance
+C. Enable Auto Scaling
+D. Set up an S3 bucket policy
+Answer: A
+
+9. Which AWS service provides built-in DDoS protection for Amazon CloudFront and Amazon Route 53?
+A. AWS WAF
+B. AWS Shield Advanced
+C. AWS Config
+D. AWS VPN
+Answer: B
+
+10. What mechanism can you use to rotate encryption keys in AWS KMS automatically?
+A. Use AWS Systems Manager
+B. Enable key rotation in KMS
+C. Set up a CloudWatch alarm for key rotation
+D. Use IAM roles to manage key rotation
+Answer: B
+
+11. What AWS service provides a way to monitor API requests and responses for security auditing?
+A. AWS CloudTrail
+B. AWS GuardDuty
+C. AWS CloudWatch
+D. AWS Config
+Answer: A
+
+12. How can you protect data in transit between AWS services?
+A. Use AWS WAF
+B. Enable encryption on data transfer
+C. Use VPC Endpoints
+D. Apply IAM policies
+Answer: B
+
+13. Which AWS service allows for secure, centralized management of encryption keys?
+A. AWS Key Management Service (KMS)
+B. AWS Secrets Manager
+C. AWS Certificate Manager
+D. AWS Systems Manager Parameter Store
+Answer: A
+
+14. What is the purpose of an IAM policy?
+A. To control which users can access a VPC
+B. To define the permissions that a user or group has
+C. To encrypt data at rest
+D. To monitor AWS resource usage
+Answer: B
+
+15. To secure access to your AWS Management Console, which feature should you enable for added security?
+A. AWS SSO
+B. IAM Roles
+C. MFA (Multi-Factor Authentication)
+D. IAM Policies
+Answer: C
+
+16. Which AWS service can be used to scan your AWS environment for compliance with security best practices?
+A. AWS Inspector
+B. AWS Config
+C. AWS GuardDuty
+D. AWS CloudTrail
+Answer: B
+
+17. How can you ensure that all data written to an S3 bucket is encrypted?
+A. Apply encryption at the bucket level
+B. Use S3 Access Points
+C. Configure lifecycle policies
+D. Enable versioning
+Answer: A
+
+18. What is the purpose of AWS Security Hub?
+A. To provide a unified view of security alerts and compliance status
+B. To manage security group rules
+C. To store encryption keys
+D. To handle disaster recovery
+Answer: A
+
+19. How can you restrict access to an Amazon RDS instance based on the IP address?
+A. Modify the RDS instance parameter group
+B. Use security groups to control inbound traffic
+C. Enable IAM roles for RDS
+D. Configure CloudTrail
+Answer: B
+
+20. Which AWS service helps you enforce security policies for AWS resources?
+A. AWS CloudFormation
+B. AWS Config
+C. AWS Secrets Manager
+D. AWS CloudTrail
+Answer: B
+
+21. What is the function of a Security Group in AWS?
+A. To restrict the amount of data transferred
+B. To manage encryption keys
+C. To control inbound and outbound traffic to instances
+D. To automate resource scaling
+Answer: C
+
+22. Which AWS service allows you to manage SSL/TLS certificates for your domain names?
+A. AWS KMS
+B. AWS Secrets Manager
+C. AWS Certificate Manager
+D. AWS CloudHSM
+Answer: C
+
+23. What is AWS IAM’s primary function?
+A. To manage and secure network configurations
+B. To monitor API activity
+C. To provide access control for AWS resources
+D. To handle data replication
+Answer: C
+
+24. To ensure that sensitive information in environment variables is protected, which AWS service should be used?
+A. AWS Secrets Manager
+B. AWS Systems Manager Parameter Store
+C. AWS KMS
+D. AWS CloudFormation
+Answer: A
+
+25. How can you secure access to an S3 bucket from a specific application?
+A. Configure IAM policies
+B. Set up VPC Endpoints
+C. Use a bucket policy
+D. Enable versioning
+Answer: C
+
+26. What is the purpose of AWS GuardDuty?
+A. To monitor and respond to security incidents
+B. To provide disaster recovery options
+C. To manage encryption keys
+D. To create IAM policies
+Answer: A
+
+27. Which AWS service provides protection against SQL injection and cross-site scripting (XSS)?
+A. AWS WAF
+B. AWS Shield
+C. AWS IAM
+D. AWS Config
+Answer: A
+
+28. How can you restrict which AWS services can be used within an AWS Organization?
+A. Use Service Control Policies (SCPs)
+B. Create IAM Roles
+C. Configure Security Groups
+D. Use VPC Flow Logs
+Answer: A
+
+29. Which feature helps to ensure that IAM credentials are not shared or leaked?
+A. Rotate access keys regularly
+B. Enable CloudTrail
+C. Configure Security Groups
+D. Use VPC Endpoints
+Answer: A
+
+30. What AWS service allows you to enforce compliance policies across AWS accounts?
+A. AWS Config
+B. AWS Organizations
+C. AWS Trusted Advisor
+D. AWS CloudWatch
+Answer: B
+
+31. Which service allows you to encrypt data stored in DynamoDB tables?
+A. AWS KMS
+B. AWS Secrets Manager
+C. AWS CloudHSM
+D. AWS WAF
+Answer: A
+
+32. To monitor unauthorized access attempts in your AWS environment, which service would you use?
+A. AWS CloudTrail
+B. AWS Shield
+C. AWS KMS
+D. AWS IAM
+Answer: A
+
+33. What AWS service can be used to create a secure, isolated network for running AWS resources?
+A. AWS VPC
+B. AWS Direct Connect
+C. AWS VPN
+D. AWS Transit Gateway
+Answer: A
+
+34. How can you ensure that data stored in an Amazon EBS volume is encrypted?
+A. Enable encryption when creating the volume
+B. Use AWS Config
+C. Apply IAM policies
+D. Set up CloudWatch alarms
+Answer: A
+
+35. What is AWS Shield used for?
+A. Protecting AWS resources against DDoS attacks
+B. Managing IAM policies
+C. Encrypting data at rest
+D. Configuring VPCs
+Answer: A
+
+36. To log and audit access to your AWS resources, which service should be used?
+A. AWS CloudTrail
+B. AWS CloudWatch
+C. AWS Config
+D. AWS Trusted Advisor
+Answer: A
+
+37. How can you ensure that only authorized users can access your AWS Management Console?
+A. Use IAM roles
+B. Enable Multi-Factor Authentication (MFA)
+C. Set up VPC Endpoints
+D. Configure S3 bucket policies
+Answer: B
+
+38. What AWS service provides centralized management of network access control lists?
+A. AWS VPC
+B. AWS CloudFront
+C. AWS Route 53
+D. AWS Security Hub
+Answer: A
+
+39. Which AWS service should be used to protect your web application from common web exploits?
+A. AWS WAF
+B. AWS Shield
+C. AWS Inspector
+D. AWS CloudFormation
+Answer: A
+
+40. To create a secure, isolated environment for your cloud applications, which AWS service should you use?
+A. AWS VPC
+B. AWS Elastic Beanstalk
+C. AWS Lambda
+D. AWS ECS
+Answer: A
+
+41. What is the purpose of AWS KMS (Key Management Service)?
+A. To manage encryption keys for securing data
+B. To create and manage VPC configurations
+C. To monitor API activity
+D. To handle resource scaling
+Answer: A
+
+42. How can you limit access to a specific AWS resource using IAM?
+A. Use IAM policies
+B. Configure Security Groups
+C. Apply encryption
+D. Set up CloudWatch alarms
+Answer: A
+
+43. What AWS service allows you to enforce security and compliance policies on AWS resources?
+A. AWS Config
+B. AWS CloudTrail
+C. AWS Shield
+D. AWS WAF
+Answer: A
+
+44. To protect data in transit between AWS services and external clients, which feature should be enabled?
+A. SSL/TLS Encryption
+B. VPC Peering
+C. IAM Roles
+D. Security Groups
+Answer: A
+
+45. Which AWS service provides tools to automatically rotate secrets used by your applications?
+A. AWS Secrets Manager
+B. AWS Systems Manager Parameter Store
+C. AWS KMS
+D. AWS CloudHSM
+Answer: A
+
+46. What AWS feature can be used to prevent unauthorized access to data in S3 buckets?
+A. Bucket Policies
+B. IAM Roles
+C. Security Groups
+D. VPC Endpoints
+Answer: A
+
+47. To control inbound and outbound traffic to EC2 instances, which AWS feature is used?
+A. Security Groups
+B. Network ACLs
+C. VPC Endpoints
+D. NAT Gateways
+Answer: A
+
+48. How can you monitor and protect against suspicious activity in AWS accounts?
+A. Use AWS GuardDuty
+B. Enable CloudWatch metrics
+C. Configure IAM policies
+D. Set up S3 bucket policies
+Answer: A
+
+49. What AWS service helps ensure that only authorized entities can access your data in transit?
+A. AWS Certificate Manager
+B. AWS Shield
+C. AWS WAF
+D. AWS IAM
+Answer: A
+
+50. How can you ensure that your data stored in S3 is encrypted automatically?
+A. Configure Server-Side Encryption (SSE)
+B. Use VPC Endpoints
+C. Create IAM Roles
+D. Enable CloudTrail
+Answer: A
+
+51. Which AWS service can be used to centrally manage security and compliance information from multiple AWS accounts?
+A. AWS Security Hub
+B. AWS CloudTrail
+C. AWS Config
+D. AWS IAM
+Answer: A
+
+52. To restrict access to your AWS resources from specific IP addresses, which service should you configure?
+A. Security Groups
+B. IAM Policies
+C. VPC Peering
+D. AWS KMS
+Answer: A
+
+53. What is the best way to ensure that your sensitive data is protected in a multi-region AWS environment?
+A. Use AWS KMS with region-specific keys
+B. Apply IAM policies
+C. Enable CloudWatch alarms
+D. Use VPC Endpoints
+Answer: A
+
+54. Which AWS service allows you to automatically back up and restore data from your RDS instances?
+A. AWS Backup
+B. AWS CloudFormation
+C. AWS Systems Manager
+D. AWS Shield
+Answer: A
+
+55. How can you ensure secure communication between AWS Lambda functions and other AWS services?
+A. Use IAM roles
+B. Set up VPC Endpoints
+C. Enable MFA
+D. Apply security groups
+Answer: A
+
+56. To enforce encryption for data at rest in Amazon EBS volumes, what should you do?
+A. Enable encryption when creating the volume
+B. Use a NAT Gateway
+C. Configure CloudWatch metrics
+D. Apply Security Group rules
+Answer: A
+
+57. Which service provides the ability to apply security policies and compliance checks across AWS resources?
+A. AWS Config
+B. AWS Inspector
+C. AWS Shield
+D. AWS WAF
+Answer: A
+
+58. What is the role of AWS CloudTrail in security auditing?
+A. It logs API calls made in your AWS account
+B. It monitors network traffic
+C. It encrypts data at rest
+D. It manages encryption keys
+Answer: A
+
+59. To control which IAM users can access specific AWS services, what should you use?
+A. IAM Policies
+B. Security Groups
+C. VPC Endpoints
+D. CloudWatch
+Answer: A
+
+60. Which AWS service provides a managed firewall that helps protect your applications from web attacks?
+A. AWS WAF
+B. AWS Shield
+C. AWS Security Hub
+D. AWS CloudFront
+Answer: A
+
+61. To ensure your data is encrypted while stored in DynamoDB, what should you use?
+A. AWS KMS
+B. AWS Secrets Manager
+C. AWS CloudHSM
+D. AWS Config
+Answer: A
+
+62. How can you ensure that sensitive data in your AWS environment is not exposed to unauthorized users?
+A. Implement IAM policies and roles
+B. Use VPC Endpoints
+C. Configure Security Groups
+D. Set up S3 bucket policies
+Answer: A
+
+63. What AWS service provides protection for your web application against common web exploits?
+A. AWS WAF
+B. AWS Shield
+C. AWS Inspector
+D. AWS Config
+Answer: A
+
+64. Which AWS service allows you to centrally manage and control access to your cloud resources?
+A. AWS IAM
+B. AWS CloudTrail
+C. AWS GuardDuty
+D. AWS Security Hub
+Answer: A
+
+65. How can you securely store and manage secrets and sensitive information for your applications?
+A. Use AWS Secrets Manager
+B. Apply IAM policies
+C. Enable CloudWatch
+D. Configure VPC Endpoints
+Answer: A
+
+66. To ensure data integrity and confidentiality when sending data to an AWS service, what should you use?
+A. SSL/TLS Encryption
+B. VPC Peering
+C. IAM Policies
+D. AWS KMS
+Answer: A
+
+67. What is the primary purpose of AWS CloudHSM?
+A. To provide hardware-based key management for encryption
+B. To manage VPC configurations
+C. To monitor network traffic
+D. To handle disaster recovery
+Answer: A
+
+68. How can you ensure that IAM credentials are not compromised?
+A. Rotate access keys regularly and use MFA
+B. Configure CloudWatch alarms
+C. Set up VPC Endpoints
+D. Apply IAM roles
+Answer: A
+
+69. Which AWS service helps in analyzing and protecting against potential security threats?
+A. AWS GuardDuty
+B. AWS CloudTrail
+C. AWS Config
+D. AWS WAF
+Answer: A
+
+70. To enforce security compliance across multiple AWS accounts, which feature should you use?
+A. AWS Organizations with Service Control Policies (SCPs)
+B. AWS Config
+C. AWS CloudTrail
+D. AWS GuardDuty
+Answer: A
+
+71. Which AWS service should you use to manage and monitor compliance with security policies?
+A. AWS Security Hub
+B. AWS Inspector
+C. AWS CloudTrail
+D. AWS Shield
+Answer: A
+
+72. How can you restrict access to an Amazon EC2 instance from certain IP addresses?
+A. Modify the instance's security group
+B. Use IAM roles
+C. Configure VPC Endpoints
+D. Apply encryption
+Answer: A
+
+73. What AWS service provides automatic security monitoring and threat detection for your AWS environment?
+A. AWS GuardDuty
+B. AWS CloudTrail
+C. AWS Config
+D. AWS Inspector
+Answer: A
+
+74. To protect an S3 bucket from unauthorized access, which AWS feature should be configured?
+A. Bucket Policies
+B. Security Groups
+C. IAM Roles
+D. VPC Endpoints
+Answer: A
+
+75. How can you automatically encrypt data in S3 as it is uploaded?
+A. Enable Server-Side Encryption (SSE)
+B. Use IAM policies
+C. Configure VPC Endpoints
+D. Apply Security Groups
+Answer: A
+
+76. What is the purpose of AWS Systems Manager Parameter Store?
+A. To store and manage configuration data and secrets
+B. To provide DDoS protection
+C. To manage VPC configurations
+D. To handle network access control
+Answer: A
+
+77. To secure communications between AWS resources and external clients, which service should you use?
+A. AWS Certificate Manager
+B. AWS CloudFront
+C. AWS Shield
+D. AWS KMS
+Answer: A
+
+78. Which AWS service allows you to create a secure private network connection from your on-premises network to AWS?
+A. AWS Direct Connect
+B. AWS VPN
+C. AWS Shield
+D. AWS VPC
+Answer: A
+
+79. How can you audit changes to AWS resources to ensure compliance?
+A. Use AWS CloudTrail
+B. Configure CloudWatch alarms
+C. Apply IAM roles
+D. Enable Security Groups
+Answer: A
+
+80. What feature of AWS VPC allows you to securely connect to AWS services from within your VPC without using public IP addresses?
+A. VPC Endpoints
+B. NAT Gateways
+C. Security Groups
+D. VPC Peering
+Answer: A
+
+81. To manage access to AWS resources using a temporary security credential, which AWS service should you use?
+A. AWS STS (Security Token Service)
+B. AWS IAM
+C. AWS KMS
+D. AWS CloudTrail
+Answer: A
+
+82. How can you secure your AWS resources by defining which IAM users or roles can access specific actions or resources?
+A. Use IAM Policies
+B. Configure VPC Security Groups
+C. Apply S3 Bucket Policies
+D. Set up CloudWatch alarms
+Answer: A
+
+83. What AWS service provides a firewall to control traffic at the application layer?
+A. AWS WAF
+B. AWS Shield
+C. AWS Inspector
+D. AWS Config
+Answer: A
+
+84. To ensure data privacy and integrity for data stored in RDS, what should you enable?
+A. Encryption at rest and in transit
+B. VPC Peering
+C. IAM roles
+D. CloudWatch metrics
+Answer: A
+
+85. What AWS feature allows you to manage and enforce security policies across all AWS accounts?
+A. AWS Organizations
+B. AWS CloudTrail
+C. AWS GuardDuty
+D. AWS WAF
+Answer: A
+
+86. To ensure the confidentiality of data at rest in Amazon S3, what must be enabled?
+A. Server-Side Encryption (SSE)
+B. IAM Policies
+C. Security Groups
+D. CloudTrail
+Answer: A
+
+87. Which AWS service allows you to detect and respond to suspicious activity in your AWS environment?
+A. AWS GuardDuty
+B. AWS CloudWatch
+C. AWS Config
+D. AWS Shield
+Answer: A
+
+88. What is the role of AWS Security Hub?
+A. To aggregate and prioritize security findings from multiple AWS services
+B. To encrypt data in transit
+C. To manage IAM roles
+D. To handle disaster recovery
+Answer: A
+
+89. How can you restrict access to AWS resources from specific geographic locations?
+A. Use AWS WAF geolocation rules
+B. Configure Security Groups
+C. Apply IAM policies
+D. Enable VPC Endpoints
+Answer: A
+
+90. Which AWS service provides DDoS protection to safeguard your applications?
+A. AWS Shield
+B. AWS WAF
+C. AWS Security Hub
+D. AWS GuardDuty
+Answer: A
+
+91. To ensure that your data is encrypted while stored in Amazon EFS, what should you enable?
+A. Encryption at rest
+B. Security Groups
+C. IAM roles
+D. CloudWatch metrics
+Answer: A
+
+92. How can you ensure that data transferred between AWS services is encrypted?
+A. Use TLS encryption
+B. Configure VPC Endpoints
+C. Enable CloudTrail
+D. Apply IAM policies
+Answer: A
+
+93. What is the purpose of AWS Secrets Manager?
+A. To securely store and manage sensitive information such as passwords and API keys
+B. To provide DDoS protection
+C. To monitor network traffic
+D. To handle data backup
+Answer: A
+
+94. To protect your web applications from SQL injection attacks, which service should you use?
+A. AWS WAF
+B. AWS Shield
+C. AWS CloudTrail
+D. AWS Config
+Answer: A
+
+95. What AWS service provides visibility into the network traffic in your VPC?
+A. VPC Flow Logs
+B. AWS GuardDuty
+C. AWS CloudTrail
+D. AWS Inspector
+Answer: A
+
+96. How can you ensure that all changes to your AWS infrastructure are logged and monitored?
+A. Enable AWS CloudTrail
+B. Set up CloudWatch alarms
+C. Apply IAM policies
+D. Use AWS WAF
+Answer: A
+
+97. Which AWS service allows you to monitor and analyze security vulnerabilities in your AWS environment?
+A. AWS Inspector
+B. AWS GuardDuty
+C. AWS Config
+D. AWS Shield
+Answer: A
+
+98. How can you secure API requests to your AWS services?
+A. Use AWS API Gateway with authentication and authorization mechanisms
+B. Apply IAM policies
+C. Configure Security Groups
+D. Enable CloudWatch metrics
+Answer: A
+
+99. What is the primary function of AWS CloudWatch?
+A. To monitor and log AWS resources and applications
+B. To provide DDoS protection
+C. To manage encryption keys
+D. To handle VPC configurations
+Answer: A
+
+100. To protect your applications from cross-site scripting (XSS) attacks, which AWS service should you use?
+A. AWS WAF
+B. AWS Shield
+C. AWS Security Hub
+D. AWS GuardDuty
+Answer: A
+
+101. Which AWS service can be used to automatically distribute incoming traffic across multiple Amazon EC2 instances?
+A. Amazon RDS
+B. Amazon EC2 Auto Scaling
+C. AWS Elastic Load Balancing
+D. Amazon CloudFront
+Answer: C
+
+102. What is the primary purpose of AWS Route 53's health checks?
+A. To monitor the performance of EC2 instances
+B. To detect and route traffic away from unhealthy endpoints
+C. To ensure data consistency in RDS
+D. To scale DynamoDB tables
+Answer: B
+
+103. Which AWS service provides automated backup, failover, and recovery for Amazon RDS databases?
+A. AWS Backup
+B. Amazon RDS Multi-AZ
+C. AWS Elastic Beanstalk
+D. AWS CloudFormation
+Answer: B
+
+104. What can be used to store the state of an application to recover from failures?
+A. Amazon S3
+B. Amazon DynamoDB
+C. Amazon ElastiCache
+D. AWS IAM
+Answer: A
+
+105. Which of the following is a key benefit of deploying an application across multiple Availability Zones?
+A. Reduced latency for end-users
+B. Cost savings on data transfer
+C. Improved fault tolerance
+D. Increased storage capacity
+Answer: C
+
+106. How does Amazon CloudFront improve the availability and performance of your website?
+A. By caching content at edge locations
+B. By optimizing database queries
+C. By increasing EC2 instance types
+D. By enhancing IAM policies
+Answer: A
+
+107. Which AWS service allows you to configure a fully redundant and highly available application architecture?
+A. Amazon RDS
+B. Amazon DynamoDB
+C. AWS Auto Scaling
+D. AWS Elastic Beanstalk
+Answer: C
+
+108. Which AWS service provides a highly available and scalable DNS service?
+A. Amazon Route 53
+B. AWS Direct Connect
+C. AWS VPN
+D. AWS Global Accelerator
+Answer: A
+
+109. What is the primary function of Amazon S3's versioning feature?
+A. To increase storage capacity
+B. To retain multiple versions of an object
+C. To reduce data transfer costs
+D. To optimize object retrieval speed
+Answer: B
+
+110. Which AWS service can be used to monitor application logs and set alarms for specific events?
+A. AWS CloudTrail
+B. Amazon CloudWatch
+C. AWS Config
+D. AWS X-Ray
+Answer: B
+
+111. What AWS service can be used to create and manage virtual private servers?
+A. AWS Lambda
+B. Amazon EC2
+C. AWS Glue
+D. AWS Fargate
+Answer: B
+
+112. Which service provides automated snapshots and replication for Amazon EBS volumes?
+A. Amazon RDS
+B. AWS Backup
+C. Amazon EC2 Auto Scaling
+D. AWS CloudFormation
+Answer: B
+
+113. What feature of Amazon S3 helps in disaster recovery by providing geographic redundancy?
+A. S3 Transfer Acceleration
+B. S3 Standard-IA
+C. S3 Cross-Region Replication
+D. S3 Glacier
+Answer: C
+
+114. Which AWS service helps you deploy a resilient architecture by automatically scaling your application based on demand?
+A. AWS Lambda
+B. Amazon EC2 Auto Scaling
+C. Amazon RDS
+D. Amazon S3
+Answer: B
+
+115. What feature of AWS Elastic Load Balancing helps to distribute traffic across multiple targets?
+A. Health Checks
+B. SSL Termination
+C. Session Persistence
+D. Cross-Zone Load Balancing
+Answer: D
+
+116. Which AWS service is designed to facilitate the migration of databases with minimal downtime?
+A. AWS Database Migration Service
+B. AWS Snowball
+C. AWS Data Pipeline
+D. AWS Glue
+Answer: A
+
+117. How can AWS Auto Scaling help in designing resilient architectures?
+A. By managing network configurations
+B. By automatically adjusting the number of EC2 instances
+C. By improving data consistency across regions
+D. By encrypting data at rest
+Answer: B
+
+118. Which AWS service provides automated failover and data replication for your application across multiple regions?
+A. Amazon Aurora
+B. Amazon DynamoDB Global Tables
+C. AWS Global Accelerator
+D. AWS Elastic Beanstalk
+Answer: B
+
+119. What is the purpose of Amazon EC2 Spot Instances in a resilient architecture?
+A. To provide dedicated hardware for critical workloads
+B. To save costs on computing by utilizing unused EC2 capacity
+C. To ensure high availability for database instances
+D. To provide consistent performance for web servers
+Answer: B
+
+120. Which AWS service provides a fully managed backup solution for your on-premises data?
+A. AWS Storage Gateway
+B. Amazon S3 Glacier
+C. AWS Backup
+D. AWS CloudFormation
+Answer: A
+
+121. What feature of AWS CloudFormation helps to deploy and manage AWS resources in a predictable manner?
+A. Infrastructure as Code
+B. Managed Databases
+C. Security Groups
+D. Auto Scaling Policies
+Answer: A
+
+122. Which AWS service provides scalable and highly available file storage for use with EC2 instances?
+A. Amazon S3
+B. Amazon EFS
+C. Amazon Glacier
+D. AWS Storage Gateway
+Answer: B
+
+123. Which service helps you deploy multiple copies of an application to different AWS Regions for high availability?
+A. Amazon RDS
+B. AWS Elastic Beanstalk
+C. AWS Global Accelerator
+D. Amazon EC2 Auto Scaling
+Answer: C
+
+124. What is the benefit of using Amazon RDS Multi-AZ deployments?
+A. Increased storage performance
+B. Improved backup speed
+C. Enhanced availability and data durability
+D. Reduced data transfer costs
+Answer: C
+
+125. Which AWS service can automatically replace failed instances in an Auto Scaling Group?
+A. Amazon CloudWatch
+B. AWS Lambda
+C. AWS Auto Scaling
+D. Amazon Route 53
+Answer: C
+
+126. What is AWS's service for creating and managing VPCs with failover capabilities?
+A. AWS VPC
+B. AWS Direct Connect
+C. AWS VPN
+D. AWS Transit Gateway
+Answer: A
+
+127. Which AWS service provides a managed service for data warehousing that automatically scales based on demand?
+A. Amazon Redshift
+B. Amazon RDS
+C. Amazon Aurora
+D. Amazon DynamoDB
+Answer: A
+
+128. How can AWS Global Accelerator improve the availability of your applications?
+A. By providing DDoS protection
+B. By routing traffic to the nearest AWS region
+C. By managing DNS records
+D. By optimizing database queries
+Answer: B
+
+129. Which AWS service enables you to replicate data across multiple regions for disaster recovery purposes?
+A. Amazon DynamoDB Global Tables
+B. Amazon S3 Standard-IA
+C. Amazon ElastiCache
+D. AWS Snowball
+Answer: A
+
+130. What AWS service allows you to set up a disaster recovery plan with automated failover for your applications?
+A. AWS Backup
+B. Amazon RDS Read Replicas
+C. Amazon Route 53
+D. AWS Elastic Beanstalk
+Answer: C
+
+131. Which AWS service is designed for low-latency access to data across multiple geographic locations?
+A. Amazon CloudFront
+B. Amazon S3
+C. Amazon RDS
+D. Amazon EFS
+Answer: A
+
+132. What AWS feature can be used to ensure that your EC2 instances are distributed across multiple Availability Zones?
+A. EC2 Spot Instances
+B. EC2 Placement Groups
+C. EC2 Auto Scaling
+D. EC2 Reserved Instances
+Answer: C
+
+133. Which AWS service provides highly available and scalable content delivery for global applications?
+A. Amazon CloudFront
+B. Amazon Route 53
+C. Amazon S3
+D. AWS WAF
+Answer: A
+
+134. What feature of Amazon RDS enhances the availability of your database instances?
+A. Multi-AZ Deployments
+B. Read Replicas
+C. Automated Backups
+D. Performance Insights
+Answer: A
+
+135. Which AWS service helps you to set up a scalable, highly available architecture with minimal management overhead?
+A. Amazon EC2
+B. AWS Elastic Beanstalk
+C. Amazon CloudWatch
+D. AWS CodeDeploy
+Answer: B
+
+136. What AWS feature helps to improve fault tolerance in a distributed architecture?
+A. Load Balancers
+B. IAM Roles
+C. CloudWatch Alarms
+D. Security Groups
+Answer: A
+
+137. Which AWS service can be used to implement application-level caching for improved performance and availability?
+A. Amazon ElastiCache
+B. Amazon S3
+C. Amazon DynamoDB
+D. AWS Glue
+Answer: A
+
+138. What is the purpose of Amazon DynamoDB Global Tables?
+A. To create backups of DynamoDB tables
+B. To enable multi-region, fully replicated tables
+C. To provide faster query performance
+D. To automatically scale DynamoDB tables
+Answer: B
+
+139. Which AWS service provides automated data backup and recovery for Amazon EC2 instances?
+A. Amazon S3
+B. AWS Backup
+C. Amazon RDS
+D. AWS CloudFormation
+Answer: B
+
+140. What AWS service helps you manage and automate the provisioning of infrastructure using code?
+A. AWS CloudFormation
+B. Amazon CloudWatch
+C. AWS IAM
+D. AWS CodeDeploy
+Answer: A
+
+141. Which AWS service can be used to monitor the health of instances and automatically replace unhealthy ones?
+A. AWS Lambda
+B. Amazon CloudWatch
+C. AWS Auto Scaling
+D. Amazon RDS
+Answer: C
+
+142. What is the purpose of Amazon Route 53's DNS failover feature?
+A. To balance traffic between multiple instances
+B. To route traffic away from unhealthy endpoints
+C. To optimize network performance
+D. To manage DNS records
+Answer: B
+
+143. Which AWS service provides a high-throughput, low-latency, scalable NoSQL database?
+A. Amazon DynamoDB
+B. Amazon RDS
+C. Amazon Aurora
+D. Amazon Redshift
+Answer: A
+
+144. What is the benefit of using AWS Elastic Load Balancer with your web applications?
+A. Enhanced security for your applications
+B. Automated data replication
+C. Distribution of incoming application traffic
+D. Cost reduction for data transfer
+Answer: C
+
+145. How does AWS CloudFront enhance application performance and availability?
+A. By storing data in S3 buckets
+B. By caching content at edge locations
+C. By monitoring application logs
+D. By configuring IAM policies
+Answer: B
+
+146. Which AWS service provides scalable object storage with durability and availability?
+A. Amazon EBS
+B. Amazon RDS
+C. Amazon S3
+D. Amazon DynamoDB
+Answer: C
+
+147. What AWS service helps you automate backups and snapshots for EC2 instances?
+A. AWS Backup
+B. Amazon CloudWatch
+C. AWS Systems Manager
+D. AWS CodePipeline
+Answer: A
+
+148. Which AWS service helps to replicate data across multiple AWS regions to improve disaster recovery?
+A. Amazon RDS
+B. Amazon DynamoDB
+C. Amazon S3
+D. Amazon ElastiCache
+Answer: C
+
+149. What feature of AWS Elastic Beanstalk helps in managing application deployments?
+A. Versioning
+B. Auto Scaling
+C. Health Monitoring
+D. Traffic Distribution
+Answer: A
+
+150. Which AWS service can you use to manage virtual private network connections to your VPC?
+A. AWS Direct Connect
+B. Amazon VPC Peering
+C. AWS VPN
+D. AWS Transit Gateway
+Answer: C
+
+151. What AWS service allows you to create and manage a fully isolated network within AWS?
+A. AWS Transit Gateway
+B. Amazon VPC
+C. AWS Direct Connect
+D. AWS CloudFormation
+Answer: B
+
+152. Which AWS feature ensures data is replicated across multiple AWS regions for high availability?
+A. Amazon S3 Cross-Region Replication
+B. AWS Snowball
+C. Amazon CloudWatch
+D. AWS Elastic Beanstalk
+Answer: A
+
+153. What AWS service allows you to automatically monitor and scale the capacity of a web application based on incoming traffic?
+A. Amazon EC2
+B. AWS Auto Scaling
+C. Amazon RDS
+D. AWS Lambda
+Answer: B
+
+154. Which AWS service provides a scalable, managed, distributed file system for use with AWS Cloud services and on-premises resources?
+A. Amazon EFS
+B. Amazon S3
+C. AWS Storage Gateway
+D. Amazon RDS
+Answer: A
+
+155. What AWS feature allows you to maintain database availability during planned maintenance events?
+A. Multi-AZ Deployments
+B. Read Replicas
+C. Automated Backups
+D. Database Snapshots
+Answer: A
+
+156. Which AWS service can be used to deploy applications across multiple regions to improve fault tolerance?
+A. AWS Elastic Beanstalk
+B. Amazon S3
+C. Amazon Route 53
+D. AWS CodeDeploy
+Answer: C
+
+157. What is the primary benefit of using Amazon Aurora with Global Databases?
+A. Increased storage capacity
+B. Automated backup of instances
+C. Multi-region, low-latency read and write operations
+D. Simplified network configuration
+Answer: C
+
+158. Which AWS service is best suited for low-cost, long-term storage of archival data?
+A. Amazon S3 Standard
+B. Amazon S3 Glacier
+C. Amazon EFS
+D. Amazon RDS
+Answer: B
+
+159. What AWS service provides a centralized way to manage access to AWS resources across accounts?
+A. AWS IAM
+B. AWS Organizations
+C. AWS SSO
+D. AWS Config
+Answer: B
+
+160. Which AWS service can be used to automate the deployment of a highly available architecture with minimal effort?
+A. AWS CloudFormation
+B. AWS CodePipeline
+C. AWS CodeBuild
+D. AWS OpsWorks
+Answer: A
+
+161. How can you achieve high availability for an application that requires consistent, low-latency data access across multiple regions?
+A. By using Amazon RDS Multi-AZ
+B. By deploying Amazon DynamoDB Global Tables
+C. By using Amazon EC2 Spot Instances
+D. By enabling Amazon S3 Cross-Region Replication
+Answer: B
+
+162. Which AWS service provides an integrated toolset for monitoring and managing resources?
+A. AWS CloudWatch
+B. Amazon CloudFront
+C. Amazon DynamoDB
+D. AWS CloudTrail
+Answer: A
+
+163. What feature of AWS Route 53 enables you to route traffic to healthy endpoints in case of an outage?
+A. Traffic Policies
+B. Health Checks
+C. Latency-Based Routing
+D. Weighted Routing
+Answer: B
+
+164. Which AWS service helps you deploy a highly available multi-tier application architecture?
+A. Amazon RDS
+B. AWS Elastic Beanstalk
+C. Amazon CloudFront
+D. Amazon ElastiCache
+Answer: B
+
+165. What is the main advantage of using AWS Lambda for serverless applications?
+A. Automatic scaling based on demand
+B. Persistent storage of logs
+C. Dedicated instances for computation
+D. Simplified database management
+Answer: A
+
+166. How can you ensure high availability for an application that requires a database with synchronous replication?
+A. By using Amazon Aurora Multi-Master
+B. By configuring Amazon RDS Read Replicas
+C. By enabling Amazon DynamoDB Streams
+D. By using Amazon ElastiCache
+Answer: A
+
+167. Which AWS service is used to cache frequently accessed data to reduce latency?
+A. Amazon ElastiCache
+B. Amazon CloudWatch
+C. Amazon S3
+D. AWS Data Pipeline
+Answer: A
+
+168. What AWS service can be used to create a highly available, scalable application that uses microservices?
+A. AWS Lambda
+B. Amazon ECS
+C. Amazon RDS
+D. AWS CloudFormation
+Answer: B
+
+169. Which AWS service is best suited for managing a large number of distributed virtual machines across multiple regions?
+A. Amazon EC2 Auto Scaling
+B. AWS CloudFormation
+C. Amazon S3
+D. AWS Systems Manager
+Answer: A
+
+170. What feature of AWS S3 ensures that your data is stored redundantly across multiple facilities?
+A. Versioning
+B. Replication
+C. Durability
+D. Encryption
+Answer: C
+
+171. How can you minimize downtime for an application deployed across multiple availability zones?
+A. By using Elastic Load Balancing
+B. By enabling AWS CloudTrail
+C. By using Amazon S3 Glacier
+D. By deploying AWS Direct Connect
+Answer: A
+
+172. Which AWS service can automatically deploy and manage infrastructure updates?
+A. AWS CloudFormation
+B. Amazon RDS
+C. AWS Elastic Beanstalk
+D. AWS CodeDeploy
+Answer: D
+
+173. What AWS service helps you implement a disaster recovery strategy by replicating data to a secondary region?
+A. AWS Backup
+B. Amazon S3
+C. Amazon CloudWatch
+D. AWS Direct Connect
+Answer: A
+
+174. Which AWS service provides a highly available and scalable messaging system?
+A. Amazon SQS
+B. Amazon SNS
+C. AWS Lambda
+D. AWS Step Functions
+Answer: A
+
+175. What feature of AWS Auto Scaling helps ensure the availability of applications by adjusting the number of running instances?
+A. Launch Configuration
+B. Scaling Policies
+C. Scheduled Actions
+D. Instance Refresh
+Answer: B
+
+176. Which AWS service allows you to deploy a distributed application with high availability and low latency?
+A. AWS Global Accelerator
+B. Amazon ElastiCache
+C. AWS Step Functions
+D. Amazon Kinesis
+Answer: A
+
+177. What AWS service provides a fully managed Kubernetes environment for deploying applications?
+A. Amazon ECS
+B. AWS Lambda
+C. Amazon EKS
+D. AWS Fargate
+Answer: C
+
+178. Which AWS service provides managed, fault-tolerant, scalable file storage accessible by multiple instances?
+A. Amazon S3
+B. Amazon EFS
+C. Amazon Glacier
+D. AWS Snowball
+Answer: B
+
+179. What AWS service helps you automate the process of scaling your application based on incoming traffic or load?
+A. AWS Auto Scaling
+B. Amazon CloudFront
+C. AWS Lambda
+D. AWS Fargate
+Answer: A
+
+180. Which AWS service enables you to create and manage private connectivity between AWS and your on-premises data center?
+A. AWS Direct Connect
+B. AWS VPN
+C. AWS Transit Gateway
+D. Amazon VPC Peering
+Answer: A
+
+181. How can you enhance the fault tolerance of an application deployed in a single AWS region?
+A. By using multiple availability zones
+B. By enabling Amazon S3 versioning
+C. By configuring AWS CloudTrail
+D. By using Amazon CloudFront
+Answer: A
+
+182. What is the primary benefit of using Amazon Aurora for database workloads?
+A. High availability with automatic failover
+B. Dedicated instance types for high performance
+C. Automated scaling based on traffic
+D. Built-in security monitoring
+Answer: A
+
+183. Which AWS service provides a fully managed, scalable, and highly available database for your applications?
+A. Amazon RDS
+B. Amazon EC2
+C. AWS Lambda
+D. AWS Glue
+Answer: A
+
+184. What is the advantage of using Amazon CloudFront for content delivery?
+A. Low-cost storage for archival data
+B. Improved performance through edge caching
+C. Automated backup of data
+D. Simplified deployment of microservices
+Answer: B
+
+185. Which AWS service provides a fully managed, scalable, and fault- tolerant data lake solution?
+A. Amazon Redshift
+B. Amazon RDS
+C. Amazon S3
+D. AWS Lake Formation
+Answer: D
+
+186. What AWS feature helps ensure data durability by replicating data across multiple geographical locations?
+A. Amazon S3 Replication
+B. Amazon EBS Snapshots
+C. AWS Data Pipeline
+D. Amazon CloudWatch Logs
+Answer: A
+
+187. Which AWS service provides managed container orchestration for Docker containers?
+A. Amazon ECS
+B. AWS Lambda
+C. AWS Batch
+D. Amazon EKS
+Answer: A
+
+188. How does AWS Elastic Beanstalk help in managing the lifecycle of your applications?
+A. By automating deployments and updates
+B. By providing dedicated instances
+C. By managing database backups
+D. By configuring security policies
+Answer: A
+
+189. Which AWS service helps you ensure that your applications remain available by distributing traffic across multiple instances?
+A. Amazon Route 53
+B. AWS Auto Scaling
+C. Elastic Load Balancing
+D. AWS CloudFormation
+Answer: C
+
+190. What AWS service helps in providing a managed, scalable solution for data warehousing?
+A. Amazon Redshift
+B. Amazon S3
+C. AWS Glue
+D. AWS Data Pipeline
+Answer: A
+
+191. Which AWS service provides a managed environment to deploy and scale containerized applications?
+A. Amazon ECS
+B. Amazon RDS
+C. AWS Lambda
+D. Amazon EC2
+Answer: A
+
+192. What is the purpose of using AWS Elastic Load Balancer with your application?
+A. To balance the load between multiple instances
+B. To encrypt data in transit
+C. To create snapshots of instances
+D. To manage application dependencies
+Answer: A
+
+193. Which AWS service provides a way to ensure high availability and durability for your data stored in Amazon S3?
+A. Amazon S3 Cross-Region Replication
+B. AWS Direct Connect
+C. Amazon ElastiCache
+D. AWS Backup
+Answer: A
+
+194. What AWS service can be used to manage and automate backups for on- premises data and AWS resources?
+A. AWS Backup
+B. Amazon CloudWatch
+C. AWS Systems Manager
+D. AWS CodePipeline
+Answer: A
+
+195. Which AWS feature provides automatic scaling and load balancing for applications with varying workloads?
+A. AWS Auto Scaling
+B. Amazon RDS
+C. AWS Lambda
+D. Amazon CloudFront
+Answer: A
+
+196. How does Amazon Aurora help improve database availability and durability?
+A. By providing multi-region replication
+B. By automatically scaling database instances
+C. By offering high performance storage and replication
+D. By managing network security
+Answer: C
+
+197. What AWS service provides fully managed, scalable relational databases with built-in high availability?
+A. Amazon RDS
+B. Amazon DynamoDB
+C. Amazon Aurora
+D. Amazon Redshift
+Answer: A
+
+198. Which AWS service is designed to provide a scalable, fully managed file storage solution for multiple instances?
+A. Amazon EFS
+B. Amazon S3
+C. AWS Snowball
+D. AWS Storage Gateway
+Answer: A
+
+199. What feature of AWS S3 ensures that data is replicated to multiple geographically separated locations?
+A. S3 Object Lock
+B. S3 Cross-Region Replication
+C. S3 Intelligent-Tiering
+D. S3 Glacier Deep Archive
+Answer: B
+
+200. Which AWS service enables you to deploy, manage, and scale containerized applications using Kubernetes?
+A. Amazon EKS
+B. Amazon ECS
+C. AWS Fargate
+D. AWS Lambda
+Answer: A
+
+201. Which AWS service is designed to improve application performance by distributing incoming traffic across multiple targets?
+A. AWS Lambda
+B. Amazon CloudFront
+C. AWS Auto Scaling
+D. Elastic Load Balancing (ELB) -
+Answer: D
+
+202. What is the primary benefit of using Amazon RDS Read Replicas?
+A. Increased write throughput
+B. High availability
+C. Improved read performance
+D. Enhanced data security -
+Answer: C
+
+203. Which AWS service would you use to store data that is infrequently accessed but must be retained for long-term archiving?
+A. Amazon S3 Glacier
+B. Amazon S3 Standard
+C. Amazon EBS
+D. Amazon S3 Intelligent-Tiering -
+Answer: A
+
+204. How can you enhance the performance of an Amazon RDS database instance?
+A. Enable Multi-AZ deployments
+B. Increase the instance type
+C. Implement Amazon RDS Read Replicas
+D. Use Amazon CloudWatch to monitor performance metrics -
+Answer: B
+
+205. What should you use to handle high-throughput, low-latency workloads that require a distributed in-memory cache?
+A. Amazon ElastiCache
+B. Amazon DynamoDB
+C. Amazon RDS
+D. Amazon S3 -
+Answer: A
+
+206. Which AWS service can be used to manage and deploy Docker containers?
+A. AWS Lambda
+B. Amazon EC2
+C. Amazon ECS
+D. AWS Fargate -
+Answer: C
+
+207. What AWS service provides an integrated caching solution to reduce the load on a database and improve application response times?
+A. Amazon RDS
+B. Amazon ElastiCache
+C. Amazon DynamoDB
+D. AWS Lambda -
+Answer: B
+
+208. What is the benefit of using Amazon CloudFront with an application?
+A. Data encryption at rest
+B. Improved data durability
+C. Reduced latency and faster content delivery
+D. Enhanced data processing capabilities -
+Answer: C
+
+209. Which AWS service should be used for automated scaling of resources based on demand?
+A. AWS Auto Scaling
+B. Amazon CloudWatch
+C. AWS Lambda
+D. Amazon Route 53 -
+Answer: A
+
+210. What feature of Amazon S3 enables you to automatically transition objects to different storage classes based on their access patterns?
+A. S3 Lifecycle Policies
+B. S3 Event Notifications
+C. S3 Storage Class Analysis
+D. S3 Cross-Region Replication -
+Answer: A
+
+211. Which AWS service is used to provide high availability and disaster recovery for applications running on AWS?
+A. Amazon Route 53
+B. AWS CloudFormation
+C. AWS Backup
+D. Amazon RDS Multi-AZ Deployments -
+Answer: D
+
+212. What is the main advantage of using AWS Global Accelerator?
+A. Cost reduction
+B. Simplified monitoring
+C. Improved application availability and performance
+D. Increased data security -
+Answer: C
+
+213. Which AWS service provides a scalable file storage solution for use with Amazon EC2 instances?
+A. Amazon S3
+B. Amazon EFS
+C. Amazon Glacier
+D. AWS Storage Gateway -
+Answer: B
+
+214. What type of Amazon EC2 instance is best suited for compute-intensive applications?
+A. T Series
+B. M Series
+C. C Series
+D. R Series -
+Answer: C
+
+215. How can you improve the read performance of an Amazon DynamoDB table?
+A. Increase the read capacity units
+B. Enable DynamoDB Streams
+C. Use Amazon ElastiCache
+D. Implement DynamoDB Global Tables -
+Answer: A
+
+216. Which AWS service provides a managed Kubernetes environment for running containerized applications?
+A. AWS Fargate
+B. Amazon EKS
+C. Amazon ECS
+D. AWS Lambda -
+Answer: B
+
+217. What is the primary benefit of Amazon S3 Transfer Acceleration?
+A. Reduced cost of data storage
+B. Increased data transfer speed to Amazon S3
+C. Improved security for data at rest
+D. Enhanced data analytics capabilities -
+Answer: B
+
+218. Which AWS service helps you monitor and gain insights into the performance of your AWS resources and applications?
+A. Amazon CloudWatch
+B. AWS CloudTrail
+C. AWS Config
+D. AWS X-Ray -
+Answer: A
+
+219. What should you use to optimize the cost of your Amazon EC2 instances for applications with predictable workloads?
+A. On-Demand Instances
+B. Reserved Instances
+C. Spot Instances
+D. Dedicated Hosts -
+Answer: B
+
+220. Which AWS service allows you to create a high-performance, distributed file system for use with Amazon EC2?
+A. Amazon S3
+B. Amazon EBS
+C. Amazon EFS
+D. Amazon FSx for Windows File Server -
+Answer: C
+
+221. How can you ensure high availability of an Amazon RDS database instance across multiple AWS Regions?
+A. Use Multi-AZ deployments
+B. Enable read replicas in a different Region
+C. Use Amazon RDS with Amazon S3
+D. Implement Amazon RDS with Amazon Route 53 -
+Answer: B
+
+222. Which AWS service is best suited for storing large amounts of unstructured data that is frequently accessed?
+A. Amazon S3
+B. Amazon EFS
+C. Amazon DynamoDB
+D. Amazon RDS -
+Answer: A
+
+223. What is the purpose of Amazon Route 53's latency-based routing policy?
+A. Route traffic based on the geographic location of users
+B. Distribute traffic evenly across multiple endpoints
+C. Route traffic to the endpoint with the lowest latency
+D. Perform DNS failover for high availability -
+Answer: C
+
+224. Which service can be used to manage the configuration and deployment of infrastructure as code on AWS?
+A. AWS CloudFormation
+B. AWS OpsWorks
+C. AWS Systems Manager
+D. AWS CodeDeploy -
+Answer: A
+
+225. Which AWS service provides real-time analytics of streaming data for immediate insights?
+A. Amazon Kinesis Data Streams
+B. Amazon Redshift
+C. Amazon Athena
+D. Amazon QuickSight -
+Answer: A
+
+226. What AWS service can you use to cache frequently accessed data to reduce latency and improve performance?
+A. Amazon RDS
+B. Amazon DynamoDB
+C. Amazon ElastiCache
+D. Amazon S3 -
+Answer: C
+
+227. What feature of Amazon S3 allows you to maintain multiple versions of an object?
+A. S3 Object Lock
+B. S3 Versioning
+C. S3 Lifecycle Policies
+D. S3 Cross-Region Replication -
+Answer: B
+
+228. Which AWS service allows you to deploy applications across multiple regions for improved availability?
+A. AWS CodeDeploy
+B. AWS CloudFormation
+C. AWS Elastic Beanstalk
+D. AWS Global Accelerator -
+Answer: D
+
+229. How can you increase the capacity of an Amazon DynamoDB table to handle more traffic?
+A. Increase the write throughput units
+B. Enable DynamoDB Streams
+C. Use DynamoDB Auto Scaling
+D. Create additional global tables -
+Answer: C
+
+230. What AWS service is designed to provide a highly available, scalable DNS web service?
+A. Amazon Route 53
+B. AWS Global Accelerator
+C. Amazon CloudFront
+D. AWS App Mesh -
+Answer: A
+
+231. Which AWS service would you use to analyze large datasets using SQL queries directly on data stored in Amazon S3?
+A. Amazon Redshift
+B. Amazon Athena
+C. Amazon EMR
+D. Amazon RDS -
+Answer: B
+
+232. What is the primary use case for Amazon FSx for Lustre?
+A. Windows-based file storage
+B. High-performance computing (HPC) workloads
+C. Backup and disaster recovery
+D. Data archiving -
+Answer: B
+
+233. Which AWS service can be used to automate the deployment, scaling, and management of containerized applications?
+A. AWS Lambda
+B. Amazon ECS
+C. Amazon CloudFormation
+D. AWS CloudWatch -
+Answer: B
+
+234. How can you improve the availability of an application hosted on multiple Amazon EC2 instances in different Availability Zones?
+A. Use Elastic Load Balancing
+B. Implement Amazon CloudWatch alarms
+C. Enable Auto Scaling
+D. Use Amazon CloudFront -
+Answer: A
+
+235. Which AWS service can be used to deploy a highly available and scalable MySQL database?
+A. Amazon RDS for MySQL
+B. Amazon DynamoDB
+C. Amazon Aurora
+D. Amazon Redshift -
+Answer: A
+
+236. What is the purpose of AWS Auto Scaling?
+A. To monitor and log application performance
+B. To automatically adjust the number of EC2 instances based on demand
+C. To deploy applications across multiple regions
+D. To manage the configuration of infrastructure -
+Answer: B
+
+237. Which AWS service provides a fully managed, scalable NoSQL database that supports key-value and document data models?
+A. Amazon DynamoDB
+B. Amazon RDS
+C. Amazon Aurora
+D. Amazon ElastiCache -
+Answer: A
+
+238. How can you ensure that an application has low-latency access to data stored in Amazon S3?
+A. Use Amazon S3 Transfer Acceleration
+B. Enable S3 Versioning
+C. Use Amazon CloudWatch
+D. Implement S3 Lifecycle Policies -
+Answer: A
+
+239. Which AWS service allows you to create an isolated virtual network within the AWS cloud?
+A. Amazon VPC
+B. AWS Direct Connect
+C. AWS Shield
+D. AWS WAF -
+Answer: A
+
+240. What is the benefit of using Amazon CloudWatch Logs Insights?
+A. To store logs securely
+B. To analyze and query log data in real-time
+C. To back up log data to Amazon S3
+D. To visualize log data with dashboards -
+Answer: B
+
+241. Which AWS service provides a managed service for analyzing log data from various sources?
+A. Amazon Kinesis Data Firehose
+B. Amazon CloudWatch Logs
+C. AWS X-Ray
+D. AWS Glue -
+Answer: B
+
+242. What AWS service is designed to optimize the cost of storage by automatically archiving data that is infrequently accessed?
+A. Amazon S3 Glacier
+B. Amazon EBS
+C. Amazon S3 Standard
+D. Amazon S3 Intelligent-Tiering -
+Answer: A
+
+243. Which service would you use to automate the deployment of applications and manage the underlying infrastructure?
+A. AWS Elastic Beanstalk
+B. AWS Lambda
+C. AWS Fargate
+D. AWS OpsWorks -
+Answer: A
+
+244. What is the primary function of AWS Global Accelerator?
+A. Route traffic based on DNS policies
+B. Accelerate the delivery of content from Amazon S3
+C. Improve the performance and availability of global applications
+D. Manage the deployment of global applications -
+Answer: C
+
+245. Which AWS service provides a fully managed, scalable data warehouse for analyzing large volumes of data?
+A. Amazon Redshift
+B. Amazon RDS
+C. Amazon DynamoDB
+D. Amazon S3 -
+Answer: A
+
+246. What feature of Amazon Aurora helps to ensure high availability and durability of the database?
+A. Multi-AZ deployments
+B. Automatic backups
+C. Read Replicas
+D. Global Databases -
+Answer: D
+
+247. Which AWS service can be used to deploy, manage, and scale containerized applications using Kubernetes?
+A. Amazon ECS
+B. AWS Fargate
+C. Amazon EKS
+D. AWS Lambda -
+Answer: C
+
+248. How can you enhance the performance of a web application hosted on AWS by caching static content closer to users?
+A. Use Amazon CloudFront
+B. Implement Amazon RDS Multi-AZ deployments
+C. Use AWS WAF
+D. Deploy Amazon EC2 instances in multiple Availability Zones -
+Answer: A
+
+249. Which AWS service can be used to automate the backup of Amazon RDS databases and manage their restoration?
+A. AWS Backup
+B. Amazon RDS Automated Backups
+C. AWS Data Pipeline
+D. Amazon Aurora Backups -
+Answer: B
+
+250. What AWS service allows you to create and manage a private network within the AWS cloud?
+A. AWS Direct Connect
+B. Amazon VPC
+C. AWS Global Accelerator
+D. AWS Shield -
+Answer: B
+
+251. What is the primary use case for Amazon ElastiCache?
+A. Data archiving
+B. High-performance in-memory caching
+C. Backup and restore
+D. Data warehousing -
+Answer: B
+
+252. How can you reduce the cost of Amazon EC2 instances for short-term, interruptible workloads?
+A. Use On-Demand Instances
+B. Purchase Reserved Instances
+C. Use Spot Instances
+D. Deploy Dedicated Hosts -
+Answer: C
+
+253. Which AWS service provides a fully managed environment for deploying and managing machine learning models?
+A. Amazon SageMaker
+B. AWS Lambda
+C. Amazon EC2
+D. AWS Glue -
+Answer: A
+
+254. What is the main purpose of Amazon Route 53's weighted routing policy?
+A. To distribute traffic evenly across multiple endpoints
+B. To route traffic based on endpoint health
+C. To route traffic to endpoints based on a specified weight
+D. To perform DNS failover -
+Answer: C
+
+255. Which AWS service provides a scalable and secure file system for Linux-based workloads?
+A. Amazon EFS
+B. Amazon FSx for Windows File Server
+C. Amazon S3
+D. Amazon EBS -
+Answer: A
+
+256. How can you improve the performance of a global application by routing user requests to the nearest endpoint?
+A. Use Amazon CloudFront
+B. Implement AWS Global Accelerator
+C. Enable Amazon Route 53 latency-based routing
+D. Use AWS Direct Connect -
+Answer: B
+
+257. Which AWS service provides a fully managed service for deploying and managing containerized applications with Docker?
+A. AWS Fargate
+B. Amazon ECS
+C. Amazon EKS
+D. AWS Lambda -
+Answer: B
+
+258. What feature of Amazon S3 ensures the durability and availability of stored data?
+A. S3 Versioning
+B. S3 Cross-Region Replication
+C. S3 Lifecycle Policies
+D. S3 Object Lock -
+Answer: B
+
+259. Which AWS service can you use to deploy, manage, and scale applications with a serverless architecture?
+A. AWS Lambda
+B. Amazon EC2
+C. Amazon ECS
+D. AWS Fargate -
+Answer: A
+
+260. What is the benefit of using Amazon Aurora Serverless?
+A. Automatic scaling based on demand
+B. Built-in high availability
+C. Integrated data analytics
+D. Enhanced data security -
+Answer: A
+
+261. Which AWS service provides a managed, scalable, and secure NoSQL database that supports both key-value and document data models?
+A. Amazon DynamoDB
+B. Amazon Aurora
+C. Amazon RDS
+D. Amazon ElastiCache -
+Answer: A
+
+262. What AWS service provides real-time insights and analytics for streaming data?
+A. Amazon Kinesis Data Analytics
+B. Amazon Redshift
+C. Amazon RDS
+D. Amazon DynamoDB -
+Answer: A
+
+263. Which AWS service can be used to automate the deployment and scaling of containerized applications without managing servers?
+A. AWS Lambda
+B. Amazon ECS with AWS Fargate
+C. Amazon EKS
+D. AWS OpsWorks -
+Answer: B
+
+264. What is the primary benefit of using Amazon ElastiCache with Amazon RDS?
+A. Increased write throughput
+B. Reduced latency and improved read performance
+C. Automated backups
+D. Data archiving -
+Answer: B
+
+265. How can you achieve high availability for a multi-tier application deployed on AWS?
+A. Use Amazon RDS Multi-AZ deployments
+B. Implement Elastic Load Balancing and Auto Scaling
+C. Use Amazon Route 53 for DNS failover
+D. Deploy instances in multiple regions -
+Answer: B
+
+266. Which AWS service allows you to deploy and manage infrastructure as code?
+A. AWS CloudFormation
+B. AWS CloudTrail
+C. AWS Config
+D. AWS OpsWorks -
+Answer: A
+
+267. What is the purpose of Amazon S3 Intelligent-Tiering?
+A. To automatically archive infrequently accessed data
+B. To optimize the cost of storage by automatically moving data between access tiers
+C. To store data securely in a private cloud
+D. To manage the lifecycle of objects -
+Answer: B
+
+268. Which AWS service can be used to create a secure, isolated network environment within AWS?
+A. Amazon VPC
+B. AWS Direct Connect
+C. AWS Shield
+D. AWS WAF -
+Answer: A
+
+269. What feature of AWS Elastic Beanstalk helps to maintain the performance and availability of applications?
+A. Application monitoring and logging
+B. Auto Scaling and Load Balancing
+C. Data encryption
+D. Backup and recovery -
+Answer: B
+
+270. Which AWS service can be used to automatically adjust the number of EC2 instances based on demand?
+A. AWS Auto Scaling
+B. AWS Lambda
+C. Amazon EC2 Spot Instances
+D. Amazon CloudFront -
+Answer: A
+
+271. What is the primary purpose of AWS CodeDeploy?
+A. To automate the deployment of applications to Amazon EC2 instances
+B. To manage the source code repository
+C. To monitor application performance
+D. To automate infrastructure provisioning -
+Answer: A
+
+272. Which AWS service provides a managed Kubernetes environment for deploying and scaling containerized applications?
+A. Amazon EKS
+B. AWS Fargate
+C. Amazon ECS
+D. AWS Lambda -
+Answer: A
+
+273. What is the benefit of using Amazon RDS Read Replicas?
+A. Increased write throughput
+B. Improved read performance and scalability
+C. Automated backups
+D. Multi-region replication -
+Answer: B
+
+274. Which AWS service provides real-time monitoring and logging of AWS resources and applications?
+A. Amazon CloudWatch
+B. AWS CloudTrail
+C. AWS X-Ray
+D. AWS Config -
+Answer: A
+
+275. How can you achieve low-latency access to frequently accessed data stored in Amazon S3?
+A. Use Amazon CloudFront
+B. Enable S3 Transfer Acceleration
+C. Use S3 Intelligent-Tiering
+D. Use S3 Glacier for archival -
+Answer: A
+
+276. Which AWS service allows you to create and manage isolated network environments within AWS?
+A. Amazon VPC
+B. AWS Direct Connect
+C. AWS Shield
+D. AWS WAF -
+Answer: A
+
+277. What is the main purpose of AWS Global Accelerator?
+A. Improve the performance and availability of global applications
+B. Route traffic based on DNS policies
+C. Automate the deployment of global applications
+D. Manage the performance of AWS resources -
+Answer: A
+
+278. Which AWS service provides a fully managed, scalable data warehouse solution?
+A. Amazon Redshift
+B. Amazon RDS
+C. Amazon DynamoDB
+D. Amazon Aurora -
+Answer: A
+
+279. How can you optimize costs associated with Amazon EC2 instances for a long-term, predictable workload?
+A. Use On-Demand Instances
+B. Purchase Reserved Instances
+C. Use Spot Instances
+D. Deploy Dedicated Hosts -
+Answer: B
+
+280. Which AWS service can be used to implement high-performance, in- memory caching for applications?
+A. Amazon ElastiCache
+B. Amazon RDS
+C. Amazon DynamoDB
+D. Amazon Aurora -
+Answer: A
+
+281. What is the primary function of AWS Elastic Load Balancing?
+A. Distribute incoming application traffic across multiple targets
+B. Monitor and log application performance
+C. Scale Amazon EC2 instances based on demand
+D. Manage application deployment -
+Answer: A
+
+282. Which AWS service allows you to deploy serverless applications and manage their scaling and availability?
+A. AWS Lambda
+B. Amazon EC2
+C. Amazon ECS
+D. AWS Fargate -
+Answer: A
+
+283. What is the benefit of using AWS Fargate with Amazon ECS?
+A. Manage the underlying server infrastructure
+B. Automatically scale containerized applications
+C. Deploy applications without managing servers
+D. Optimize network traffic for applications -
+Answer: C
+
+284. Which AWS service helps you to monitor the performance and health of your AWS resources and applications?
+A. Amazon CloudWatch
+B. AWS CloudTrail
+C. AWS Config
+D. AWS X-Ray -
+Answer: A
+
+285. How can you ensure high availability for a multi-tier application deployed on AWS?
+A. Use Amazon RDS Multi-AZ deployments
+B. Implement Elastic Load Balancing and Auto Scaling
+C. Use Amazon Route 53 for DNS failover
+D. Deploy instances in multiple regions -
+Answer: B
+
+286. Which AWS service provides automated data archiving and retrieval solutions for infrequently accessed data?
+A. Amazon S3 Glacier
+B. Amazon S3 Intelligent-Tiering
+C. Amazon EBS
+D. Amazon S3 Standard -
+Answer: A
+
+287. What is the primary use case for AWS Lambda?
+A. Running serverless code in response to events
+B. Managing containerized applications
+C. Storing large volumes of data
+D. Deploying scalable web applications -
+Answer: A
+
+288. Which AWS service provides real-time, event-driven data streaming capabilities?
+A. Amazon Kinesis Data Streams
+B. Amazon S3
+C. Amazon DynamoDB
+D. Amazon RDS -
+Answer: A
+
+289. What AWS service can be used to automate the deployment of applications across multiple environments?
+A. AWS CodeDeploy
+B. AWS CodePipeline
+C. AWS CloudFormation
+D. AWS OpsWorks -
+Answer: A
+
+290. Which AWS service provides a fully managed service for analyzing log data in real-time?
+A. Amazon CloudWatch Logs Insights
+B. AWS X-Ray
+C. Amazon Kinesis Data Firehose
+D. Amazon Athena -
+Answer: A
+
+291. How can you improve application performance by distributing traffic across multiple regions?
+A. Use AWS Global Accelerator
+B. Implement Amazon CloudFront
+C. Use AWS Route 53 latency-based routing
+D. Deploy instances in multiple Availability Zones -
+Answer: A
+
+292. Which AWS service provides a scalable, fully managed environment for containerized applications with Docker?
+A. Amazon ECS
+B. AWS Lambda
+C. AWS Fargate
+D. Amazon EKS -
+Answer: A
+
+293. What is the primary function of AWS WAF?
+A. Protect web applications from common web exploits
+B. Monitor application performance
+C. Optimize content delivery
+D. Manage data backup and recovery -
+Answer: A
+
+294. Which AWS service allows you to store and manage data in a scalable, object storage solution?
+A. Amazon S3
+B. Amazon EBS
+C. Amazon EFS
+D. Amazon FSx -
+Answer: A
+
+295. How can you ensure that an application is resilient to failures by using multiple AWS services?
+A. Implement Auto Scaling and Elastic Load Balancing
+B. Use Amazon S3 for data backup
+C. Enable Amazon CloudFront for content delivery
+D. Use AWS Lambda for serverless computing -
+Answer: A
+
+296. Which AWS service provides a scalable, high-performance file storage solution for Windows-based applications?
+A. Amazon FSx for Windows File Server
+B. Amazon EFS
+C. Amazon S3
+D. Amazon EBS -
+Answer: A
+
+297. What is the primary use case for AWS Snowball?
+A. Large-scale data transfer and migration
+B. Real-time data streaming
+C. Monitoring AWS resource performance
+D. Managing containerized applications -
+Answer: A
+
+298. Which AWS service enables you to create, deploy, and manage APIs for your applications?
+A. Amazon API Gateway
+B. AWS AppSync
+C. AWS Lambda
+D. AWS CloudFront -
+Answer: A
+
+299. What is the main benefit of using AWS CloudTrail?
+A. Enables governance, compliance, and operational auditing
+B. Monitors and manages application performance
+C. Deploys and manages serverless applications
+D. Provides real-time data streaming -
+Answer: A
+
+300. Which AWS service provides fully managed database services with automatic backups and scaling?
+A. Amazon RDS
+B. Amazon DynamoDB
+C. Amazon Aurora
+D. Amazon Redshift -
+Answer: A
+
+301. Which AWS service allows you to pay only for the compute time you consume, with no long-term contracts?
+A. AWS Lambda
+B. Amazon EC2 Reserved Instances
+C. Amazon EC2 Spot Instances
+D. AWS Savings Plans
+Answer: A
+
+302. What is the best way to reduce costs for an application that has unpredictable traffic patterns and needs to scale quickly?
+A. Use Amazon EC2 Reserved Instances
+B. Use Amazon EC2 On-Demand Instances
+C. Use Amazon EC2 Spot Instances
+D. Use AWS Savings Plans
+Answer: C
+
+303. Which AWS service offers a pay-as-you-go pricing model for storage with no upfront costs or long-term contracts?
+A. Amazon S3
+B. Amazon EBS
+C. Amazon Glacier
+D. AWS Snowball
+Answer: A
+
+304. To minimize costs for a database that has variable workloads and you need automatic scaling, which database service should you choose?
+A. Amazon RDS for MySQL
+B. Amazon Aurora
+C. Amazon DynamoDB
+D. Amazon Redshift
+Answer: C
+
+305. What pricing model provides a significant discount compared to on- demand pricing by committing to a usage level for a one- or three-year term?
+A. AWS Savings Plans
+B. Amazon EC2 Reserved Instances
+C. Amazon EC2 Spot Instances
+D. AWS Free Tier
+Answer: B
+
+306. Which AWS service allows you to manage and analyze costs with a pay- as-you-go model?
+A. AWS Cost Explorer
+B. AWS Trusted Advisor
+C. AWS Budgets
+D. AWS Cost and Usage Report
+Answer: A
+
+307. Which AWS feature allows you to reduce costs by purchasing unused capacity at discounted rates?
+A. AWS Savings Plans
+B. Amazon EC2 Spot Instances
+C. Amazon EC2 Reserved Instances
+D. AWS Free Tier
+Answer: B
+
+308. What is the most cost-effective storage solution for long-term archival data that is infrequently accessed?
+A. Amazon S3 Standard
+B. Amazon S3 Intelligent-Tiering
+C. Amazon S3 Glacier
+D. Amazon EBS Standard
+Answer: C
+
+309. Which tool helps you to estimate your AWS service costs before you use them?
+A. AWS Pricing Calculator
+B. AWS Cost Explorer
+C. AWS Cost and Usage Report
+D. AWS Budgets
+Answer: A
+
+310. To automatically reduce costs associated with idle Amazon EC2 instances, which feature should you use?
+A. Auto Scaling
+B. EC2 Spot Instances
+C. EC2 Savings Plans
+D. Reserved Instances
+Answer: A
+
+311. Which AWS service can help you find and eliminate unused resources to reduce your AWS costs?
+A. AWS Trusted Advisor
+B. AWS Cost Explorer
+C. AWS Cost and Usage Report
+D. AWS Budgets
+Answer: A
+
+312. What is the most cost-effective way to store data that is frequently accessed and needs high durability?
+A. Amazon S3 Standard
+B. Amazon S3 Glacier
+C. Amazon EBS
+D. Amazon S3 One Zone-IA
+Answer: A
+
+313. Which service allows you to set up alerts when your AWS usage or costs exceed a predefined threshold?
+A. AWS Budgets
+B. AWS Cost Explorer
+C. AWS Cost and Usage Report
+D. AWS Trusted Advisor
+Answer: A
+
+314. Which AWS service can help you to lower your data transfer costs between your VPC and the internet?
+A. Amazon CloudFront
+B. AWS Global Accelerator
+C. Amazon S3 Transfer Acceleration
+D. AWS Direct Connect
+Answer: D
+
+315. To reduce data transfer costs within a region, which service should you use?
+A. AWS Direct Connect
+B. Amazon CloudFront
+C. AWS Data Transfer
+D. Amazon VPC PrivateLink
+Answer: D
+
+316. Which storage class in Amazon S3 is designed for data that is accessed less frequently but requires rapid access when needed?
+A. Amazon S3 Standard
+B. Amazon S3 Intelligent-Tiering
+C. Amazon S3 One Zone-IA
+D. Amazon S3 Glacier
+Answer: C
+
+317. Which AWS service can automatically optimize your EBS volumes by identifying and removing unused snapshots?
+A. AWS Trusted Advisor
+B. AWS Systems Manager
+C. AWS Cost Explorer
+D. Amazon EBS Snapshot Manager
+Answer: B
+
+318. What is the benefit of using Amazon EC2 Spot Instances compared to On-Demand Instances?
+A. Lower cost for short-term, flexible computing needs
+B. Guaranteed availability
+C. Long-term commitment discount
+D. Higher computing capacity
+Answer: A
+
+319. Which service provides detailed information about your AWS usage and costs, including cost allocation reports?
+A. AWS Cost Explorer
+B. AWS Cost and Usage Report
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: B
+
+320. What pricing model is best for applications with predictable workloads that require steady compute capacity?
+A. On-Demand Instances
+B. Reserved Instances
+C. Spot Instances
+D. Savings Plans
+Answer: B
+
+321. Which AWS service helps you visualize and analyze your AWS costs and usage?
+A. AWS Cost Explorer
+B. AWS Cost and Usage Report
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: A
+
+322. Which AWS service provides a way to manage the cost of your Lambda functions based on the number of requests and compute time?
+A. AWS Cost Explorer
+B. AWS Lambda Pricing
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: B
+
+323. Which pricing model allows you to save up to 70% compared to On- Demand prices by committing to a specific amount of usage for one or three years?
+A. EC2 Spot Instances
+B. EC2 Reserved Instances
+C. AWS Savings Plans
+D. AWS Free Tier
+Answer: B
+
+324. What is the cost-effective storage class for frequently accessed data that is expected to be retained for the long term?
+A. Amazon S3 Glacier
+B. Amazon S3 One Zone-IA
+C. Amazon S3 Intelligent-Tiering
+D. Amazon S3 Standard
+Answer: D
+
+325. Which AWS service provides a comprehensive view of your AWS resource inventory and configuration history to help manage costs?
+A. AWS Config
+B. AWS Cost Explorer
+C. AWS Systems Manager
+D. AWS Trusted Advisor
+Answer: A
+
+326. Which AWS feature helps optimize costs by automatically scaling your resources up or down based on demand?
+A. Auto Scaling
+B. EC2 Spot Instances
+C. EC2 Savings Plans
+D. Reserved Instances
+Answer: A
+
+327. Which AWS service allows you to analyze cost and usage data across multiple AWS accounts and regions?
+A. AWS Cost Explorer
+B. AWS Cost and Usage Report
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: B
+
+328. What is the most cost-effective way to store data that is archived but needs to be restored occasionally?
+A. Amazon S3 Standard
+B. Amazon S3 One Zone-IA
+C. Amazon S3 Glacier
+D. Amazon EBS
+Answer: C
+
+329. Which AWS service helps to track and manage AWS costs and usage across various services and accounts?
+A. AWS Cost Explorer
+B. AWS Cost and Usage Report
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: B
+
+330. Which AWS pricing model is most suitable for applications with variable workloads that do not have predictable patterns?
+A. EC2 On-Demand Instances
+B. EC2 Reserved Instances
+C. EC2 Spot Instances
+D. AWS Savings Plans
+Answer: C
+
+331. Which AWS service provides a way to pay for only the compute capacity you use for a specific task and get charged per execution?
+A. AWS Lambda
+B. Amazon EC2 Reserved Instances
+C. Amazon EC2 Spot Instances
+D. AWS Savings Plans
+Answer: A
+
+332. Which AWS service helps to manage costs by providing recommendations to reserve instances or switch to different pricing plans?
+A. AWS Trusted Advisor
+B. AWS Cost Explorer
+C. AWS Budgets
+D. AWS Cost and Usage Report
+Answer: A
+
+333. What is the most cost-effective storage solution for data that is accessed less frequently but requires quick retrieval when needed?
+A. Amazon S3 One Zone-IA
+B. Amazon S3 Glacier
+C. Amazon S3 Intelligent-Tiering
+D. Amazon S3 Standard
+Answer: A
+
+334. Which service allows you to track AWS service costs and usage and provides data to help you make cost-effective decisions?
+A. AWS Cost Explorer
+B. AWS Cost and Usage Report
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: B
+
+335. Which AWS pricing model is best suited for predictable workloads with a consistent usage pattern over a year or more?
+A. On-Demand Instances
+B. Reserved Instances
+C. Spot Instances
+D. Savings Plans
+Answer: B
+
+336. Which AWS service allows you to evaluate and adjust the cost- effectiveness of your resource usage based on your preferences and usage patterns?
+A. AWS Cost Explorer
+B. AWS Budgets
+C. AWS Trusted Advisor
+D. AWS Cost and Usage Report
+Answer: A
+
+337. Which AWS service is designed to provide the most cost-effective solution for archival storage with infrequent access?
+A. Amazon S3 Standard
+B. Amazon S3 One Zone-IA
+C. Amazon S3 Glacier Deep Archive
+D. Amazon S3 Intelligent-Tiering
+Answer: C
+
+338. Which AWS service provides a way to automate cost management by setting up alerts and tracking budgets?
+A. AWS Budgets
+B. AWS Cost Explorer
+C. AWS Cost and Usage Report
+D. AWS Trusted Advisor
+Answer: A
+
+339. Which AWS feature enables you to optimize costs by reducing your data transfer charges between your VPC and other AWS services?
+A. AWS Direct Connect
+B. Amazon CloudFront
+C. AWS Global Accelerator
+D. AWS Transit Gateway
+Answer: D
+
+340. Which AWS pricing model allows you to receive discounts based on a commitment to a specific usage level for one or three years?
+A. AWS Savings Plans
+B. EC2 Spot Instances
+C. EC2 On-Demand Instances
+D. EC2 Reserved Instances
+Answer: D
+
+341. What is the most cost-effective way to ensure high availability of your application with minimal impact on cost?
+A. Use EC2 Spot Instances for high-availability
+B. Implement Auto Scaling with multiple AZs
+C. Use Reserved Instances for all instances
+D. Deploy instances in a single region
+Answer: B
+
+342. Which AWS service helps you to optimize your storage costs by moving data to the most cost-effective storage class based on access patterns?
+A. Amazon S3 Intelligent-Tiering
+B. Amazon S3 Standard
+C. Amazon S3 One Zone-IA
+D. Amazon S3 Glacier
+Answer: A
+
+343. Which AWS service can help you reduce data transfer costs by caching content closer to your users?
+A. Amazon CloudFront
+B. AWS Global Accelerator
+C. AWS Direct Connect
+D. Amazon VPC PrivateLink
+Answer: A
+
+344. Which AWS feature allows you to save costs by using capacity that is otherwise unused in the AWS cloud?
+A. EC2 Spot Instances
+B. EC2 Reserved Instances
+C. AWS Savings Plans
+D. EC2 On-Demand Instances
+Answer: A
+
+345. Which AWS service provides visibility into your resource costs and helps you make informed decisions about cost management?
+A. AWS Cost Explorer
+B. AWS Cost and Usage Report
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: A
+
+346. Which AWS storage service provides an affordable option for backup and restore with a low retrieval time?
+A. Amazon S3 Glacier
+B. Amazon S3 Intelligent-Tiering
+C. Amazon EBS
+D. Amazon S3 Standard
+Answer: A
+
+347. Which AWS service provides detailed billing and cost management information to help track and control costs?
+A. AWS Cost Explorer
+B. AWS Cost and Usage Report
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: B
+
+348. To minimize costs for a database with unpredictable traffic patterns, which option should you consider?
+A. Amazon RDS for MySQL with Reserved Instances
+B. Amazon DynamoDB with On-Demand Capacity
+C. Amazon Aurora with Reserved Instances
+D. Amazon Redshift with Reserved Instances
+Answer: B
+
+349. Which AWS feature helps to reduce costs by automatically resizing your Amazon EC2 instances based on demand?
+A. Auto Scaling
+B. EC2 Spot Instances
+C. Reserved Instances
+D. AWS Savings Plans
+Answer: A
+
+350. What is the best practice to reduce costs for a long-term, predictable workload that requires high compute capacity?
+A. Use On-Demand Instances
+B. Use EC2 Spot Instances
+C. Use Reserved Instances
+D. Use AWS Savings Plans
+Answer: C
+
+351. Which AWS service is most cost-effective for delivering static content with low latency to end users around the world?
+A. Amazon CloudFront
+B. AWS Global Accelerator
+C. AWS Direct Connect
+D. AWS S3 Transfer Acceleration
+Answer: A
+
+352. What is the most cost-effective way to manage your costs associated with AWS Lambda functions?
+A. Use AWS Cost Explorer to analyze usage
+B. Implement AWS Lambda provisioned concurrency
+C. Configure AWS Lambda function timeouts
+D. Use AWS Budgets to set alerts
+Answer: A
+
+353. Which AWS storage service allows you to save on storage costs for data that is accessed infrequently but needs to be quickly retrievable?
+A. Amazon S3 Glacier
+B. Amazon S3 One Zone-IA
+C. Amazon S3 Intelligent-Tiering
+D. Amazon EBS
+Answer: B
+
+354. Which AWS service provides recommendations to help you reduce costs by identifying and managing unused resources?
+A. AWS Trusted Advisor
+B. AWS Cost Explorer
+C. AWS Budgets
+D. AWS Cost and Usage Report
+Answer: A
+
+355. To reduce costs for a compute-intensive application with fluctuating demand, which pricing model should you use?
+A. EC2 On-Demand Instances
+B. EC2 Reserved Instances
+C. EC2 Spot Instances
+D. AWS Savings Plans
+Answer: C
+
+356. Which AWS service provides the most cost-effective option for archiving data that is rarely accessed?
+A. Amazon S3 Glacier Deep Archive
+B. Amazon S3 Glacier
+C. Amazon S3 Standard-IA
+D. Amazon S3 Intelligent-Tiering
+Answer: A
+
+357. Which AWS feature helps to optimize costs by automatically adjusting the size and number of your EC2 instances based on demand?
+A. Auto Scaling
+B. EC2 Reserved Instances
+C. EC2 Spot Instances
+D. AWS Savings Plans
+Answer: A
+
+358. Which AWS service allows you to set up spending alerts and track your AWS usage to avoid unexpected charges?
+A. AWS Budgets
+B. AWS Cost Explorer
+C. AWS Cost and Usage Report
+D. AWS Trusted Advisor
+Answer: A
+
+359. What is the most cost-effective way to handle data that is archived but may need to be accessed occasionally?
+A. Amazon S3 Glacier Deep Archive
+B. Amazon S3 Glacier
+C. Amazon S3 Standard-IA
+D. Amazon EBS
+Answer: A
+
+360. Which AWS service can help you manage and optimize the costs associated with your AWS Lambda functions by providing insights into usage patterns?
+A. AWS Cost Explorer
+B. AWS Lambda Cost Optimization
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: A
+
+361. Which AWS feature helps you minimize costs by ensuring that resources are only running when needed?
+A. Auto Scaling
+B. EC2 Spot Instances
+C. EC2 Reserved Instances
+D. AWS Savings Plans
+Answer: A
+
+362. Which AWS service offers a cost-effective way to transfer large amounts of data into AWS from on-premises storage?
+A. AWS Snowball
+B. AWS Direct Connect
+C. AWS DataSync
+D. AWS Transfer Family
+Answer: A
+
+363. Which AWS pricing model is best for workloads with predictable and consistent usage patterns?
+A. On-Demand Instances
+B. Reserved Instances
+C. Spot Instances
+D. Savings Plans
+Answer: B
+
+364. What is the cost-effective solution for storing data that is infrequently accessed but needs to be retained for long periods?
+A. Amazon S3 Glacier Deep Archive
+B. Amazon S3 Glacier
+C. Amazon S3 Standard-IA
+D. Amazon EBS
+Answer: A
+
+365. Which AWS feature can help to optimize costs by adjusting the number of instances based on actual usage?
+A. Auto Scaling
+B. EC2 Spot Instances
+C. EC2 Reserved Instances
+D. AWS Savings Plans
+Answer: A
+
+366. Which AWS service can help you control and manage your AWS costs and usage by creating cost allocation tags?
+A. AWS Cost Explorer
+B. AWS Budgets
+C. AWS Cost and Usage Report
+D. AWS Tag Editor
+Answer: D
+
+367. Which AWS service provides detailed billing information and analysis to help with cost management and optimization?
+A. AWS Cost Explorer
+B. AWS Cost and Usage Report
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: B
+
+368. Which AWS pricing model is the best choice for unpredictable workloads that require immediate access to compute resources?
+A. EC2 On-Demand Instances
+B. EC2 Spot Instances
+C. EC2 Reserved Instances
+D. AWS Savings Plans
+Answer: A
+
+369. Which AWS service provides cost management features that allow you to track usage and set budgets for different AWS accounts or services?
+A. AWS Budgets
+B. AWS Cost Explorer
+C. AWS Cost and Usage Report
+D. AWS Trusted Advisor
+Answer: A
+
+370. Which AWS storage class is the most cost-effective for storing data that is accessed less frequently but needs to be available quickly when needed?
+A. Amazon S3 One Zone-IA
+B. Amazon S3 Glacier
+C. Amazon S3 Standard
+D. Amazon S3 Intelligent-Tiering
+Answer: A
+
+371. Which AWS service provides automated cost optimization and recommendations for AWS resources to help reduce costs?
+A. AWS Trusted Advisor
+B. AWS Cost Explorer
+C. AWS Budgets
+D. AWS Cost and Usage Report
+Answer: A
+
+372. What is the most cost-effective AWS service for delivering content with low latency to users worldwide?
+A. Amazon CloudFront
+B. AWS Global Accelerator
+C. AWS Direct Connect
+D. AWS S3 Transfer Acceleration
+Answer: A
+
+373. Which AWS service helps you manage and optimize costs by analyzing data usage and providing recommendations?
+A. AWS Cost Explorer
+B. AWS Cost and Usage Report
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: A
+
+374. What is the cost-effective solution for handling occasional spikes in compute demand?
+A. EC2 Spot Instances
+B. EC2 Reserved Instances
+C. EC2 On-Demand Instances
+D. AWS Savings Plans
+Answer: A
+
+375. Which AWS storage service is the most cost-effective for archiving data that is rarely accessed but needs to be retained for a long time?
+A. Amazon S3 Glacier Deep Archive
+B. Amazon S3 Glacier
+C. Amazon S3 One Zone-IA
+D. Amazon S3 Intelligent-Tiering
+Answer: A
+
+376. Which AWS service helps you optimize the cost of your Amazon EC2 instances by providing recommendations based on usage patterns?
+A. AWS Trusted Advisor
+B. AWS Cost Explorer
+C. AWS Budgets
+D. AWS Cost and Usage Report
+Answer: A
+
+377. What is the most cost-effective AWS service for minimizing the cost of transferring large amounts of data into AWS from on-premises storage?
+A. AWS Snowball
+B. AWS Direct Connect
+C. AWS DataSync
+D. AWS Transfer Family
+Answer: A
+
+378. Which AWS feature helps to control costs by automatically scaling your Amazon EC2 instances up or down based on demand?
+A. Auto Scaling
+B. EC2 Spot Instances
+C. EC2 Reserved Instances
+D. AWS Savings Plans
+Answer: A
+
+379. Which AWS service provides a way to track and control AWS costs by setting up cost allocation tags?
+A. AWS Cost Explorer
+B. AWS Budgets
+C. AWS Cost and Usage Report
+D. AWS Tag Editor
+Answer: D
+
+380. Which AWS pricing model offers the highest cost savings for workloads with a long-term, predictable usage pattern?
+A. EC2 On-Demand Instances
+B. EC2 Spot Instances
+C. EC2 Reserved Instances
+D. AWS Savings Plans
+Answer: C
+
+381. What is the most cost-effective AWS service for delivering content to end users with low latency?
+A. Amazon CloudFront
+B. AWS Global Accelerator
+C. AWS Direct Connect
+D. Amazon S3 Transfer Acceleration
+Answer: A
+
+382. Which AWS service provides the most cost-effective solution for handling temporary or unpredictable compute workloads?
+A. EC2 Spot Instances
+B. EC2 On-Demand Instances
+C. EC2 Reserved Instances
+D. AWS Savings Plans
+Answer: A
+
+383. Which AWS service provides visibility and insights into your AWS costs and usage to help optimize your spending?
+A. AWS Cost Explorer
+B. AWS Cost and Usage Report
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: A
+
+384. Which AWS feature allows you to minimize costs by resizing your instances based on actual usage?
+A. Auto Scaling
+B. EC2 Spot Instances
+C. EC2 Reserved Instances
+D. AWS Savings Plans
+Answer: A
+
+385. Which AWS storage class is the most cost-effective for storing data that is accessed less frequently and requires rapid retrieval?
+A. Amazon S3 One Zone-IA
+B. Amazon S3 Glacier
+C. Amazon S3 Intelligent-Tiering
+D. Amazon S3 Standard
+Answer: A
+
+386. Which AWS service provides recommendations for optimizing your AWS environment by analyzing your usage patterns and providing cost- saving opportunities?
+A. AWS Trusted Advisor
+B. AWS Cost Explorer
+C. AWS Budgets
+D. AWS Cost and Usage Report
+Answer: A
+
+387. What is the best practice to reduce costs for a long-term, predictable workload with consistent compute requirements?
+A. Use EC2 On-Demand Instances
+B. Use EC2 Spot Instances
+C. Use EC2 Reserved Instances
+D. Use AWS Savings Plans
+Answer: C
+
+388. Which AWS service provides insights into cost and usage patterns and helps to identify opportunities for cost savings?
+A. AWS Cost Explorer
+B. AWS Cost and Usage Report
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: A
+
+389. Which AWS service allows you to set cost and usage budgets and receive alerts when your spending exceeds thresholds?
+A. AWS Budgets
+B. AWS Cost Explorer
+C. AWS Cost and Usage Report
+D. AWS Trusted Advisor
+Answer: A
+
+390. Which AWS storage service is best for data that is archived but needs to be accessed occasionally?
+A. Amazon S3 Glacier
+B. Amazon S3 Intelligent-Tiering
+C. Amazon S3 One Zone-IA
+D. Amazon EBS
+Answer: A
+
+391. What is the most cost-effective AWS service for storing data that is infrequently accessed but must be retained for a long time?
+A. Amazon S3 Glacier Deep Archive
+B. Amazon S3 Glacier
+C. Amazon S3 Standard-IA
+D. Amazon EBS
+Answer: A
+
+392. Which AWS service provides cost optimization recommendations based on your usage patterns and resource configurations?
+A. AWS Trusted Advisor
+B. AWS Cost Explorer
+C. AWS Budgets
+D. AWS Cost and Usage Report
+Answer: A
+
+393. Which AWS feature allows you to track your AWS usage and cost by allocating expenses to specific projects or departments?
+A. AWS Cost Allocation Tags
+B. AWS Cost Explorer
+C. AWS Budgets
+D. AWS Cost and Usage Report
+Answer: A
+
+394. Which AWS service is most suitable for managing data transfers and migrations from on-premises to AWS?
+A. AWS Snowball
+B. AWS Direct Connect
+C. AWS DataSync
+D. AWS Transfer Family
+Answer: A
+
+395. Which AWS pricing model is best suited for applications with highly variable and unpredictable usage patterns?
+A. EC2 On-Demand Instances
+B. EC2 Spot Instances
+C. EC2 Reserved Instances
+D. AWS Savings Plans
+Answer: A
+
+396. Which AWS service provides a comprehensive view of your AWS spending and helps you understand where your money is going?
+A. AWS Cost Explorer
+B. AWS Cost and Usage Report
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: A
+
+397. What is the most cost-effective AWS service for delivering static and dynamic content to users globally with minimal latency?
+A. Amazon CloudFront
+B. AWS Global Accelerator
+C. AWS Direct Connect
+D. AWS S3 Transfer Acceleration
+Answer: A
+
+398. Which AWS service is best for optimizing the cost of your EC2 instances by analyzing usage and providing recommendations?
+A. AWS Trusted Advisor
+B. AWS Cost Explorer
+C. AWS Budgets
+D. AWS Cost and Usage Report
+Answer: A
+
+399. Which AWS feature provides detailed billing and usage data to help with cost analysis and optimization?
+A. AWS Cost and Usage Report
+B. AWS Cost Explorer
+C. AWS Budgets
+D. AWS Trusted Advisor
+Answer: A
+
+400. What is the most cost-effective AWS service for storing and retrieving large amounts of infrequently accessed data?
+A. Amazon S3 Glacier
+B. Amazon S3 Glacier Deep Archive
+C. Amazon S3 Standard-IA
+D. Amazon EBS
+Answer: A

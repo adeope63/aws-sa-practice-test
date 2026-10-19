@@ -1,0 +1,12 @@
+import {chromium} from '@playwright/test';
+const browser=await chromium.launch({headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1050},reducedMotion:'reduce'});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:5175/');await page.getByRole('button',{name:'Study Guide',exact:true}).click();await page.getByText('100 matching flashcards',{exact:true}).waitFor();
+await page.screenshot({path:'docs/study-guide.png',fullPage:false});
+await page.getByRole('button',{name:'Start quick study'}).click();
+await page.getByRole('button',{name:'Reveal flashcard answer'}).click();
+await page.screenshot({path:'docs/study-flashcard.png',fullPage:false});
+await page.setViewportSize({width:390,height:844});await page.screenshot({path:'docs/study-flashcard-mobile.png',fullPage:true});
+console.log(JSON.stringify({errors,horizontalOverflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)}));
+await browser.close();

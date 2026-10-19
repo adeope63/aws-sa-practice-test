@@ -1,0 +1,17 @@
+import {chromium} from '@playwright/test';
+const browser=await chromium.launch({headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1050},reducedMotion:'reduce'});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:5175/');await page.getByRole('button',{name:'Question Bank',exact:true}).click();
+await page.getByRole('combobox',{name:'Filter collection'}).selectOption('howlett');
+await page.getByText(/400 matching questions · 292 eligible/).waitFor();
+await page.screenshot({path:'docs/book-question-bank.png',fullPage:false});
+await page.getByRole('textbox',{name:'Search questions'}).fill('temporary role credentials');
+await page.getByRole('button',{name:'Study explanation'}).click();
+await page.getByText('Source & review · Howlett #3 · book answer B').click();
+await page.screenshot({path:'docs/book-explanation.png',fullPage:false});
+await page.getByRole('button',{name:'Close explanation'}).click();
+await page.setViewportSize({width:390,height:844});
+await page.screenshot({path:'docs/book-question-bank-mobile.png',fullPage:false});
+console.log(JSON.stringify({errors,horizontalOverflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)}));
+await browser.close();

@@ -1,0 +1,1625 @@
+{
+  "counts": {
+    "Reviewed": 247,
+    "Corrected": 45,
+    "Review only": 108
+  },
+  "eligible": 292,
+  "items": [
+    {
+      "id": "H003",
+      "number": 3,
+      "status": "Corrected",
+      "book_key": "b",
+      "reviewed_key": "b",
+      "eligible": true,
+      "reason": "IAM roles define assumable permissions and provide temporary security credentials. They do not eliminate credentials: AWS SDKs can retrieve and refresh role credentials without embedding long-lived keys. The supplied option must be corrected. Practice option wording corrected; original options preserved below.",
+      "changes": [
+        "Practice option wording corrected; original options preserved below."
+      ]
+    },
+    {
+      "id": "H009",
+      "number": 9,
+      "status": "Corrected",
+      "book_key": "b",
+      "reviewed_key": "b",
+      "eligible": true,
+      "reason": "The included baseline protection is AWS Shield Standard, not the optional paid Shield Advanced tier. CloudFront and Route 53 benefit from AWS's built-in DDoS protections. The supplied option name is corrected while retaining its letter. Practice option wording corrected; original options preserved below.",
+      "changes": [
+        "Practice option wording corrected; original options preserved below."
+      ]
+    },
+    {
+      "id": "H020",
+      "number": 20,
+      "status": "Corrected",
+      "book_key": "b",
+      "reviewed_key": "b",
+      "eligible": true,
+      "reason": "Config rules identify noncompliant resource configurations and can invoke configured remediation. Config is primarily detective; it is not a blanket preventive permission system. The practice wording explicitly asks for evaluation and configured remediation. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H024",
+      "number": 24,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "Secrets Manager stores protected application secrets and supports configured rotation. Parameter Store SecureString is also valid for secure values, so the practice question adds a managed-rotation requirement to distinguish the choices. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H025",
+      "number": 25,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Both identity-based IAM policies/roles and S3 bucket policies can authorize access. A bucket policy is a resource policy, not the only possible method. The original wording does not specify a cross-account or resource-policy requirement, so it does not support declaring every alternative wrong.",
+      "changes": []
+    },
+    {
+      "id": "H029",
+      "number": 29,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Key rotation limits the lifetime of exposed long-term keys but cannot ensure credentials are never leaked. MFA protects interactive authentication; assumed roles reduce long-lived key distribution. The source overstates guarantees and offers overlapping security practices.",
+      "changes": []
+    },
+    {
+      "id": "H030",
+      "number": 30,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Organizations supports account organization and policy guardrails, but Config can evaluate compliance and WAF policies can govern particular workloads. The broad word compliance does not distinguish preventive authorization from detective resource checks.",
+      "changes": []
+    },
+    {
+      "id": "H038",
+      "number": 38,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "Network ACLs are configured as VPC networking resources. Calling this centralized management is imprecise: VPC does not itself provide a global organization-wide ACL manager. The practice stem asks where subnet network ACLs are configured. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H043",
+      "number": 43,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "Config rules identify noncompliant resource configurations and can invoke configured remediation. Config is primarily detective; it is not a blanket preventive permission system. The practice wording explicitly asks for evaluation and configured remediation. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H046",
+      "number": 46,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Both identity-based IAM policies/roles and S3 bucket policies can authorize access. A bucket policy is a resource policy, not the only possible method. The original wording does not specify a cross-account or resource-policy requirement, so it does not support declaring every alternative wrong.",
+      "changes": []
+    },
+    {
+      "id": "H049",
+      "number": 49,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "ACM manages certificates for TLS endpoints; it does not decide which application principals are authorized to access data. IAM authorizes supported AWS requests. The original statement conflates transport confidentiality, certificate identity and access authorization and has no unique service answer.",
+      "changes": []
+    },
+    {
+      "id": "H052",
+      "number": 52,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Security groups restrict network connectivity by source IP, while IAM conditions such as aws:SourceIp can constrain supported API requests. The question does not specify the access plane, so either can be valid in a suitable context.",
+      "changes": []
+    },
+    {
+      "id": "H053",
+      "number": 53,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Regional KMS keys can protect data at rest, but eligible multi-Region KMS keys also exist. IAM policies are equally necessary to restrict access. Without specifying encryption or threat requirements, no listed option is the sole best data-protection design.",
+      "changes": []
+    },
+    {
+      "id": "H055",
+      "number": 55,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "A Lambda execution role supplies permissions and temporary credentials for supported AWS service calls. Network endpoints provide connectivity and TLS protects transport; MFA is not an unattended function authentication mechanism. The practice wording explicitly asks about authorized API calls. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H057",
+      "number": 57,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "Config rules identify noncompliant resource configurations and can invoke configured remediation. Config is primarily detective; it is not a blanket preventive permission system. The practice wording explicitly asks for evaluation and configured remediation. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H062",
+      "number": 62,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "IAM policies and roles, bucket policies, and network controls can all protect different access paths. The broad question does not establish that bucket policies or security groups are wrong. A secure design combines controls according to the resource and threat model.",
+      "changes": []
+    },
+    {
+      "id": "H068",
+      "number": 68,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Key rotation limits the lifetime of exposed long-term keys but cannot ensure credentials are never leaked. MFA protects interactive authentication; assumed roles reduce long-lived key distribution. The source overstates guarantees and offers overlapping security practices.",
+      "changes": []
+    },
+    {
+      "id": "H074",
+      "number": 74,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Both identity-based IAM policies/roles and S3 bucket policies can authorize access. A bucket policy is a resource policy, not the only possible method. The original wording does not specify a cross-account or resource-policy requirement, so it does not support declaring every alternative wrong.",
+      "changes": []
+    },
+    {
+      "id": "H078",
+      "number": 78,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "Direct Connect establishes dedicated private network connectivity between on-premises sites and AWS. VPN provides encrypted tunnels over existing connectivity. Direct Connect is not encrypted by default; additional encryption is needed when required. The practice stem distinguishes the dedicated connection. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H085",
+      "number": 85,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Organizations supports account organization and policy guardrails, but Config can evaluate compliance and WAF policies can govern particular workloads. The broad word compliance does not distinguish preventive authorization from detective resource checks.",
+      "changes": []
+    },
+    {
+      "id": "H089",
+      "number": 89,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "WAF geographic-match rules filter supported HTTP requests by country. They cannot govern access to every kind of AWS resource or API. The practice question is narrowed to a supported web endpoint. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H098",
+      "number": 98,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "API Gateway can protect application APIs with supported authorizers, IAM authorization and other controls. IAM policies can also secure direct AWS API calls. The source does not distinguish the API type, so several options are applicable rather than uniquely wrong.",
+      "changes": []
+    },
+    {
+      "id": "H103",
+      "number": 103,
+      "status": "Corrected",
+      "book_key": "b",
+      "reviewed_key": "b",
+      "eligible": true,
+      "reason": "RDS Multi-AZ DB instance deployments provide synchronous replication and managed standby failover. Native automated backups provide restore points separately; Multi-AZ is not itself a backup service. The practice stem asks specifically about standby replication and failover. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H104",
+      "number": 104,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "S3 and DynamoDB can both persist application state outside a compute instance; a suitably configured cache may also retain some state but is not a universal durable authority. The required access pattern, durability and recovery semantics are missing, so there is no unique choice.",
+      "changes": []
+    },
+    {
+      "id": "H107",
+      "number": 107,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Auto Scaling, managed databases and Elastic Beanstalk can all participate in resilient systems. No one service automatically makes every application dependency fully redundant. The source has no deployment or failure requirements that establish one unique answer.",
+      "changes": []
+    },
+    {
+      "id": "H114",
+      "number": 114,
+      "status": "Corrected",
+      "book_key": "b",
+      "reviewed_key": "b",
+      "eligible": true,
+      "reason": "EC2 Auto Scaling adjusts the instance count using configured policies and replaces unhealthy instances in the group. Metrics, health checks, bounds and AZ placement must be configured. It does not automatically scale every application dependency or replicate databases. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H115",
+      "number": 115,
+      "status": "Corrected",
+      "book_key": "d",
+      "reviewed_key": "d",
+      "eligible": true,
+      "reason": "Cross-zone load balancing lets a load balancer node distribute traffic to eligible targets beyond its own AZ, subject to the load balancer's support and configuration. The practice stem explicitly asks about targets in other AZs, which the original generic wording omitted. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H118",
+      "number": 118,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "DynamoDB global tables replicate the database across Regions, but they do not automatically fail over every application component. Aurora can also replicate across Regions in supported configurations. The source lacks a DynamoDB data-model requirement and a complete application routing/failover design.",
+      "changes": []
+    },
+    {
+      "id": "H120",
+      "number": 120,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Storage Gateway supplies hybrid storage interfaces, while AWS Backup centrally orchestrates supported backups including supported hybrid resources. On-premises data is too broad to distinguish those roles without specifying the interface or protected resource. The source key is not uniquely justified.",
+      "changes": []
+    },
+    {
+      "id": "H123",
+      "number": 123,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Global Accelerator and Route 53 steer traffic to existing endpoints; they do not create or deploy application copies. Elastic Beanstalk, CloudFormation and deployment tools can provision or deploy appropriately configured applications, but the source does not specify enough to select a unique deployment service.",
+      "changes": []
+    },
+    {
+      "id": "H126",
+      "number": 126,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "VPC defines the network, but a VPC does not autonomously fail over arbitrary routes or appliances. Redundant endpoints, routing and recovery mechanisms must be designed. None of these service names alone is a complete VPC failover feature.",
+      "changes": []
+    },
+    {
+      "id": "H127",
+      "number": 127,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "Redshift is an analytical warehouse. Automatic demand-driven warehouse capacity is specifically a Redshift Serverless characteristic rather than a universal claim about any provisioned Redshift cluster; the practice stem adds that distinction. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H128",
+      "number": 128,
+      "status": "Corrected",
+      "book_key": "b",
+      "reviewed_key": "b",
+      "eligible": true,
+      "reason": "Global Accelerator directs supported traffic to healthy endpoints using the AWS global network and configured endpoint groups. It does not invariably choose the geographically nearest Region, deploy applications, or optimize SQL. The nearest-Region option is corrected to healthy endpoint routing. Practice option wording corrected; original options preserved below.",
+      "changes": [
+        "Practice option wording corrected; original options preserved below."
+      ]
+    },
+    {
+      "id": "H130",
+      "number": 130,
+      "status": "Corrected",
+      "book_key": "c",
+      "reviewed_key": "c",
+      "eligible": true,
+      "reason": "Route 53 failover routing can shift DNS responses to a healthy recovery endpoint, but it does not build the recovery environment or restore its data. Backups and database promotion cover different recovery steps. The practice stem explicitly asks for DNS-based endpoint failover. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H131",
+      "number": 131,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "CloudFront fits cacheable HTTP content, while S3, databases and file systems have other access models. Arbitrary data across geographic locations does not specify an HTTP/cacheable workload, so the source cannot uniquely select a CDN.",
+      "changes": []
+    },
+    {
+      "id": "H148",
+      "number": 148,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "S3 replication, DynamoDB global tables, supported RDS cross-Region replicas and AWS Backup copies can all support different recovery needs. The question does not identify the data type or recovery mechanism, so more than one option may satisfy it.",
+      "changes": []
+    },
+    {
+      "id": "H153",
+      "number": 153,
+      "status": "Corrected",
+      "book_key": "b",
+      "reviewed_key": "b",
+      "eligible": true,
+      "reason": "EC2 Auto Scaling adjusts the instance count using configured policies and replaces unhealthy instances in the group. Metrics, health checks, bounds and AZ placement must be configured. It does not automatically scale every application dependency or replicate databases. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H156",
+      "number": 156,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Global Accelerator and Route 53 steer traffic to existing endpoints; they do not create or deploy application copies. Elastic Beanstalk, CloudFormation and deployment tools can provision or deploy appropriately configured applications, but the source does not specify enough to select a unique deployment service.",
+      "changes": []
+    },
+    {
+      "id": "H157",
+      "number": 157,
+      "status": "Corrected",
+      "book_key": "c",
+      "reviewed_key": "c",
+      "eligible": true,
+      "reason": "Aurora Global Database has a primary write Region and replicated secondary clusters that serve regional reads. Write forwarding still executes writes at the primary; it is not independent low-latency multi-master writing in every Region. The source's read-and-write option is corrected. Practice option wording corrected; original options preserved below.",
+      "changes": [
+        "Practice option wording corrected; original options preserved below."
+      ]
+    },
+    {
+      "id": "H159",
+      "number": 159,
+      "status": "Corrected",
+      "book_key": "b",
+      "reviewed_key": "c",
+      "eligible": true,
+      "reason": "IAM Identity Center, formerly AWS SSO, centrally assigns workforce access across accounts using permission sets. Organizations manages accounts and guardrail policies, not workforce sign-in permissions by itself. The source key is corrected to the offered AWS SSO option. Answer key corrected from B to C.",
+      "changes": [
+        "Answer key corrected from B to C."
+      ]
+    },
+    {
+      "id": "H166",
+      "number": 166,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "The offered Aurora Multi-Master name is not a current recommended substitute for conventional synchronous RDS Multi-AZ standby replication. Read replicas are usually asynchronous, Streams expose changes, and ElastiCache is a different data store. No offered current answer unambiguously satisfies the source statement.",
+      "changes": []
+    },
+    {
+      "id": "H168",
+      "number": 168,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "ECS and Lambda can both run appropriately designed microservices with managed scaling. High availability depends on configuration and workload design, not merely the microservices label. Without requiring containers, neither can be dismissed as wrong.",
+      "changes": []
+    },
+    {
+      "id": "H169",
+      "number": 169,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "EC2 Auto Scaling groups are regional. Systems Manager can support fleet operations and CloudFormation can provision regional resources, but the source does not say whether managing means patching, provisioning, inventory or scaling. There is no unique all-Region fleet management answer.",
+      "changes": []
+    },
+    {
+      "id": "H170",
+      "number": 170,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Durability is a storage design property, not a named switch that ensures every S3 class spans multiple facilities. Standard and many regional classes store data across AZs; One Zone classes differ. The source lacks the storage-class scope required for its absolute claim.",
+      "changes": []
+    },
+    {
+      "id": "H172",
+      "number": 172,
+      "status": "Corrected",
+      "book_key": "d",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "CloudFormation provisions and updates declared infrastructure resources. CodeDeploy automates supported application code deployments, rather than generally managing infrastructure. The source key is corrected to CloudFormation. Answer key corrected from D to A.",
+      "changes": [
+        "Answer key corrected from D to A."
+      ]
+    },
+    {
+      "id": "H173",
+      "number": 173,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "S3 replication, DynamoDB global tables, supported RDS cross-Region replicas and AWS Backup copies can all support different recovery needs. The question does not identify the data type or recovery mechanism, so more than one option may satisfy it.",
+      "changes": []
+    },
+    {
+      "id": "H174",
+      "number": 174,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "SQS and SNS are both managed scalable messaging services, but SQS provides a worker queue while SNS supplies pub-sub distribution. The source only says messaging system and does not specify the required delivery pattern. Both are plausible, so it is review-only.",
+      "changes": []
+    },
+    {
+      "id": "H175",
+      "number": 175,
+      "status": "Corrected",
+      "book_key": "b",
+      "reviewed_key": "b",
+      "eligible": true,
+      "reason": "Configured scaling policies change capacity in response to demand-related signals. Launch definitions specify how instances are created, instance refresh replaces them, and scheduled actions change capacity at specified times. The practice stem clarifies metric-based scaling. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H176",
+      "number": 176,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Global Accelerator and Route 53 steer traffic to existing endpoints; they do not create or deploy application copies. Elastic Beanstalk, CloudFormation and deployment tools can provision or deploy appropriately configured applications, but the source does not specify enough to select a unique deployment service.",
+      "changes": []
+    },
+    {
+      "id": "H179",
+      "number": 179,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "EC2 Auto Scaling adjusts the instance count using configured policies and replaces unhealthy instances in the group. Metrics, health checks, bounds and AZ placement must be configured. It does not automatically scale every application dependency or replicate databases. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H180",
+      "number": 180,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "Direct Connect establishes dedicated private network connectivity between on-premises sites and AWS. VPN provides encrypted tunnels over existing connectivity. Direct Connect is not encrypted by default; additional encryption is needed when required. The practice stem distinguishes the dedicated connection.",
+      "changes": []
+    },
+    {
+      "id": "H185",
+      "number": 185,
+      "status": "Review only",
+      "book_key": "d",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Lake Formation manages permissions and governance for data lakes built on services such as S3 and the Glue catalog. S3 supplies the durable storage. The source conflates an entire lake with its governance service and does not distinguish the storage layer.",
+      "changes": []
+    },
+    {
+      "id": "H187",
+      "number": 187,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Both ECS and EKS orchestrate container workloads; Docker packaging alone does not distinguish them. AWS Batch also runs containerized batch jobs, while Lambda runs event handlers. The source requires an orchestration or workload requirement before one answer can be uniquely graded.",
+      "changes": []
+    },
+    {
+      "id": "H193",
+      "number": 193,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "S3 storage classes already define native durability and availability behavior; Cross-Region Replication adds a configured remote copy. It is not required to make every S3 object durable. The source wording confuses baseline storage redundancy with optional regional recovery.",
+      "changes": []
+    },
+    {
+      "id": "H195",
+      "number": 195,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "Auto Scaling adjusts capacity; ELB distributes requests. They integrate but Auto Scaling alone is not the load balancer. The practice stem explicitly asks for the service that adjusts capacity while integrated with ELB. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H197",
+      "number": 197,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "RDS and Aurora both provide managed relational databases and HA options. The generic wording does not distinguish an RDS-supported engine requirement from Aurora compatibility. Redshift is an analytical warehouse and DynamoDB is NoSQL, but RDS versus Aurora is not uniquely settled.",
+      "changes": []
+    },
+    {
+      "id": "H204",
+      "number": 204,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "A larger instance can address compute or memory limits, while read replicas can address read-heavy pressure. Multi-AZ targets availability and monitoring diagnoses the bottleneck. Without workload measurements, both scaling choices can improve performance.",
+      "changes": []
+    },
+    {
+      "id": "H206",
+      "number": 206,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "ECS schedules container tasks; Fargate supplies serverless capacity for ECS and eligible EKS workloads; EKS supplies Kubernetes orchestration. More than one offered option can run Docker containers. The source needs an orchestrator or server-management constraint for a unique answer.",
+      "changes": []
+    },
+    {
+      "id": "H209",
+      "number": 209,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "EC2 Auto Scaling adjusts the instance count using configured policies and replaces unhealthy instances in the group. Metrics, health checks, bounds and AZ placement must be configured. It does not automatically scale every application dependency or replicate databases. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H210",
+      "number": 210,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Lifecycle rules transition objects based on configured age or filters, not by individually observing last-access frequency. Intelligent-Tiering monitors eligible object access and moves objects between its tiers. The source asks for access-pattern automation but does not offer that direct feature.",
+      "changes": []
+    },
+    {
+      "id": "H211",
+      "number": 211,
+      "status": "Review only",
+      "book_key": "d",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Multi-AZ DB instances handle database AZ failover, Route 53 handles traffic failover, Backup handles recovery points, and CloudFormation can recreate resources. Application HA and regional disaster recovery require a coordinated design; the generic source has no unique service answer.",
+      "changes": []
+    },
+    {
+      "id": "H212",
+      "number": 212,
+      "status": "Corrected",
+      "book_key": "c",
+      "reviewed_key": "c",
+      "eligible": true,
+      "reason": "Global Accelerator directs supported traffic to healthy endpoints using the AWS global network and configured endpoint groups. It does not invariably choose the geographically nearest Region, deploy applications, or optimize SQL. The nearest-Region option is corrected to healthy endpoint routing.",
+      "changes": []
+    },
+    {
+      "id": "H215",
+      "number": 215,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Higher read capacity helps when provisioned capacity is insufficient, caching can reduce repeated reads, and global tables can reduce regional distance for distributed users. Streams expose changes rather than increasing read capacity. The missing access pattern prevents a unique performance recommendation.",
+      "changes": []
+    },
+    {
+      "id": "H220",
+      "number": 220,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "EFS is shared NFS storage and FSx for Windows supplies managed SMB files; either may be high performance for the relevant clients. The source omits protocol, operating system and throughput requirements, so it cannot declare one universally best distributed file system.",
+      "changes": []
+    },
+    {
+      "id": "H221",
+      "number": 221,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "A supported RDS cross-Region read replica supplies an asynchronous remote copy but does not promise automatic cross-Region failover for a conventional RDS DB instance. Multi-AZ remains within one Region. The source's ensure-HA language requires a promotion and traffic recovery design.",
+      "changes": []
+    },
+    {
+      "id": "H222",
+      "number": 222,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "S3 is appropriate for large collections of frequently accessed unstructured objects when an object interface is required. EFS is appropriate for shared file semantics instead, so the practice stem adds the missing object-API requirement. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H225",
+      "number": 225,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Kinesis Data Streams retains and distributes stream records; applications or analytics engines process those records. Redshift, Athena and QuickSight have distinct analytical uses, but a stream alone is not an engine providing automatic real-time analytics. The source conflates ingestion with computation.",
+      "changes": []
+    },
+    {
+      "id": "H228",
+      "number": 228,
+      "status": "Review only",
+      "book_key": "d",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Global Accelerator and Route 53 steer traffic to existing endpoints; they do not create or deploy application copies. Elastic Beanstalk, CloudFormation and deployment tools can provision or deploy appropriately configured applications, but the source does not specify enough to select a unique deployment service.",
+      "changes": []
+    },
+    {
+      "id": "H229",
+      "number": 229,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Increasing provisioned write capacity and configuring provisioned-capacity auto scaling can both increase supported traffic capacity. Streams capture changes and global tables add regional copies. The source omits whether traffic is reads, writes, bursty or predictable.",
+      "changes": []
+    },
+    {
+      "id": "H231",
+      "number": 231,
+      "status": "Corrected",
+      "book_key": "b",
+      "reviewed_key": "b",
+      "eligible": true,
+      "reason": "Athena queries supported data in S3 using SQL without managing a query cluster. Glue catalog metadata, permissions and suitable file layouts are still required. Redshift Spectrum and EMR can also query S3, so the practice stem specifies the serverless direct-query pattern. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H234",
+      "number": 234,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "ELB can route among healthy instances across AZs, while Auto Scaling can replace or expand instances. Both can improve availability; the source does not specify whether the problem is traffic distribution or replacement capacity.",
+      "changes": []
+    },
+    {
+      "id": "H235",
+      "number": 235,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "RDS for MySQL and Aurora MySQL can both support managed MySQL-compatible databases with appropriate HA configuration. The source does not require the community MySQL engine specifically or distinguish Aurora compatibility, so both choices are valid.",
+      "changes": []
+    },
+    {
+      "id": "H238",
+      "number": 238,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Transfer Acceleration targets supported long-distance S3 transfers, not a blanket guarantee of low-latency application reads. CloudFront caching, regional placement and request patterns matter. The source lacks a geographic transfer condition and does not offer CloudFront.",
+      "changes": []
+    },
+    {
+      "id": "H242",
+      "number": 242,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "d",
+      "eligible": true,
+      "reason": "S3 Intelligent-Tiering automatically moves eligible objects between access tiers based on observed access, with optional archival tiers requiring activation. Glacier storage classes do not independently discover and automatically move arbitrary objects into themselves. The source key is corrected to Intelligent-Tiering. Answer key corrected from A to D.",
+      "changes": [
+        "Answer key corrected from A to D."
+      ]
+    },
+    {
+      "id": "H244",
+      "number": 244,
+      "status": "Corrected",
+      "book_key": "c",
+      "reviewed_key": "c",
+      "eligible": true,
+      "reason": "Global Accelerator directs supported traffic to healthy endpoints using the AWS global network and configured endpoint groups. It does not invariably choose the geographically nearest Region, deploy applications, or optimize SQL. The nearest-Region option is corrected to healthy endpoint routing.",
+      "changes": []
+    },
+    {
+      "id": "H246",
+      "number": 246,
+      "status": "Corrected",
+      "book_key": "d",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "Aurora cluster storage spans AZs and a configured replica topology supports regional failover. Global Database adds cross-Region replication but is optional, while backups address restoration. The source key is corrected to the Multi-AZ choice and the practice wording specifies regional cluster availability. Practice stem clarified; original preserved below. Answer key corrected from D to A.",
+      "changes": [
+        "Practice stem clarified; original preserved below.",
+        "Answer key corrected from D to A."
+      ]
+    },
+    {
+      "id": "H249",
+      "number": 249,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Native RDS automated backups and AWS Backup can both automate supported RDS recovery points and restoration workflows. The source does not specify native point-in-time recovery or centralized policy management, so neither offered service can be universally dismissed.",
+      "changes": []
+    },
+    {
+      "id": "H256",
+      "number": 256,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Global Accelerator optimizes supported network paths to configured healthy endpoints; Route 53 latency routing chooses DNS answers using latency measurements; CloudFront serves HTTP content from edges. The source does not specify protocol, static IPs or caching, so more than one offered approach is valid.",
+      "changes": []
+    },
+    {
+      "id": "H257",
+      "number": 257,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "ECS schedules container tasks; Fargate supplies serverless capacity for ECS and eligible EKS workloads; EKS supplies Kubernetes orchestration. More than one offered option can run Docker containers. The source needs an orchestrator or server-management constraint for a unique answer.",
+      "changes": []
+    },
+    {
+      "id": "H258",
+      "number": 258,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "S3 storage classes already define native durability and availability behavior; Cross-Region Replication adds a configured remote copy. It is not required to make every S3 object durable. The source wording confuses baseline storage redundancy with optional regional recovery.",
+      "changes": []
+    },
+    {
+      "id": "H259",
+      "number": 259,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Lambda is event-driven serverless compute, while Fargate is serverless compute for containers. A question asking only for serverless applications without a function or event requirement does not distinguish them. ECS on Fargate may also be a suitable application platform.",
+      "changes": []
+    },
+    {
+      "id": "H262",
+      "number": 262,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "The former Kinesis Data Analytics for Apache Flink is now Amazon Managed Service for Apache Flink; the separate SQL Applications offering was discontinued. The practice option is modernized to Managed Service for Apache Flink for stateful streaming analytics. Practice stem clarified; original preserved below. Practice option wording corrected; original options preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below.",
+        "Practice option wording corrected; original options preserved below."
+      ]
+    },
+    {
+      "id": "H265",
+      "number": 265,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "ELB plus Auto Scaling addresses web/compute distribution and replacement, while Multi-AZ RDS addresses database failover and Route 53 can address endpoint recovery. A multi-tier design needs appropriate resilience in every tier; the source does not isolate the tier being fixed.",
+      "changes": []
+    },
+    {
+      "id": "H271",
+      "number": 271,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "CodeDeploy automates supported application deployments, CodePipeline orchestrates delivery stages, and CloudFormation provisions infrastructure. The source answer is understandable for direct application deployment, but CodeDeploy is listed outside SAA-C03 scope. This item remains available for reference but not scored SAA practice.",
+      "changes": []
+    },
+    {
+      "id": "H277",
+      "number": 277,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "Global Accelerator directs supported traffic to healthy endpoints using the AWS global network and configured endpoint groups. It does not invariably choose the geographically nearest Region, deploy applications, or optimize SQL. The nearest-Region option is corrected to healthy endpoint routing.",
+      "changes": []
+    },
+    {
+      "id": "H282",
+      "number": 282,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Lambda is event-driven serverless compute, while Fargate is serverless compute for containers. A question asking only for serverless applications without a function or event requirement does not distinguish them. ECS on Fargate may also be a suitable application platform.",
+      "changes": []
+    },
+    {
+      "id": "H285",
+      "number": 285,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "ELB plus Auto Scaling addresses web/compute distribution and replacement, while Multi-AZ RDS addresses database failover and Route 53 can address endpoint recovery. A multi-tier design needs appropriate resilience in every tier; the source does not isolate the tier being fixed.",
+      "changes": []
+    },
+    {
+      "id": "H286",
+      "number": 286,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Glacier classes provide archival object storage, while Intelligent-Tiering can automate movement to optional archive tiers. The original mixes archival storage and automatic archival, and the generic Glacier name omits restore characteristics. No uniquely best class can be inferred.",
+      "changes": []
+    },
+    {
+      "id": "H289",
+      "number": 289,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "CodeDeploy automates supported application deployments, CodePipeline orchestrates delivery stages, and CloudFormation provisions infrastructure. The source answer is understandable for direct application deployment, but CodeDeploy is listed outside SAA-C03 scope. This item remains available for reference but not scored SAA practice.",
+      "changes": []
+    },
+    {
+      "id": "H291",
+      "number": 291,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Global Accelerator optimizes supported network paths to configured healthy endpoints; Route 53 latency routing chooses DNS answers using latency measurements; CloudFront serves HTTP content from edges. The source does not specify protocol, static IPs or caching, so more than one offered approach is valid.",
+      "changes": []
+    },
+    {
+      "id": "H292",
+      "number": 292,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "ECS schedules container tasks; Fargate supplies serverless capacity for ECS and eligible EKS workloads; EKS supplies Kubernetes orchestration. More than one offered option can run Docker containers. The source needs an orchestrator or server-management constraint for a unique answer.",
+      "changes": []
+    },
+    {
+      "id": "H295",
+      "number": 295,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "Auto Scaling and ELB can keep a configured redundant EC2 tier available through target failure and load variation. Backups protect recoverability rather than live compute capacity. The practice stem narrows the original generic application to the EC2 tier. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H297",
+      "number": 297,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Snowball historically moved large datasets using shipped devices rather than a live stream. It is not open to new customers, so this legacy-service item is preserved for reference and excluded from current scored practice. Online alternatives depend on bandwidth and migration needs.",
+      "changes": []
+    },
+    {
+      "id": "H298",
+      "number": 298,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "API Gateway manages supported REST, HTTP and WebSocket APIs; AppSync manages GraphQL APIs. Without an API style or protocol requirement, both are plausible. Lambda supplies handlers and CloudFront delivery, but the source does not distinguish the two API management services.",
+      "changes": []
+    },
+    {
+      "id": "H300",
+      "number": 300,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "RDS, DynamoDB, Aurora and Redshift all provide managed databases with distinct backup and scaling capabilities. The source omits relational versus key-value versus analytical requirements and the intended scaling mode, so it cannot uniquely justify RDS.",
+      "changes": []
+    },
+    {
+      "id": "H302",
+      "number": 302,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Spot may be inexpensive but capacity can be reclaimed. Variable or short-lived demand alone does not establish interruption tolerance. On-Demand avoids commitments and Spot interruption risk; the original needs recovery and availability requirements before one can be called best.",
+      "changes": []
+    },
+    {
+      "id": "H303",
+      "number": 303,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "S3, EBS and S3 Glacier classes all have usage-based storage charging without an ordinary long-term purchase commitment. Their object/block interfaces and access latency differ. The generic pay-as-you-go requirement does not uniquely select S3.",
+      "changes": []
+    },
+    {
+      "id": "H304",
+      "number": 304,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "DynamoDB on-demand or provisioned auto scaling can suit variable key-value demand, while Aurora Serverless can suit variable relational workloads. Generic variable database demand does not establish the data model or capacity mode, so DynamoDB is not uniquely best as stated.",
+      "changes": []
+    },
+    {
+      "id": "H305",
+      "number": 305,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Reserved Instances and Savings Plans both offer eligible usage discounts for one- or three-year commitments. Choice depends on configuration flexibility, eligible service, commitment utilization and pricing. The source does not distinguish them, and a fixed maximum-savings percentage is not a universal current rate.",
+      "changes": []
+    },
+    {
+      "id": "H308",
+      "number": 308,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "The listed generic S3 Glacier name denotes archival storage but does not distinguish Instant Retrieval, Flexible Retrieval or Deep Archive. Minimum retention, retrieval requirements and data size affect total cost. It is an archival choice but not enough information for an absolute most-cost-effective claim.",
+      "changes": []
+    },
+    {
+      "id": "H310",
+      "number": 310,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "Configured scaling or scheduled actions can reduce unneeded EC2 capacity when demand falls. An Auto Scaling group must have suitable minimum capacity and policies; it does not automatically detect and stop every idle instance in the account. The practice stem makes the group/configuration condition explicit. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H314",
+      "number": 314,
+      "status": "Review only",
+      "book_key": "d",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Direct Connect serves a dedicated hybrid circuit, not a generic replacement for VPC internet traffic. CloudFront may reduce origin traffic for cacheable content; accelerators can add fees. The required destination and volume are missing, so no listed service guarantees lower internet transfer costs.",
+      "changes": []
+    },
+    {
+      "id": "H315",
+      "number": 315,
+      "status": "Review only",
+      "book_key": "d",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "S3/DynamoDB gateway endpoints can avoid NAT processing fees for matching regional traffic. PrivateLink interface endpoints have their own charges; Transit Gateway adds attachment/processing charges. None universally lowers all regional/service transfer costs without a specified traffic path.",
+      "changes": []
+    },
+    {
+      "id": "H316",
+      "number": 316,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "One Zone-IA supplies millisecond object access at reduced storage cost for an appropriate infrequent-access workload, but stores data in one AZ and charges retrieval/minimum durations. Without allowing loss of that AZ copy or specifying recreatable data, it is not universally the correct low-cost choice.",
+      "changes": []
+    },
+    {
+      "id": "H317",
+      "number": 317,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Data Lifecycle Manager automates retention and deletion of snapshots it manages. Systems Manager can execute custom automation but is not a built-in universal unused-snapshot detector. The named EBS Snapshot Manager is not the offered official feature name; no source choice precisely matches the claim.",
+      "changes": []
+    },
+    {
+      "id": "H320",
+      "number": 320,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Reserved Instances and Savings Plans both offer eligible usage discounts for one- or three-year commitments. Choice depends on configuration flexibility, eligible service, commitment utilization and pricing. The source does not distinguish them, and a fixed maximum-savings percentage is not a universal current rate.",
+      "changes": []
+    },
+    {
+      "id": "H322",
+      "number": 322,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Lambda pricing describes metering of requests and execution duration; it is not a separate AWS cost-management service. Cost Explorer analyzes spending and Budgets alerts on it. The source conflates a pricing schedule with a management service and has no uniquely correct key.",
+      "changes": []
+    },
+    {
+      "id": "H323",
+      "number": 323,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Reserved Instances and Savings Plans both offer eligible usage discounts for one- or three-year commitments. Choice depends on configuration flexibility, eligible service, commitment utilization and pricing. The source does not distinguish them, and a fixed maximum-savings percentage is not a universal current rate.",
+      "changes": []
+    },
+    {
+      "id": "H327",
+      "number": 327,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "CUR offers detailed billing exports and Cost Explorer also tracks and analyzes cost and usage across supported accounts and Regions. The source does not require a line-item export, so both can satisfy the generic cost-analysis wording. Budgets instead supplies thresholds and Advisor supplies checks.",
+      "changes": []
+    },
+    {
+      "id": "H328",
+      "number": 328,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Glacier Flexible Retrieval and Deep Archive have different restore times, minimum storage durations and request/retrieval charges; Standard-IA can be appropriate when immediate reads are needed. Occasional access alone cannot establish the most cost-effective class without retention, size and restore requirements.",
+      "changes": []
+    },
+    {
+      "id": "H329",
+      "number": 329,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "CUR offers detailed billing exports and Cost Explorer also tracks and analyzes cost and usage across supported accounts and Regions. The source does not require a line-item export, so both can satisfy the generic cost-analysis wording. Budgets instead supplies thresholds and Advisor supplies checks.",
+      "changes": []
+    },
+    {
+      "id": "H330",
+      "number": 330,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Spot may be inexpensive but capacity can be reclaimed. Variable or short-lived demand alone does not establish interruption tolerance. On-Demand avoids commitments and Spot interruption risk; the original needs recovery and availability requirements before one can be called best.",
+      "changes": []
+    },
+    {
+      "id": "H332",
+      "number": 332,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Trusted Advisor provides selected resource optimization checks; Cost Explorer provides supported rightsizing and commitment purchase recommendations based on usage. Both can contribute to the requested cost recommendations, so the generic source does not establish a unique service.",
+      "changes": []
+    },
+    {
+      "id": "H333",
+      "number": 333,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "One Zone-IA supplies millisecond object access at reduced storage cost for an appropriate infrequent-access workload, but stores data in one AZ and charges retrieval/minimum durations. Without allowing loss of that AZ copy or specifying recreatable data, it is not universally the correct low-cost choice.",
+      "changes": []
+    },
+    {
+      "id": "H334",
+      "number": 334,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "CUR offers detailed billing exports and Cost Explorer also tracks and analyzes cost and usage across supported accounts and Regions. The source does not require a line-item export, so both can satisfy the generic cost-analysis wording. Budgets instead supplies thresholds and Advisor supplies checks.",
+      "changes": []
+    },
+    {
+      "id": "H335",
+      "number": 335,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Reserved Instances and Savings Plans both offer eligible usage discounts for one- or three-year commitments. Choice depends on configuration flexibility, eligible service, commitment utilization and pricing. The source does not distinguish them, and a fixed maximum-savings percentage is not a universal current rate.",
+      "changes": []
+    },
+    {
+      "id": "H339",
+      "number": 339,
+      "status": "Review only",
+      "book_key": "d",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "S3/DynamoDB gateway endpoints can avoid NAT processing fees for matching regional traffic. PrivateLink interface endpoints have their own charges; Transit Gateway adds attachment/processing charges. None universally lowers all regional/service transfer costs without a specified traffic path.",
+      "changes": []
+    },
+    {
+      "id": "H340",
+      "number": 340,
+      "status": "Review only",
+      "book_key": "d",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Reserved Instances and Savings Plans both offer eligible usage discounts for one- or three-year commitments. Choice depends on configuration flexibility, eligible service, commitment utilization and pricing. The source does not distinguish them, and a fixed maximum-savings percentage is not a universal current rate.",
+      "changes": []
+    },
+    {
+      "id": "H341",
+      "number": 341,
+      "status": "Corrected",
+      "book_key": "b",
+      "reviewed_key": "b",
+      "eligible": true,
+      "reason": "Configured Auto Scaling across AZs plus request distribution can maintain redundant capacity without running peak capacity at all times. Spot interruptions and purchase discounts do not themselves guarantee HA. The practice option explicitly includes a load balancer and sufficient capacity. Practice stem clarified; original preserved below. Practice option wording corrected; original options preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below.",
+        "Practice option wording corrected; original options preserved below."
+      ]
+    },
+    {
+      "id": "H346",
+      "number": 346,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Generic S3 Glacier could mean several classes with very different retrieval times; S3 Standard and active Intelligent-Tiering tiers give immediate reads. Low retrieval time and affordable backup require explicit latency, retention and access-volume constraints, so the source key cannot be uniquely justified.",
+      "changes": []
+    },
+    {
+      "id": "H347",
+      "number": 347,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "CUR offers detailed billing exports and Cost Explorer also tracks and analyzes cost and usage across supported accounts and Regions. The source does not require a line-item export, so both can satisfy the generic cost-analysis wording. Budgets instead supplies thresholds and Advisor supplies checks.",
+      "changes": []
+    },
+    {
+      "id": "H348",
+      "number": 348,
+      "status": "Corrected",
+      "book_key": "b",
+      "reviewed_key": "b",
+      "eligible": true,
+      "reason": "DynamoDB on-demand capacity can accommodate variable key-value/document traffic without buying a fixed instance fleet or configuring provisioned capacity in advance. It is not a drop-in relational database substitute, and always-lowest cost is not guaranteed. The practice stem states the key-value requirement. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H349",
+      "number": 349,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "EC2 Auto Scaling primarily changes fleet instance count and replaces instances; it does not simply resize running instances vertically according to demand. Right-sizing uses measured resource needs and planned replacements. The practice wording is corrected to instance-count scaling. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H350",
+      "number": 350,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Reserved Instances and Savings Plans both offer eligible usage discounts for one- or three-year commitments. Choice depends on configuration flexibility, eligible service, commitment utilization and pricing. The source does not distinguish them, and a fixed maximum-savings percentage is not a universal current rate.",
+      "changes": []
+    },
+    {
+      "id": "H352",
+      "number": 352,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Cost Explorer can expose Lambda usage costs, timeouts can bound runaway execution, and Budgets can warn about spending. None alone is universally most cost-effective. Provisioned concurrency adds cost and is chosen for latency requirements, not automatically for cost reduction.",
+      "changes": []
+    },
+    {
+      "id": "H353",
+      "number": 353,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "One Zone-IA supplies millisecond object access at reduced storage cost for an appropriate infrequent-access workload, but stores data in one AZ and charges retrieval/minimum durations. Without allowing loss of that AZ copy or specifying recreatable data, it is not universally the correct low-cost choice.",
+      "changes": []
+    },
+    {
+      "id": "H355",
+      "number": 355,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Spot may be inexpensive but capacity can be reclaimed. Variable or short-lived demand alone does not establish interruption tolerance. On-Demand avoids commitments and Spot interruption risk; the original needs recovery and availability requirements before one can be called best.",
+      "changes": []
+    },
+    {
+      "id": "H357",
+      "number": 357,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "EC2 Auto Scaling primarily changes fleet instance count and replaces instances; it does not simply resize running instances vertically according to demand. Right-sizing uses measured resource needs and planned replacements. The practice wording is corrected to instance-count scaling. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H359",
+      "number": 359,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Glacier Flexible Retrieval and Deep Archive have different restore times, minimum storage durations and request/retrieval charges; Standard-IA can be appropriate when immediate reads are needed. Occasional access alone cannot establish the most cost-effective class without retention, size and restore requirements.",
+      "changes": []
+    },
+    {
+      "id": "H361",
+      "number": 361,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "Configured scaling or scheduled actions can reduce unneeded EC2 capacity when demand falls. An Auto Scaling group must have suitable minimum capacity and policies; it does not automatically detect and stop every idle instance in the account. The practice stem makes the group/configuration condition explicit. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H362",
+      "number": 362,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Snowball historically provided offline transfer; DataSync automates online storage transfer; Direct Connect supplies a link; Transfer Family provides managed file-transfer protocols. Dataset size, bandwidth, deadlines and current service eligibility are missing, so Snowball cannot be called universally best.",
+      "changes": []
+    },
+    {
+      "id": "H363",
+      "number": 363,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Reserved Instances and Savings Plans both offer eligible usage discounts for one- or three-year commitments. Choice depends on configuration flexibility, eligible service, commitment utilization and pricing. The source does not distinguish them, and a fixed maximum-savings percentage is not a universal current rate.",
+      "changes": []
+    },
+    {
+      "id": "H364",
+      "number": 364,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Glacier Flexible Retrieval and Deep Archive have different restore times, minimum storage durations and request/retrieval charges; Standard-IA can be appropriate when immediate reads are needed. Occasional access alone cannot establish the most cost-effective class without retention, size and restore requirements.",
+      "changes": []
+    },
+    {
+      "id": "H366",
+      "number": 366,
+      "status": "Corrected",
+      "book_key": "d",
+      "reviewed_key": "d",
+      "eligible": true,
+      "reason": "Tag Editor can add supported resource tags. To use tags for billing attribution, activate eligible cost allocation tags through the billing workflow; creating a tag alone does not activate it for cost reports. The practice stem explicitly asks only for bulk application of resource tags. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H367",
+      "number": 367,
+      "status": "Review only",
+      "book_key": "b",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "CUR offers detailed billing exports and Cost Explorer also tracks and analyzes cost and usage across supported accounts and Regions. The source does not require a line-item export, so both can satisfy the generic cost-analysis wording. Budgets instead supplies thresholds and Advisor supplies checks.",
+      "changes": []
+    },
+    {
+      "id": "H368",
+      "number": 368,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "On-Demand EC2 avoids long-term purchase commitments and interruption due to Spot reclamation. It does not guarantee unlimited available capacity, so capacity planning can still be needed. The practice stem clarifies that Spot interruptions are unacceptable. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H370",
+      "number": 370,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "One Zone-IA supplies millisecond object access at reduced storage cost for an appropriate infrequent-access workload, but stores data in one AZ and charges retrieval/minimum durations. Without allowing loss of that AZ copy or specifying recreatable data, it is not universally the correct low-cost choice.",
+      "changes": []
+    },
+    {
+      "id": "H373",
+      "number": 373,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Cost Explorer offers billing analysis and purchase/rightsizing recommendations, while Trusted Advisor offers supported configuration cost checks. The source does not specify financial trend analysis versus resource checks, so both are applicable.",
+      "changes": []
+    },
+    {
+      "id": "H374",
+      "number": 374,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Spot may be inexpensive but capacity can be reclaimed. Variable or short-lived demand alone does not establish interruption tolerance. On-Demand avoids commitments and Spot interruption risk; the original needs recovery and availability requirements before one can be called best.",
+      "changes": []
+    },
+    {
+      "id": "H376",
+      "number": 376,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Trusted Advisor provides selected resource optimization checks; Cost Explorer provides supported rightsizing and commitment purchase recommendations based on usage. Both can contribute to the requested cost recommendations, so the generic source does not establish a unique service.",
+      "changes": []
+    },
+    {
+      "id": "H377",
+      "number": 377,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Snowball historically provided offline transfer; DataSync automates online storage transfer; Direct Connect supplies a link; Transfer Family provides managed file-transfer protocols. Dataset size, bandwidth, deadlines and current service eligibility are missing, so Snowball cannot be called universally best.",
+      "changes": []
+    },
+    {
+      "id": "H379",
+      "number": 379,
+      "status": "Corrected",
+      "book_key": "d",
+      "reviewed_key": "d",
+      "eligible": true,
+      "reason": "Tag Editor can add supported resource tags. To use tags for billing attribution, activate eligible cost allocation tags through the billing workflow; creating a tag alone does not activate it for cost reports. The practice stem explicitly asks only for bulk application of resource tags. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H380",
+      "number": 380,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Reserved Instances and Savings Plans both offer eligible usage discounts for one- or three-year commitments. Choice depends on configuration flexibility, eligible service, commitment utilization and pricing. The source does not distinguish them, and a fixed maximum-savings percentage is not a universal current rate.",
+      "changes": []
+    },
+    {
+      "id": "H382",
+      "number": 382,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Spot may be inexpensive but capacity can be reclaimed. Variable or short-lived demand alone does not establish interruption tolerance. On-Demand avoids commitments and Spot interruption risk; the original needs recovery and availability requirements before one can be called best.",
+      "changes": []
+    },
+    {
+      "id": "H384",
+      "number": 384,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "EC2 Auto Scaling primarily changes fleet instance count and replaces instances; it does not simply resize running instances vertically according to demand. Right-sizing uses measured resource needs and planned replacements. The practice wording is corrected to instance-count scaling. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H385",
+      "number": 385,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "One Zone-IA supplies millisecond object access at reduced storage cost for an appropriate infrequent-access workload, but stores data in one AZ and charges retrieval/minimum durations. Without allowing loss of that AZ copy or specifying recreatable data, it is not universally the correct low-cost choice.",
+      "changes": []
+    },
+    {
+      "id": "H387",
+      "number": 387,
+      "status": "Review only",
+      "book_key": "c",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Reserved Instances and Savings Plans both offer eligible usage discounts for one- or three-year commitments. Choice depends on configuration flexibility, eligible service, commitment utilization and pricing. The source does not distinguish them, and a fixed maximum-savings percentage is not a universal current rate.",
+      "changes": []
+    },
+    {
+      "id": "H390",
+      "number": 390,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Glacier Flexible Retrieval and Deep Archive have different restore times, minimum storage durations and request/retrieval charges; Standard-IA can be appropriate when immediate reads are needed. Occasional access alone cannot establish the most cost-effective class without retention, size and restore requirements.",
+      "changes": []
+    },
+    {
+      "id": "H391",
+      "number": 391,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Glacier Flexible Retrieval and Deep Archive have different restore times, minimum storage durations and request/retrieval charges; Standard-IA can be appropriate when immediate reads are needed. Occasional access alone cannot establish the most cost-effective class without retention, size and restore requirements.",
+      "changes": []
+    },
+    {
+      "id": "H394",
+      "number": 394,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Snowball historically provided offline transfer; DataSync automates online storage transfer; Direct Connect supplies a link; Transfer Family provides managed file-transfer protocols. Dataset size, bandwidth, deadlines and current service eligibility are missing, so Snowball cannot be called universally best.",
+      "changes": []
+    },
+    {
+      "id": "H395",
+      "number": 395,
+      "status": "Corrected",
+      "book_key": "a",
+      "reviewed_key": "a",
+      "eligible": true,
+      "reason": "On-Demand EC2 avoids long-term purchase commitments and interruption due to Spot reclamation. It does not guarantee unlimited available capacity, so capacity planning can still be needed. The practice stem clarifies that Spot interruptions are unacceptable. Practice stem clarified; original preserved below.",
+      "changes": [
+        "Practice stem clarified; original preserved below."
+      ]
+    },
+    {
+      "id": "H398",
+      "number": 398,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Trusted Advisor provides selected resource optimization checks; Cost Explorer provides supported rightsizing and commitment purchase recommendations based on usage. Both can contribute to the requested cost recommendations, so the generic source does not establish a unique service.",
+      "changes": []
+    },
+    {
+      "id": "H400",
+      "number": 400,
+      "status": "Review only",
+      "book_key": "a",
+      "reviewed_key": null,
+      "eligible": false,
+      "reason": "Glacier Flexible Retrieval and Deep Archive have different restore times, minimum storage durations and request/retrieval charges; Standard-IA can be appropriate when immediate reads are needed. Occasional access alone cannot establish the most cost-effective class without retention, size and restore requirements.",
+      "changes": []
+    }
+  ]
+}

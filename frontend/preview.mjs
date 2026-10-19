@@ -1,0 +1,10 @@
+import {chromium} from '@playwright/test';
+const browser=await chromium.launch({headless:true});
+const page=await browser.newPage({reducedMotion:'reduce',viewport:{width:1440,height:1100},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:5175/');await page.waitForSelector('.domain-card');
+await page.screenshot({path:'docs/dashboard.png',fullPage:true});
+await page.setViewportSize({width:390,height:844});
+await page.screenshot({path:'docs/dashboard-mobile.png',fullPage:true});
+console.log(JSON.stringify({errors,horizontalOverflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)}));
+await browser.close();

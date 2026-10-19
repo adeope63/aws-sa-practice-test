@@ -1,0 +1,2121 @@
+{
+  "source": {
+    "title": "AWS Certified Solutions Architect Study Guide, Fourth Edition",
+    "authors": [
+      "Ben Piper",
+      "David Clinton"
+    ],
+    "edition": 4,
+    "year": 2022,
+    "pdf_pages": 477,
+    "note": "100 original paraphrased flashcards based on chapter topics, with current AWS clarifications. These are not the publisher online flashcard set."
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Introduction to Cloud Computing and AWS",
+      "pdf_start": 45,
+      "pdf_end": 66,
+      "printed_start": 3,
+      "printed_end": 24
+    },
+    {
+      "id": 2,
+      "title": "Compute Services",
+      "pdf_start": 67,
+      "pdf_end": 108,
+      "printed_start": 25,
+      "printed_end": 66
+    },
+    {
+      "id": 3,
+      "title": "AWS Storage",
+      "pdf_start": 109,
+      "pdf_end": 130,
+      "printed_start": 67,
+      "printed_end": 88
+    },
+    {
+      "id": 4,
+      "title": "Amazon Virtual Private Cloud (VPC)",
+      "pdf_start": 131,
+      "pdf_end": 184,
+      "printed_start": 89,
+      "printed_end": 142
+    },
+    {
+      "id": 5,
+      "title": "Database Services",
+      "pdf_start": 185,
+      "pdf_end": 216,
+      "printed_start": 143,
+      "printed_end": 174
+    },
+    {
+      "id": 6,
+      "title": "Authentication and Authorization — IAM",
+      "pdf_start": 217,
+      "pdf_end": 232,
+      "printed_start": 175,
+      "printed_end": 190
+    },
+    {
+      "id": 7,
+      "title": "CloudTrail, CloudWatch, and AWS Config",
+      "pdf_start": 233,
+      "pdf_end": 264,
+      "printed_start": 191,
+      "printed_end": 222
+    },
+    {
+      "id": 8,
+      "title": "DNS, Route 53 and CloudFront",
+      "pdf_start": 265,
+      "pdf_end": 284,
+      "printed_start": 223,
+      "printed_end": 242
+    },
+    {
+      "id": 9,
+      "title": "Data Ingestion, Transformation, and Analytics",
+      "pdf_start": 285,
+      "pdf_end": 296,
+      "printed_start": 243,
+      "printed_end": 254
+    },
+    {
+      "id": 10,
+      "title": "Resilient Architectures",
+      "pdf_start": 299,
+      "pdf_end": 328,
+      "printed_start": 257,
+      "printed_end": 286
+    },
+    {
+      "id": 11,
+      "title": "High-Performing Architectures",
+      "pdf_start": 329,
+      "pdf_end": 364,
+      "printed_start": 287,
+      "printed_end": 322
+    },
+    {
+      "id": 12,
+      "title": "Secure Architectures",
+      "pdf_start": 365,
+      "pdf_end": 398,
+      "printed_start": 323,
+      "printed_end": 356
+    },
+    {
+      "id": 13,
+      "title": "Cost-Optimized Architectures",
+      "pdf_start": 399,
+      "pdf_end": 416,
+      "printed_start": 357,
+      "printed_end": 374
+    }
+  ],
+  "cards": [
+    {
+      "id": "FC001",
+      "domain": 1,
+      "task": "1.1",
+      "chapter": 6,
+      "front": "What is the difference between authentication and authorization?",
+      "back": "Authentication establishes who the caller is. Authorization evaluates whether that identity may perform an action on a resource under applicable policies.",
+      "services": [
+        "IAM"
+      ],
+      "source_page": 217,
+      "source_printed_page": 175,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html"
+        }
+      ]
+    },
+    {
+      "id": "FC002",
+      "domain": 1,
+      "task": "1.1",
+      "chapter": 6,
+      "front": "Why prefer an IAM role over embedded access keys for an EC2 application?",
+      "back": "An instance role supplies temporary credentials that SDKs can retrieve and refresh. The application avoids storing long-lived user keys while permissions remain scoped to its needs.",
+      "services": [
+        "IAM"
+      ],
+      "source_page": 218,
+      "source_printed_page": 176,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html"
+        }
+      ]
+    },
+    {
+      "id": "FC003",
+      "domain": 1,
+      "task": "1.1",
+      "chapter": 6,
+      "front": "What does least privilege mean in an IAM policy?",
+      "back": "Allow only necessary actions, resources and conditions. Start narrowly, inspect actual usage, and remove permissions that the workload does not require.",
+      "services": [
+        "IAM"
+      ],
+      "source_page": 223,
+      "source_printed_page": 181,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html"
+        }
+      ]
+    },
+    {
+      "id": "FC004",
+      "domain": 1,
+      "task": "1.1",
+      "chapter": 6,
+      "front": "Can an additional allow override an applicable explicit deny?",
+      "back": "No. An applicable explicit deny overrides an allow. Evaluate the relevant identity, resource and organization policies together.",
+      "services": [
+        "IAM"
+      ],
+      "source_page": 219,
+      "source_printed_page": 177,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html"
+        }
+      ]
+    },
+    {
+      "id": "FC005",
+      "domain": 1,
+      "task": "1.1",
+      "chapter": 12,
+      "front": "Identity policy versus resource policy: where is each attached?",
+      "back": "An identity policy attaches to a principal such as a user or role. A resource policy attaches to a resource and usually identifies principals. Role trust policies are resource policies.",
+      "services": [
+        "IAM"
+      ],
+      "source_page": 371,
+      "source_printed_page": 329,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html"
+        }
+      ]
+    },
+    {
+      "id": "FC006",
+      "domain": 1,
+      "task": "1.1",
+      "chapter": 12,
+      "front": "Does a permissions boundary grant access?",
+      "back": "No. It limits the maximum permissions an identity-based policy can grant to the identity. Actual access still requires appropriate allows and is subject to applicable denies.",
+      "services": [
+        "IAM"
+      ],
+      "source_page": 369,
+      "source_printed_page": 327,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html"
+        }
+      ]
+    },
+    {
+      "id": "FC007",
+      "domain": 1,
+      "task": "1.1",
+      "chapter": 12,
+      "front": "What does a role trust policy decide?",
+      "back": "It defines who may assume the role and under which conditions. The role's permissions policy separately defines what its session may do.",
+      "services": [
+        "IAM"
+      ],
+      "source_page": 371,
+      "source_printed_page": 329,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html"
+        }
+      ]
+    },
+    {
+      "id": "FC008",
+      "domain": 1,
+      "task": "1.1",
+      "chapter": 1,
+      "front": "Do service control policies grant permissions to member accounts?",
+      "back": "No. SCPs bound permissions in affected member accounts. Identity/resource policies must still grant access, and applicable SCP denies constrain it.",
+      "services": [
+        "Organizations"
+      ],
+      "source_page": 56,
+      "source_printed_page": 14,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html"
+        }
+      ]
+    },
+    {
+      "id": "FC009",
+      "domain": 1,
+      "task": "1.1",
+      "chapter": 6,
+      "front": "How should the root identity be used for daily operations?",
+      "back": "Secure it with MFA and protect recovery channels. Use appropriate federated roles for routine work and reserve root for tasks requiring it.",
+      "services": [
+        "IAM"
+      ],
+      "source_page": 218,
+      "source_printed_page": 176,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html"
+        }
+      ]
+    },
+    {
+      "id": "FC010",
+      "domain": 1,
+      "task": "1.1",
+      "chapter": 6,
+      "front": "What does MFA protect, and what does it not replace?",
+      "back": "MFA adds an authentication factor. It does not grant authorization, encrypt workload data, or replace least-privilege permissions.",
+      "services": [
+        "IAM"
+      ],
+      "source_page": 220,
+      "source_printed_page": 178,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html"
+        }
+      ]
+    },
+    {
+      "id": "FC011",
+      "domain": 1,
+      "task": "1.2",
+      "chapter": 4,
+      "front": "Why separate public, application and database subnet tiers?",
+      "back": "Expose only the necessary entry points, restrict traffic between tiers, and keep sensitive services off direct public paths. Routes and security controls must enforce the separation.",
+      "services": [
+        "VPC"
+      ],
+      "source_page": 134,
+      "source_printed_page": 92,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "FC012",
+      "domain": 1,
+      "task": "1.2",
+      "chapter": 4,
+      "front": "Security groups versus network ACLs: what is the key distinction?",
+      "back": "Security groups are stateful interface-level allow rules. Network ACLs are stateless subnet-boundary ordered allow/deny rules and need explicit return-path allowances.",
+      "services": [
+        "VPC"
+      ],
+      "source_page": 148,
+      "source_printed_page": 106,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "FC013",
+      "domain": 1,
+      "task": "1.2",
+      "chapter": 4,
+      "front": "Can a security group explicitly deny one IP while allowing a broad range?",
+      "back": "No. Security groups contain allow rules. Use narrower allowed sources or an appropriate subnet/application filtering control when explicit denial is needed.",
+      "services": [
+        "VPC"
+      ],
+      "source_page": 148,
+      "source_printed_page": 106,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "FC014",
+      "domain": 1,
+      "task": "1.2",
+      "chapter": 4,
+      "front": "Does a private VPC endpoint eliminate IAM authorization requirements?",
+      "back": "No. It supplies a private path to supported services. The caller still needs appropriate authorization, and endpoint/resource policies can further restrict access.",
+      "services": [
+        "VPC"
+      ],
+      "source_page": 176,
+      "source_printed_page": 134,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "FC015",
+      "domain": 1,
+      "task": "1.2",
+      "chapter": 12,
+      "front": "Which service filters SQL injection and cross-site scripting patterns in HTTP requests?",
+      "back": "AWS WAF applies configured rules to supported web endpoints. It complements secure application code; it is not a guarantee that every attack is prevented.",
+      "services": [
+        "WAF"
+      ],
+      "source_page": 387,
+      "source_printed_page": 345,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "FC016",
+      "domain": 1,
+      "task": "1.2",
+      "chapter": 12,
+      "front": "Shield Standard versus Advanced: which is the automatic baseline?",
+      "back": "Shield Standard provides automatic baseline DDoS protections. Shield Advanced is an optional paid tier with additional capabilities.",
+      "services": [
+        "Shield"
+      ],
+      "source_page": 387,
+      "source_printed_page": 345,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "FC017",
+      "domain": 1,
+      "task": "1.2",
+      "chapter": 12,
+      "front": "GuardDuty versus Inspector: what question does each answer?",
+      "back": "GuardDuty detects suspicious behavior and threats from supported telemetry. Inspector assesses supported workload software vulnerabilities and exposure. Findings need investigation and a response plan.",
+      "services": [
+        "GuardDuty"
+      ],
+      "source_page": 374,
+      "source_printed_page": 332,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html"
+        }
+      ]
+    },
+    {
+      "id": "FC018",
+      "domain": 1,
+      "task": "1.2",
+      "chapter": 7,
+      "front": "CloudTrail, CloudWatch and Config: how do their roles differ?",
+      "back": "CloudTrail records supported API activity. CloudWatch collects metrics/logs and raises alarms. Config records resource configuration and evaluates compliance rules.",
+      "services": [
+        "CloudTrail"
+      ],
+      "source_page": 235,
+      "source_printed_page": 193,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "FC019",
+      "domain": 1,
+      "task": "1.2",
+      "chapter": 12,
+      "front": "Why does a security finding not automatically mean the incident was fixed?",
+      "back": "Detection produces evidence. Investigation, containment and remediation require a configured workflow, permissions and verification that the response succeeded.",
+      "services": [
+        "CloudWatch"
+      ],
+      "source_page": 377,
+      "source_printed_page": 335,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+        }
+      ]
+    },
+    {
+      "id": "FC020",
+      "domain": 1,
+      "task": "1.2",
+      "chapter": 2,
+      "front": "Does a NAT gateway provide application authorization?",
+      "back": "No. NAT provides supported outbound translation for private resources. IAM and application controls decide who may access data and operations.",
+      "services": [
+        "VPC"
+      ],
+      "source_page": 69,
+      "source_printed_page": 27,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "FC021",
+      "domain": 1,
+      "task": "1.3",
+      "chapter": 3,
+      "front": "What does S3 server-side encryption protect?",
+      "back": "Stored object data at rest. New uploads have baseline SSE-S3 encryption by default; choose SSE-KMS when required key control and auditing justify it.",
+      "services": [
+        "S3"
+      ],
+      "source_page": 113,
+      "source_printed_page": 71,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC022",
+      "domain": 1,
+      "task": "1.3",
+      "chapter": 12,
+      "front": "Encryption at rest versus in transit: which mechanisms apply?",
+      "back": "At-rest encryption protects stored data using the selected service/key scheme. TLS protects supported network connections. Neither substitutes for authorization.",
+      "services": [
+        "KMS"
+      ],
+      "source_page": 388,
+      "source_printed_page": 346,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "FC023",
+      "domain": 1,
+      "task": "1.3",
+      "chapter": 12,
+      "front": "What permissions are needed to read an SSE-KMS encrypted S3 object?",
+      "back": "Appropriate S3 object access and KMS decryption authorization under the key policy and applicable caller policies. Object permission alone may not be sufficient.",
+      "services": [
+        "KMS"
+      ],
+      "source_page": 376,
+      "source_printed_page": 334,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "FC024",
+      "domain": 1,
+      "task": "1.3",
+      "chapter": 3,
+      "front": "Does S3 Versioning prevent permanent deletion of every version?",
+      "back": "No. It retains object versions, but authorized version deletion or lifecycle rules can permanently remove them. Use retention controls when deletion must be prevented.",
+      "services": [
+        "S3"
+      ],
+      "source_page": 116,
+      "source_printed_page": 74,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC025",
+      "domain": 1,
+      "task": "1.3",
+      "chapter": 3,
+      "front": "Why keep noncurrent versions for a defined recovery window?",
+      "back": "They allow recovery from accidental overwrites or deletion. Retention must balance recovery needs with storage cost, and permanent-deletion permissions should be restricted.",
+      "services": [
+        "S3"
+      ],
+      "source_page": 116,
+      "source_printed_page": 74,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC026",
+      "domain": 1,
+      "task": "1.3",
+      "chapter": 12,
+      "front": "Does KMS key rotation require re-encrypting all old ciphertext immediately?",
+      "back": "No. KMS retains earlier key material to decrypt existing ciphertext. Key access, availability and rotation eligibility still matter.",
+      "services": [
+        "KMS"
+      ],
+      "source_page": 366,
+      "source_printed_page": 324,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "FC027",
+      "domain": 1,
+      "task": "1.3",
+      "chapter": 12,
+      "front": "Does obtaining an ACM certificate encrypt every application connection?",
+      "back": "No. Deploy it to a supported TLS endpoint and configure clients/listeners correctly. If required, separately encrypt the connection from the front door to backend targets.",
+      "services": [
+        "ACM"
+      ],
+      "source_page": 390,
+      "source_printed_page": 348,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html"
+        }
+      ]
+    },
+    {
+      "id": "FC028",
+      "domain": 1,
+      "task": "1.3",
+      "chapter": 12,
+      "front": "What is Macie used for?",
+      "back": "Discovering and classifying sensitive data in supported S3 objects. It helps identify risks; access and retention remediation remain separate decisions.",
+      "services": [
+        "Macie"
+      ],
+      "source_page": 386,
+      "source_printed_page": 344,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    },
+    {
+      "id": "FC029",
+      "domain": 1,
+      "task": "1.3",
+      "chapter": 2,
+      "front": "How does EBS encryption-by-default affect existing unencrypted volumes?",
+      "back": "It applies to new volumes under the regional setting. Existing unencrypted volumes need an encrypted replacement/copy process; enabling the default does not transform them in place.",
+      "services": [
+        "EBS"
+      ],
+      "source_page": 80,
+      "source_printed_page": 38,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html"
+        }
+      ]
+    },
+    {
+      "id": "FC030",
+      "domain": 1,
+      "task": "1.3",
+      "chapter": 10,
+      "front": "Why test a restore rather than only check successful backup jobs?",
+      "back": "A successful backup does not prove application recoverability. Test the data, configuration and dependent services against the required recovery objectives.",
+      "services": [
+        "Backup"
+      ],
+      "source_page": 312,
+      "source_printed_page": 270,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html"
+        }
+      ]
+    },
+    {
+      "id": "FC031",
+      "domain": 2,
+      "task": "2.1",
+      "chapter": 10,
+      "front": "Why put a queue between an API and workers?",
+      "back": "A durable backlog decouples request arrival from processing throughput. Workers can scale and retry without forcing the API to wait for every job.",
+      "services": [
+        "SQS"
+      ],
+      "source_page": 315,
+      "source_printed_page": 273,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC032",
+      "domain": 2,
+      "task": "2.1",
+      "chapter": 10,
+      "front": "Why should a standard SQS consumer be idempotent?",
+      "back": "Standard delivery can repeat messages. Idempotent processing prevents repeated delivery from creating duplicate business side effects.",
+      "services": [
+        "SQS"
+      ],
+      "source_page": 317,
+      "source_printed_page": 275,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC033",
+      "domain": 2,
+      "task": "2.1",
+      "chapter": 10,
+      "front": "What happens when an SQS visibility timeout expires before deletion?",
+      "back": "The message becomes available again for processing. Use an appropriate timeout or extend it while working, and delete only after success.",
+      "services": [
+        "SQS"
+      ],
+      "source_page": 315,
+      "source_printed_page": 273,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC034",
+      "domain": 2,
+      "task": "2.1",
+      "chapter": 10,
+      "front": "What does a dead-letter queue solve?",
+      "back": "It isolates messages that repeatedly fail so they do not keep consuming primary-worker capacity. Monitor it, fix the cause, then redrive deliberately.",
+      "services": [
+        "SQS"
+      ],
+      "source_page": 318,
+      "source_printed_page": 276,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC035",
+      "domain": 2,
+      "task": "2.1",
+      "chapter": 7,
+      "front": "How do SNS and SQS work together for fan-out?",
+      "back": "Publish to SNS and subscribe a separate SQS queue for each consumer. Every consumer gets its own durable backlog rather than competing for one copy.",
+      "services": [
+        "SNS"
+      ],
+      "source_page": 252,
+      "source_printed_page": 210,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/sns/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC036",
+      "domain": 2,
+      "task": "2.1",
+      "chapter": 10,
+      "front": "When should an SQS FIFO message group ID vary by account or order?",
+      "back": "When each account/order needs its own ordered sequence but independent groups should process concurrently. One global group unnecessarily serializes all work.",
+      "services": [
+        "SQS"
+      ],
+      "source_page": 317,
+      "source_printed_page": 275,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC037",
+      "domain": 2,
+      "task": "2.1",
+      "chapter": 10,
+      "front": "Long polling versus short polling: why use long polling?",
+      "back": "Long polling waits for available messages and can reduce empty responses and request overhead. It does not remove duplicate-delivery or processing-failure concerns.",
+      "services": [
+        "SQS"
+      ],
+      "source_page": 318,
+      "source_printed_page": 276,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC038",
+      "domain": 2,
+      "task": "2.1",
+      "chapter": 11,
+      "front": "Why externalize session state before horizontally scaling a web tier?",
+      "back": "Local in-memory state can be lost on replacement or missing on another target. A suitable shared state store lets instances serve requests independently.",
+      "services": [
+        "Lambda"
+      ],
+      "source_page": 332,
+      "source_printed_page": 290,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC039",
+      "domain": 2,
+      "task": "2.1",
+      "chapter": 11,
+      "front": "ECS versus Fargate: which orchestrates and which supplies execution capacity?",
+      "back": "ECS schedules container tasks/services. Fargate provides managed container compute without customer-managed EC2 worker hosts. They are complementary.",
+      "services": [
+        "ECS"
+      ],
+      "source_page": 336,
+      "source_printed_page": 294,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC040",
+      "domain": 2,
+      "task": "2.1",
+      "chapter": 11,
+      "front": "When is an event-driven function a useful loosely coupled component?",
+      "back": "For bounded stateless work triggered by an event. Persist state separately, handle retries/idempotency, and protect downstream capacity with concurrency controls.",
+      "services": [
+        "Lambda"
+      ],
+      "source_page": 336,
+      "source_printed_page": 294,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC041",
+      "domain": 2,
+      "task": "2.1",
+      "chapter": 7,
+      "front": "CloudWatch alarms versus EventBridge rules: what triggers each?",
+      "back": "Alarms evaluate metric conditions. EventBridge rules match events and send them to configured targets. A metric signal and an event are different triggers.",
+      "services": [
+        "EventBridge"
+      ],
+      "source_page": 253,
+      "source_printed_page": 211,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "FC042",
+      "domain": 2,
+      "task": "2.1",
+      "chapter": 10,
+      "front": "Why measure backlog per worker instead of only queue depth?",
+      "back": "Backlog per worker relates waiting work to current capacity. It can help set a scaling target consistent with processing time and acceptable delay.",
+      "services": [
+        "SQS"
+      ],
+      "source_page": 315,
+      "source_printed_page": 273,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC043",
+      "domain": 2,
+      "task": "2.1",
+      "chapter": 11,
+      "front": "Does adding more instances eliminate every application bottleneck?",
+      "back": "No. Database connections, storage, network paths and shared dependencies can remain constrained. Scale and decouple the limiting component.",
+      "services": [
+        "ELB"
+      ],
+      "source_page": 334,
+      "source_printed_page": 292,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html"
+        }
+      ]
+    },
+    {
+      "id": "FC044",
+      "domain": 2,
+      "task": "2.2",
+      "chapter": 10,
+      "front": "What must a multi-AZ EC2 application have beyond instances in two zones?",
+      "back": "Healthy request distribution, redundant dependencies and enough remaining-zone capacity to meet demand after a failure.",
+      "services": [
+        "EC2 Auto Scaling"
+      ],
+      "source_page": 314,
+      "source_printed_page": 272,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+        }
+      ]
+    },
+    {
+      "id": "FC045",
+      "domain": 2,
+      "task": "2.2",
+      "chapter": 10,
+      "front": "RDS Multi-AZ DB instance versus a read replica: which is primarily for failover?",
+      "back": "A conventional Multi-AZ DB instance uses a synchronous standby for managed failover. Read replicas primarily offload reads and typically replicate asynchronously.",
+      "services": [
+        "RDS"
+      ],
+      "source_page": 313,
+      "source_printed_page": 271,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC046",
+      "domain": 2,
+      "task": "2.2",
+      "chapter": 5,
+      "front": "Can the single standby in an RDS Multi-AZ DB instance serve reads?",
+      "back": "No. Use read replicas or an appropriate different deployment such as a supported Multi-AZ DB cluster for readable replicas.",
+      "services": [
+        "RDS"
+      ],
+      "source_page": 197,
+      "source_printed_page": 155,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC047",
+      "domain": 2,
+      "task": "2.2",
+      "chapter": 10,
+      "front": "What does RPO measure?",
+      "back": "The maximum acceptable age of lost data, often expressed as time. Backup frequency and replication behavior influence the achievable recovery point.",
+      "services": [
+        "Backup"
+      ],
+      "source_page": 312,
+      "source_printed_page": 270,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html"
+        }
+      ]
+    },
+    {
+      "id": "FC048",
+      "domain": 2,
+      "task": "2.2",
+      "chapter": 10,
+      "front": "What does RTO measure?",
+      "back": "The maximum acceptable time to restore service after disruption. Restoration, provisioning, validation and traffic recovery all contribute.",
+      "services": [
+        "Backup"
+      ],
+      "source_page": 308,
+      "source_printed_page": 266,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html"
+        }
+      ]
+    },
+    {
+      "id": "FC049",
+      "domain": 2,
+      "task": "2.2",
+      "chapter": 10,
+      "front": "Why is multi-AZ deployment not sufficient for a Region-wide outage?",
+      "back": "Its copies are within one Region. Regional disaster recovery needs an appropriate remote data copy, application recovery environment and tested traffic failover.",
+      "services": [
+        "Backup"
+      ],
+      "source_page": 308,
+      "source_printed_page": 266,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html"
+        }
+      ]
+    },
+    {
+      "id": "FC050",
+      "domain": 2,
+      "task": "2.2",
+      "chapter": 10,
+      "front": "Are object replication and historical backups interchangeable?",
+      "back": "No. Replication may propagate valid but unwanted changes. Version history and recovery points address earlier-state restoration; the design must cover both failure and corruption needs.",
+      "services": [
+        "S3"
+      ],
+      "source_page": 301,
+      "source_printed_page": 259,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC051",
+      "domain": 2,
+      "task": "2.2",
+      "chapter": 10,
+      "front": "What does an Auto Scaling group do when a configured health check marks an instance unhealthy?",
+      "back": "It can replace the unhealthy instance to maintain desired capacity. Health sources and replacement settings must be configured appropriately.",
+      "services": [
+        "EC2 Auto Scaling"
+      ],
+      "source_page": 307,
+      "source_printed_page": 265,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+        }
+      ]
+    },
+    {
+      "id": "FC052",
+      "domain": 2,
+      "task": "2.2",
+      "chapter": 8,
+      "front": "What does Route 53 failover routing not do?",
+      "back": "It does not deploy the recovery application or replicate its data. It changes eligible DNS answers based on configured primary/secondary health, with caching delays.",
+      "services": [
+        "Route 53"
+      ],
+      "source_page": 274,
+      "source_printed_page": 232,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html"
+        }
+      ]
+    },
+    {
+      "id": "FC053",
+      "domain": 2,
+      "task": "2.2",
+      "chapter": 10,
+      "front": "Why use an AZ-local NAT gateway for each resilient private subnet tier?",
+      "back": "A single zonal NAT can become another AZ dependency. Local paths reduce that dependency and may avoid unnecessary cross-AZ transfer, at added gateway cost.",
+      "services": [
+        "VPC"
+      ],
+      "source_page": 315,
+      "source_printed_page": 273,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "FC054",
+      "domain": 2,
+      "task": "2.2",
+      "chapter": 10,
+      "front": "Why use infrastructure templates in a recovery plan?",
+      "back": "They make declared resource recreation repeatable. Still include application configuration, secrets, permissions, data restoration and tested quotas.",
+      "services": [
+        "CloudFormation"
+      ],
+      "source_page": 299,
+      "source_printed_page": 257,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC055",
+      "domain": 2,
+      "task": "2.2",
+      "chapter": 10,
+      "front": "How do hard dependencies affect total availability?",
+      "back": "For a simple independent series model, multiply component availabilities. Shared failures and correlated dependencies can invalidate that simplified model.",
+      "services": [
+        "CloudWatch"
+      ],
+      "source_page": 300,
+      "source_printed_page": 258,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+        }
+      ]
+    },
+    {
+      "id": "FC056",
+      "domain": 2,
+      "task": "2.2",
+      "chapter": 10,
+      "front": "What makes a redundant component truly useful during a failure?",
+      "back": "It must be healthy, reachable, sufficiently provisioned and independent of the failed component's critical dependencies. A spare that cannot take traffic does not provide effective failover.",
+      "services": [
+        "ELB"
+      ],
+      "source_page": 302,
+      "source_printed_page": 260,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html"
+        }
+      ]
+    },
+    {
+      "id": "FC057",
+      "domain": 3,
+      "task": "3.1",
+      "chapter": 3,
+      "front": "Object, block and file storage: which services represent each?",
+      "back": "S3 provides object APIs, EBS provides block volumes, and EFS provides shared NFS files. Match the application's required interface before comparing prices.",
+      "services": [
+        "S3"
+      ],
+      "source_page": 110,
+      "source_printed_page": 68,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC058",
+      "domain": 3,
+      "task": "3.1",
+      "chapter": 2,
+      "front": "What is the durability risk of EC2 instance-store data?",
+      "back": "Its lifecycle is tied to the instance/host and it can be lost on stop, termination or failure conditions. Persist irreplaceable data to an appropriate durable service.",
+      "services": [
+        "EBS"
+      ],
+      "source_page": 77,
+      "source_printed_page": 35,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html"
+        }
+      ]
+    },
+    {
+      "id": "FC059",
+      "domain": 3,
+      "task": "3.1",
+      "chapter": 3,
+      "front": "When is EFS a better fit than separate EBS volumes?",
+      "back": "When multiple supported clients need a shared NFS namespace. EBS is AZ-scoped block storage rather than a regional shared file system.",
+      "services": [
+        "EFS"
+      ],
+      "source_page": 123,
+      "source_printed_page": 81,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html"
+        }
+      ]
+    },
+    {
+      "id": "FC060",
+      "domain": 3,
+      "task": "3.1",
+      "chapter": 3,
+      "front": "Is S3 an unchanged replacement for a POSIX file system?",
+      "back": "No. Its object API semantics differ from ordinary file operations. Adapt the application or use a suitable managed file service when file semantics are required.",
+      "services": [
+        "S3"
+      ],
+      "source_page": 110,
+      "source_printed_page": 68,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC061",
+      "domain": 3,
+      "task": "3.1",
+      "chapter": 3,
+      "front": "What consistency model should you use for ordinary S3 object PUT/DELETE reads today?",
+      "back": "S3 provides strong read-after-write consistency for these object operations. Do not carry forward older eventual-consistency assumptions for ordinary object reads and listings.",
+      "services": [
+        "S3"
+      ],
+      "source_page": 115,
+      "source_printed_page": 73,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC062",
+      "domain": 3,
+      "task": "3.2",
+      "chapter": 11,
+      "front": "CPU-bound versus memory-bound: how does instance-family selection differ?",
+      "back": "A compute-optimized family targets sustained CPU work; a memory-optimized family targets large working sets. Validate with measured CPU, memory and I/O behavior.",
+      "services": [
+        "EC2"
+      ],
+      "source_page": 333,
+      "source_printed_page": 291,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html"
+        }
+      ]
+    },
+    {
+      "id": "FC063",
+      "domain": 3,
+      "task": "3.2",
+      "chapter": 2,
+      "front": "Horizontal versus vertical scaling: what changes?",
+      "back": "Horizontal scaling changes the number of instances/tasks. Vertical scaling changes the resources assigned to one instance. EC2 Auto Scaling primarily manages group count/replacement.",
+      "services": [
+        "EC2 Auto Scaling"
+      ],
+      "source_page": 68,
+      "source_printed_page": 26,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+        }
+      ]
+    },
+    {
+      "id": "FC064",
+      "domain": 3,
+      "task": "3.2",
+      "chapter": 2,
+      "front": "Why schedule capacity before a predictable traffic peak?",
+      "back": "New resources may need startup and warm-up time. Scheduling can make capacity ready beforehand, while dynamic policies handle unexpected deviations.",
+      "services": [
+        "EC2 Auto Scaling"
+      ],
+      "source_page": 91,
+      "source_printed_page": 49,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+        }
+      ]
+    },
+    {
+      "id": "FC065",
+      "domain": 3,
+      "task": "3.2",
+      "chapter": 11,
+      "front": "What kind of process should not be one Lambda invocation?",
+      "back": "An indefinitely running or duration-unbounded process. Function execution has limits; long-running workers or container services may fit better.",
+      "services": [
+        "Lambda"
+      ],
+      "source_page": 336,
+      "source_printed_page": 294,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC066",
+      "domain": 3,
+      "task": "3.2",
+      "chapter": 11,
+      "front": "Why does serverless container compute not eliminate application scaling design?",
+      "back": "Fargate removes worker-host management, but task sizing, service scaling, networking and downstream limits remain your responsibility.",
+      "services": [
+        "ECS"
+      ],
+      "source_page": 336,
+      "source_printed_page": 294,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC067",
+      "domain": 3,
+      "task": "3.3",
+      "chapter": 5,
+      "front": "Which database access pattern is well served by RDS read replicas?",
+      "back": "Read-heavy queries that can tolerate appropriate replication lag. Writes and consistency-sensitive reads may need the primary.",
+      "services": [
+        "RDS"
+      ],
+      "source_page": 196,
+      "source_printed_page": 154,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC068",
+      "domain": 3,
+      "task": "3.3",
+      "chapter": 5,
+      "front": "Why design DynamoDB partition keys around access patterns?",
+      "back": "Traffic concentrated on a poor key can create hot partitions. Distribute access and choose indexes/capacity modes deliberately rather than relying on managed scaling alone.",
+      "services": [
+        "DynamoDB"
+      ],
+      "source_page": 186,
+      "source_printed_page": 144,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "FC069",
+      "domain": 3,
+      "task": "3.3",
+      "chapter": 11,
+      "front": "What must a cache-aside design decide about stale data?",
+      "back": "How long values may remain cached, when to invalidate/update them, and how to fall back to the authoritative data store.",
+      "services": [
+        "ElastiCache"
+      ],
+      "source_page": 355,
+      "source_printed_page": 313,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WhatIs.html"
+        }
+      ]
+    },
+    {
+      "id": "FC070",
+      "domain": 3,
+      "task": "3.3",
+      "chapter": 5,
+      "front": "Does Multi-AZ standby replication solve a logical data corruption mistake?",
+      "back": "Usually not: legitimate-but-wrong changes can replicate. Historical backups or point-in-time recovery address earlier-state restoration.",
+      "services": [
+        "RDS"
+      ],
+      "source_page": 190,
+      "source_printed_page": 148,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC071",
+      "domain": 3,
+      "task": "3.3",
+      "chapter": 5,
+      "front": "OLTP database versus warehouse: what requirement distinguishes them?",
+      "back": "OLTP serves operational transactions and updates. A warehouse such as Redshift targets large analytical SQL aggregations over historical data.",
+      "services": [
+        "Redshift"
+      ],
+      "source_page": 186,
+      "source_printed_page": 144,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC072",
+      "domain": 3,
+      "task": "3.4",
+      "chapter": 8,
+      "front": "CloudFront versus Global Accelerator: what is the caching distinction?",
+      "back": "CloudFront caches supported HTTP content near viewers. Global Accelerator optimizes supported network paths to regional endpoints without content caching.",
+      "services": [
+        "CloudFront"
+      ],
+      "source_page": 265,
+      "source_printed_page": 223,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "FC073",
+      "domain": 3,
+      "task": "3.4",
+      "chapter": 8,
+      "front": "Latency routing versus geolocation routing: what determines the answer?",
+      "back": "Latency routing uses latency measurements to configured Regions. Geolocation uses user-location categories. Neither means all clients instantly switch destinations.",
+      "services": [
+        "Route 53"
+      ],
+      "source_page": 274,
+      "source_printed_page": 232,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html"
+        }
+      ]
+    },
+    {
+      "id": "FC074",
+      "domain": 3,
+      "task": "3.4",
+      "chapter": 11,
+      "front": "When should host/path HTTP routing favor an Application Load Balancer?",
+      "back": "When HTTP routing rules need hostnames or URL paths. A Network Load Balancer focuses on transport-level traffic, not those HTTP rules.",
+      "services": [
+        "ELB"
+      ],
+      "source_page": 329,
+      "source_printed_page": 287,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html"
+        }
+      ]
+    },
+    {
+      "id": "FC075",
+      "domain": 3,
+      "task": "3.4",
+      "chapter": 4,
+      "front": "Does Direct Connect encrypt all traffic by default?",
+      "back": "No. A dedicated private circuit and encrypted transport are different requirements. Add an appropriate encryption design where required.",
+      "services": [
+        "Direct Connect"
+      ],
+      "source_page": 131,
+      "source_printed_page": 89,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC076",
+      "domain": 3,
+      "task": "3.4",
+      "chapter": 4,
+      "front": "Why can a VPC peering mesh not act as a transitive routing hub?",
+      "back": "Peering does not provide transitive routing through another peer. A suitable hub design, such as Transit Gateway, may fit larger connectivity requirements.",
+      "services": [
+        "VPC"
+      ],
+      "source_page": 165,
+      "source_printed_page": 123,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "FC077",
+      "domain": 3,
+      "task": "3.5",
+      "chapter": 9,
+      "front": "Kinesis Data Streams versus Data Firehose: which supports independent replaying consumers?",
+      "back": "Data Streams retains records for consumers to process/replay. Data Firehose manages buffered delivery to supported destinations with optional transformation.",
+      "services": [
+        "Kinesis"
+      ],
+      "source_page": 286,
+      "source_printed_page": 244,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "FC078",
+      "domain": 3,
+      "task": "3.5",
+      "chapter": 9,
+      "front": "Does ingesting a stream automatically analyze it?",
+      "back": "No. A consumer or processing engine performs analytics. Keep ingestion, retention, transformation and query/visualization roles distinct.",
+      "services": [
+        "Kinesis"
+      ],
+      "source_page": 285,
+      "source_printed_page": 243,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "FC079",
+      "domain": 3,
+      "task": "3.5",
+      "chapter": 9,
+      "front": "What role does Lake Formation play in a data lake?",
+      "back": "Governance and access management for lake data integrated with storage/catalog services. It is not by itself the entire storage and analytics engine.",
+      "services": [
+        "Lake Formation"
+      ],
+      "source_page": 286,
+      "source_printed_page": 244,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html"
+        }
+      ]
+    },
+    {
+      "id": "FC080",
+      "domain": 3,
+      "task": "3.5",
+      "chapter": 9,
+      "front": "When does a managed file-transfer protocol endpoint differ from bulk migration?",
+      "back": "Transfer Family exposes supported transfer protocols. Bulk synchronization, database change capture or offline movement may require other tools and different transport planning.",
+      "services": [
+        "Transfer Family"
+      ],
+      "source_page": 286,
+      "source_printed_page": 244,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/transfer/latest/userguide/what-is-aws-transfer-family.html"
+        }
+      ]
+    },
+    {
+      "id": "FC081",
+      "domain": 4,
+      "task": "4.1",
+      "chapter": 3,
+      "front": "Which requirements decide an archival storage class?",
+      "back": "Retention duration, object size, retrieval frequency and acceptable restore time. Include retrieval and minimum-duration charges instead of comparing storage price alone.",
+      "services": [
+        "S3"
+      ],
+      "source_page": 111,
+      "source_printed_page": 69,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC082",
+      "domain": 4,
+      "task": "4.1",
+      "chapter": 3,
+      "front": "Why is S3 One Zone-IA unsuitable for some irreplaceable data?",
+      "back": "It stores the copy in one AZ. Use it only when that resilience trade-off fits, such as recreatable secondary data with durable originals elsewhere.",
+      "services": [
+        "S3"
+      ],
+      "source_page": 115,
+      "source_printed_page": 73,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC083",
+      "domain": 4,
+      "task": "4.1",
+      "chapter": 3,
+      "front": "How does Intelligent-Tiering differ from a fixed-age lifecycle transition?",
+      "back": "Intelligent-Tiering uses eligible object access to move between access tiers. Lifecycle transitions act on configured rules such as object age. Optional archive tiers have restore trade-offs.",
+      "services": [
+        "S3"
+      ],
+      "source_page": 115,
+      "source_printed_page": 73,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC084",
+      "domain": 4,
+      "task": "4.1",
+      "chapter": 3,
+      "front": "Why clean up abandoned multipart upload parts?",
+      "back": "Unfinished parts can incur storage charges without producing useful completed objects. Use a suitable lifecycle abortion interval that does not interrupt legitimate long uploads.",
+      "services": [
+        "S3"
+      ],
+      "source_page": 112,
+      "source_printed_page": 70,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC085",
+      "domain": 4,
+      "task": "4.1",
+      "chapter": 13,
+      "front": "What does EBS Data Lifecycle Manager automate?",
+      "back": "Creation, retention and deletion of snapshots/AMIs it manages under policies. It is not a universal classifier that deletes every unused snapshot created by other means.",
+      "services": [
+        "EBS"
+      ],
+      "source_page": 405,
+      "source_printed_page": 363,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html"
+        }
+      ]
+    },
+    {
+      "id": "FC086",
+      "domain": 4,
+      "task": "4.2",
+      "chapter": 13,
+      "front": "When is Spot an appropriate cost-saving choice?",
+      "back": "When work tolerates capacity interruption and can checkpoint/retry. Variable demand alone does not establish that interruption is acceptable.",
+      "services": [
+        "EC2"
+      ],
+      "source_page": 405,
+      "source_printed_page": 363,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html"
+        }
+      ]
+    },
+    {
+      "id": "FC087",
+      "domain": 4,
+      "task": "4.2",
+      "chapter": 2,
+      "front": "When is On-Demand a useful purchasing baseline?",
+      "back": "For uncertain usage without a stable commitment baseline when Spot reclamation is unacceptable. Capacity availability still needs planning.",
+      "services": [
+        "EC2"
+      ],
+      "source_page": 68,
+      "source_printed_page": 26,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html"
+        }
+      ]
+    },
+    {
+      "id": "FC088",
+      "domain": 4,
+      "task": "4.2",
+      "chapter": 13,
+      "front": "Reserved Instances versus Savings Plans: what must you compare?",
+      "back": "Eligible services/configurations, flexibility, expected baseline utilization and commitment terms. Neither universally beats the other for every predictable workload.",
+      "services": [
+        "Savings Plans"
+      ],
+      "source_page": 405,
+      "source_printed_page": 363,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html"
+        }
+      ]
+    },
+    {
+      "id": "FC089",
+      "domain": 4,
+      "task": "4.2",
+      "chapter": 13,
+      "front": "How does scaling reduce cost without changing the unit price?",
+      "back": "It reduces idle provisioned capacity when group bounds and policies permit. Purchase discounts reduce eligible unit prices instead; these strategies can be combined.",
+      "services": [
+        "EC2 Auto Scaling"
+      ],
+      "source_page": 410,
+      "source_printed_page": 368,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+        }
+      ]
+    },
+    {
+      "id": "FC090",
+      "domain": 4,
+      "task": "4.2",
+      "chapter": 13,
+      "front": "Cost Explorer versus CUR versus Budgets: which questions do they answer?",
+      "back": "Explorer analyzes costs interactively; CUR supplies detailed exports; Budgets monitors configured thresholds and alerts/actions. None is a universal instantaneous spending cap.",
+      "services": [
+        "Cost Explorer"
+      ],
+      "source_page": 401,
+      "source_printed_page": 359,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "FC091",
+      "domain": 4,
+      "task": "4.2",
+      "chapter": 13,
+      "front": "Which tool estimates a planned workload before it produces billing data?",
+      "back": "AWS Pricing Calculator. Inputs drive estimates; compare actual usage later in billing tools. Older calculator names in the guide should not be treated as current service choices.",
+      "services": [
+        "Pricing Calculator"
+      ],
+      "source_page": 404,
+      "source_printed_page": 362,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/pricing-calculator/latest/userguide/what-is-pricing-calculator.html"
+        }
+      ]
+    },
+    {
+      "id": "FC092",
+      "domain": 4,
+      "task": "4.2",
+      "chapter": 13,
+      "front": "Does Trusted Advisor automatically remove every idle resource?",
+      "back": "No. It identifies supported best-practice/cost issues and recommends action. Validate business dependencies before making changes.",
+      "services": [
+        "Trusted Advisor"
+      ],
+      "source_page": 403,
+      "source_printed_page": 361,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html"
+        }
+      ]
+    },
+    {
+      "id": "FC093",
+      "domain": 4,
+      "task": "4.3",
+      "chapter": 5,
+      "front": "How can unpredictable key-value traffic influence DynamoDB capacity choice?",
+      "back": "On-demand capacity avoids configuring fixed provisioned units in advance. Compare costs and access distribution; it is not a relational database substitute.",
+      "services": [
+        "DynamoDB"
+      ],
+      "source_page": 207,
+      "source_printed_page": 165,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "FC094",
+      "domain": 4,
+      "task": "4.3",
+      "chapter": 5,
+      "front": "What should you check before removing an apparently unused read replica?",
+      "back": "Query clients, recovery/promotion requirements, monitoring and documented dependencies. Removing idle compute can save cost only if required resilience/performance remains.",
+      "services": [
+        "RDS"
+      ],
+      "source_page": 196,
+      "source_printed_page": 154,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC095",
+      "domain": 4,
+      "task": "4.3",
+      "chapter": 5,
+      "front": "Why can an oversized database waste money even when it works well?",
+      "back": "You pay for unused compute/memory or storage performance. Right-size from peak workload evidence, while retaining necessary failover and growth capacity.",
+      "services": [
+        "RDS"
+      ],
+      "source_page": 190,
+      "source_printed_page": 148,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC096",
+      "domain": 4,
+      "task": "4.3",
+      "chapter": 5,
+      "front": "How should backup retention be chosen for cost and recovery?",
+      "back": "Retain required recovery/compliance points and remove unneeded ones through a tested policy. Lowest storage spending is not the goal if it destroys required recovery coverage.",
+      "services": [
+        "RDS"
+      ],
+      "source_page": 190,
+      "source_printed_page": 148,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "FC097",
+      "domain": 4,
+      "task": "4.4",
+      "chapter": 4,
+      "front": "How can an S3 gateway endpoint reduce a private workload's NAT processing charges?",
+      "back": "Route matching S3 traffic through the gateway endpoint rather than NAT. Keep authorization/policies correct; arbitrary external destinations still need another path.",
+      "services": [
+        "VPC"
+      ],
+      "source_page": 176,
+      "source_printed_page": 134,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "FC098",
+      "domain": 4,
+      "task": "4.4",
+      "chapter": 8,
+      "front": "How can CDN caching reduce origin transfer without guaranteeing lowest total cost?",
+      "back": "Cache hits avoid repeated origin fetches. CDN request/delivery charges and cacheability determine total economics, so model actual traffic.",
+      "services": [
+        "CloudFront"
+      ],
+      "source_page": 265,
+      "source_printed_page": 223,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "FC099",
+      "domain": 4,
+      "task": "4.4",
+      "chapter": 4,
+      "front": "Why consider AZ-local routes when pricing outbound private traffic?",
+      "back": "Unnecessary cross-AZ hops may add transfer charges and dependencies. Compare local gateway standing cost with resilience and traffic volume.",
+      "services": [
+        "VPC"
+      ],
+      "source_page": 134,
+      "source_printed_page": 92,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "FC100",
+      "domain": 4,
+      "task": "4.4",
+      "chapter": 4,
+      "front": "When can direct peering be simpler than a transit hub?",
+      "back": "For a small set of compatible nonoverlapping VPCs without transitive routing needs. At larger scale, a hub may simplify management despite attachment/processing costs.",
+      "services": [
+        "VPC"
+      ],
+      "source_page": 165,
+      "source_printed_page": 123,
+      "source_note": "Topic located in the supplied chapter; answer paraphrased and clarified with AWS documentation.",
+      "references": [
+        {
+          "title": "AWS documentation",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    }
+  ]
+}

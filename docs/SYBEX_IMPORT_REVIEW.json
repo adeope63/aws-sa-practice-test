@@ -1,0 +1,1054 @@
+{
+  "total": 317,
+  "option_explanations": 1279,
+  "counts": {
+    "Reviewed": 199,
+    "Corrected": 38,
+    "Review only": 80
+  },
+  "eligible": 235,
+  "items": [
+    {
+      "id": "Y00-006",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below.",
+        "Practice answer key corrected from A to B."
+      ],
+      "reason": "The AMI architecture, virtualization and other requirements must match the instance type. Quick Start selection does not bypass compatibility constraints. Practice stem clarified; original retained below. Practice answer key corrected from A to B."
+    },
+    {
+      "id": "Y00-007",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Both client-side encryption and SSE-C avoid S3 retaining the supplied plaintext data-encryption key. The intended answer is SSE-C, but the stem does not restrict itself to server-side encryption."
+    },
+    {
+      "id": "Y00-012",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "A route to an Internet gateway defines public-subnet Internet routing. An instance also needs suitable addressing and security rules. Private-subnet NAT routing has the NAT device as its egress target. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y00-015",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "RDS automated backups combine snapshots with transaction logs for PITR. The latest restorable time is typically within about five minutes; monitor it rather than treating it as an unconditional guarantee. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y00-016",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Least privilege is valuable, but the greatest account protection depends on existing exposure. Remove root access keys, protect root with MFA, and revoke excessive permissions; the stem provides no basis to rank all actions uniquely."
+    },
+    {
+      "id": "Y00-019",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "EC2 default host metrics do not include guest memory usage. Install/configure the CloudWatch agent or publish a custom memory metric to observe it."
+    },
+    {
+      "id": "Y00-025",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Lambda can process bounded image jobs, but video size, execution duration, required dependencies and traffic are unspecified. These determine whether Lambda or an EC2/container workflow is most suitable."
+    },
+    {
+      "id": "Y00-029",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Puppet is a third-party tool, while OpsWorks was an AWS service. OpsWorks is now discontinued; retain this as historical service-recognition material rather than current scored practice."
+    },
+    {
+      "id": "Y00-031",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "The historical question concerns activation of legacy regional STS endpoints, not switching off the entire STS service account-wide. Endpoint defaults and Region activation rules require additional scope."
+    },
+    {
+      "id": "Y00-034",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Both running On-Demand and Spot instances incur usage charges. Standard and Convertible reservations impose payment commitments whether utilized or not. The book key C is not a unique answer to the stated question."
+    },
+    {
+      "id": "Y00-036",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Startup time depends on container image size, pre-provisioned capacity, Lambda cold starts and instance warm pools. ECS is the intended container answer, but quickest cannot be determined from the stem."
+    },
+    {
+      "id": "Y01-006",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "The listed Ireland address is the EC2 regional API endpoint. A launched application uses its own public address or load balancer hostname, not this service API endpoint."
+    },
+    {
+      "id": "Y01-007",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "An Availability Zone comprises one or more discrete datacenters within a Region. A is closest, but its single-datacenter wording is incomplete and should not be memorized as the definition."
+    },
+    {
+      "id": "Y01-009",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "An SLA describes an availability commitment, while regulatory suitability also involves compliance documentation, customer controls and shared responsibility. The original question mixes reliability and regulatory compliance."
+    },
+    {
+      "id": "Y01-011",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Business and Enterprise both support multiple contacts. The question lacks a least-cost requirement, and legacy support plans are transitioning through 2026 with announced discontinuation in 2027."
+    },
+    {
+      "id": "Y02-002",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "VM Import/Export imports a supported VM disk image uploaded to S3; the resulting private AMI can be launched. B and C are valid, but E is also a genuine prerequisite, contrary to the supplied explanation."
+    },
+    {
+      "id": "Y02-004",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Both Dedicated Hosts and Dedicated Instances isolate hardware from other customers. Dedicated Hosts add allocation and physical host visibility. A requirement for dedicated host control or socket-based licensing is needed for A to be unique."
+    },
+    {
+      "id": "Y02-008",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "AWS tags consist of a key and value, but the book convention is subjective. A stable Project key with a project-name value is also common. Multiple offered pairs are syntactically valid."
+    },
+    {
+      "id": "Y02-009",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Provisioned IOPS SSD and modern general-purpose gp3 volumes can both provide 20,000 IOPS on supported configurations. The source claim that only provisioned IOPS meets this target is outdated."
+    },
+    {
+      "id": "Y02-010",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "The options describe alternative image-creation workflows, not three necessary sequential steps. AMI creation requires bootable snapshots, appropriate mappings and explicit image/snapshot sharing permissions; launch templates are now preferred."
+    },
+    {
+      "id": "Y02-014",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below.",
+        "Practice answer key corrected from D to A."
+      ],
+      "reason": "Attach a role through an instance profile so the application obtains rotating temporary credentials. This authorizes service API requests rather than opens inbound network login. Practice stem clarified; original retained below. Practice answer key corrected from D to A."
+    },
+    {
+      "id": "Y02-022",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Scheduled actions pre-scale for the calendar spike. Target tracking and step scaling can both respond to CPU demand. The select-all source key omits a valid target-tracking policy and does not define a specific proportional adjustment requirement."
+    },
+    {
+      "id": "Y02-024",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Fargate removes server management but requires ECS or EKS as an orchestrator. ECS is also a sensible low-configuration orchestrator; the options mix compute and orchestration layers, and defaults alone do not select a unique complete platform."
+    },
+    {
+      "id": "Y03-001",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "EFS is the native managed shared Linux filesystem. Storage Gateway can supply hybrid NFS/SMB access but is not an unqualified low-latency cloud filesystem peer. The stem does not justify its required second answer."
+    },
+    {
+      "id": "Y03-003",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "The path-style us-east-1 endpoint uses s3.amazonaws.com/bucket/key. Modern examples generally prefer regional virtual-hosted-style URLs; s3:// denotes a tool URI rather than browser HTTPS. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y03-007",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "S3 durability describes protection against object loss through resilient storage design. It does not guarantee recovery from every physical-security breach, account compromise or authorized deletion. C is well-supported; the claimed second guarantee is too broad."
+    },
+    {
+      "id": "Y03-008",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "The stem asks about durability, but A discusses availability. Both Standard-IA and Intelligent-Tiering are designed for eleven-nines durability across multiple AZs. None of these choices states the requested durability distinction correctly."
+    },
+    {
+      "id": "Y03-009",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "Standard-IA is designed for 99.9% availability and eleven-nines durability. Design availability is different from the contractual SLA commitment. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y03-010",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "S3 provides strong consistency for successful writes, overwrites and deletes. The source key relies on an obsolete eventual-consistency distinction. Concurrent updates still require application concurrency/versioning design."
+    },
+    {
+      "id": "Y03-016",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "The AWS CLI default is 3600 seconds. Other signing tools can use different defaults; temporary credential expiry can shorten effective validity. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y03-018",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Deep Archive retrieval depends on the restore tier: Standard typically within 12 hours and Bulk within 48 hours. The question does not identify the retrieval tier, so the timing answer is not unique."
+    },
+    {
+      "id": "Y03-019",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Snowball was the historical offline bulk-transfer answer. Current Snowball availability is restricted to existing customers; current migration choices depend on customer eligibility and transfer requirements."
+    },
+    {
+      "id": "Y04-010",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "The main route table is the precise answer, but default route table is often used informally for the same table. The unqualified option C creates a terminology ambiguity; creating an additional table does not change the main association."
+    },
+    {
+      "id": "Y04-011",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "The private IPv4 address remains assigned across stop/start, so C is true. Without a public address or intermediary, direct Internet SSH is also unavailable, so A is true. The single-answer key is nonunique."
+    },
+    {
+      "id": "Y04-014",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "Private-subnet default routes point to the NAT gateway; the NAT gateway subnet routes to the Internet gateway. Using the same route table would create an invalid or looping egress design. Regional NAT gateways use a different model. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y04-015",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Managed NAT gateways scale throughput, but public/private types also exist, and newer regional NAT gateways support multi-AZ expansion. The original single-answer contrasts no longer make D unique."
+    },
+    {
+      "id": "Y05-008",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Oracle SE2 supports BYOL. Oracle SE1 is historical, and SQL Server licensing differs between standard RDS and RDS Custom. The question does not qualify engine offering or historical version."
+    },
+    {
+      "id": "Y05-009",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Dedicated EBS bandwidth depends on the specific RDS instance class, not only the broad memory-optimized category. Some standard classes also provide it, so the source answer is not uniquely justified."
+    },
+    {
+      "id": "Y05-010",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "200 times 1024 KiB/s divided by 16 KiB per operation equals 12,800 IOPS. Real sizing must also consider instance and storage throughput limits. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y05-011",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "600 divided by 3 equals 200 GiB. This capacity-to-baseline relationship is for gp2; gp3 has different performance provisioning. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y05-012",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "IOPS-to-storage constraints depend on engine, io1 versus io2, and supported settings. 240 GiB follows the historical io1 50 IOPS/GiB calculation, but the unqualified provisioned-IOPS question is not a universal current sizing rule."
+    },
+    {
+      "id": "Y05-016",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "ALL places a full copy of that table on each compute node, trading additional storage and load work for reduced redistribution on appropriate joins. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y05-017",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "The source confuses historical node-family and cluster storage limits. Modern Redshift separates managed storage and compute for RA3/RG offerings, and dense-storage nodes are retired. No listed option is a defensible current single-node 326 TB answer."
+    },
+    {
+      "id": "Y05-018",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "The complete key uniquely identifies an item within its table. A composite key comprises partition and sort keys; partition values alone can repeat. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y05-020",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "Strongly consistent reads consume one RCU per 4 KiB, rounded up for each item. An 11 KiB item requires ceiling(11/4), or three RCUs. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y05-021",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below.",
+        "Practice answer key corrected from B to A."
+      ],
+      "reason": "Dense-compute nodes use local SSDs. Dense-storage nodes used HDDs and are retired; current node selection should consider modern offerings. Practice stem clarified; original retained below. Practice answer key corrected from B to A."
+    },
+    {
+      "id": "Y05-022",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "A global secondary index defines an alternative key schema. A local secondary index retains the table partition key and changes the sort key. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y05-023",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Known key-based access patterns can suit DynamoDB, while complex ad hoc joins often favor SQL. JSON support and application counts do not uniquely establish the best engine; workload latency, scale and query requirements are missing."
+    },
+    {
+      "id": "Y06-001",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Routine root use increases excessive-privilege, compromise and attribution risks. Several options describe real risks; greatest depends on the threat model. Use federated/role-based least privilege and restrict root to tasks requiring it."
+    },
+    {
+      "id": "Y06-005",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice option wording repaired; source options retained below."
+      ],
+      "reason": "The IAM CLI returns the last observed use for the access key. Inactive keys should still be evaluated against application schedules and CloudTrail evidence before removal. Practice option wording repaired; source options retained below."
+    },
+    {
+      "id": "Y06-007",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "X.509 certificates can authenticate external workloads through IAM Roles Anywhere and a role trust policy. The old blanket exclusion of certificate-based identities is no longer accurate."
+    },
+    {
+      "id": "Y06-008",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "CloudHSM offers dedicated customer-controlled HSMs; KMS also uses validated HSMs. FIPS compliance alone does not uniquely select CloudHSM without a dedicated hardware/control requirement."
+    },
+    {
+      "id": "Y06-012",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Region is not a top-level IAM statement element, but regional resource ARNs and Condition keys such as aws:RequestedRegion can play a role. The original claim that Region plays no role is too broad."
+    },
+    {
+      "id": "Y06-013",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "A trust policy is required for an assumable role. Permissions may be attached or inline, and a role can be created without attached permissions. Selecting at least one policy is not a universal role-creation requirement."
+    },
+    {
+      "id": "Y06-014",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Role sessions use STS temporary credentials, but IAM users can also obtain STS session credentials. The broad authentication question does not uniquely distinguish roles from users."
+    },
+    {
+      "id": "Y06-018",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Managed AD includes multi-AZ domain controllers, replication and AWS-maintained underlying infrastructure/software. B is also an operational managed-service benefit, so the source two-choice selection is incomplete."
+    },
+    {
+      "id": "Y06-019",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Rotation includes creating and testing the new key, monitoring new and old usage, deactivating the old key, then deleting it. A as well as B/C/D can be valid; the choose-three key is incomplete."
+    },
+    {
+      "id": "Y07-001",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice answer key corrected from B, D to A, B, D."
+      ],
+      "reason": "Console sign-ins, bucket creation and subnet creation are management events. S3 PutObject is a data event and requires relevant data-event selection. Practice answer key corrected from B, D to A, B, D."
+    },
+    {
+      "id": "Y07-008",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "The stored metric resolution does not identify whether an interval value was a total, average or individual sample. Sum reproduces totals only under appropriate publishing semantics; the requested exact data points need more context."
+    },
+    {
+      "id": "Y07-010",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below.",
+        "Practice answer key corrected from A, D to D."
+      ],
+      "reason": "Set retention on the log group. CloudWatch ages out older events while retaining streams for ongoing ingestion. Practice stem clarified; original retained below. Practice answer key corrected from A, D to D."
+    },
+    {
+      "id": "Y07-011",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Delivery delays and permissions can affect missing events. The historical 256 KB event-size assumption is outdated; current CloudWatch Logs accepts larger events. The original key does not provide a reliable current diagnosis."
+    },
+    {
+      "id": "Y07-012",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "An unattached volume and insufficient samples can explain the state, but a long evaluation period can also cause insufficient evidence. Missing-data treatment is unspecified, so the select-all answer is underdetermined."
+    },
+    {
+      "id": "Y07-016",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "CloudTrail event history captures recent regional management events without a configured trail; older evidence needs retained logs. An all-Region write-only trail is not necessary, and the event age is unspecified."
+    },
+    {
+      "id": "Y07-019",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice answer key corrected from C, D to A, C, D."
+      ],
+      "reason": "AVG(m1) alone is a scalar. Subtracting a series from that scalar produces a series; METRICS()/AVG(m1) produces series, and m1/m2 produces a series. Thus A, C and D are graphable expressions. Practice answer key corrected from C, D to A, C, D."
+    },
+    {
+      "id": "Y08-007",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Route 53 geolocation can steer DNS responses but cannot enforce a regulatory access boundary. Clients can connect directly or use resolvers elsewhere. Enforce access with suitable application or WAF controls in addition to DNS."
+    },
+    {
+      "id": "Y08-008",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "Latency-based routing uses AWS latency measurements to select the configured Region with the best latency estimate; DNS caching and actual network conditions still matter. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y08-009",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "Weighted records can use weights 15, 15, 15 and 55. Weights distribute DNS responses approximately; resolver caching means they do not guarantee exact request counts. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y08-017",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "All four offered origin categories can be used with CloudFront, including API Gateway as a custom HTTP origin. The book answer incorrectly excludes API Gateway; no offered choice satisfies the original negative question."
+    },
+    {
+      "id": "Y08-018",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Price classes limit edge-location coverage and compression reduces transferred bytes. Both can reduce costs. The best choice depends on viewer locations, object compressibility and the traffic profile."
+    },
+    {
+      "id": "Y08-020",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "CloudFront RTMP distributions are discontinued. S3 was the historical supported origin, but this should remain historical study material rather than current scored service-selection practice."
+    },
+    {
+      "id": "Y09-003",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "JDBC is a supported Glue connection type for SQL databases, while Glue Connector is a broader overlapping phrase. Efficient ingestion also depends on database type, connectivity and extraction/change requirements."
+    },
+    {
+      "id": "Y09-004",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "SFTP and FTP are supported, alongside FTPS and AS2; newer Transfer Family web apps also use browser HTTPS access. The offered HTTPS choice makes the broad choose-two protocol question underspecified."
+    },
+    {
+      "id": "Y09-008",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "ELB and CloudFront logs are valid lake inputs, but IAM/CloudWatch information and EBS-resident data can also be exported into a data lake. There is no universal two-source restriction of the kind implied."
+    },
+    {
+      "id": "Y09-009",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Athena and Redshift Spectrum query S3 lake data. Spectrum is a Redshift capability, so excluding the broader Redshift choice as absolutely incapable is misleading."
+    },
+    {
+      "id": "Y09-010",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "AWS Glue supports streaming ETL as well as preparation and transformation. B is not an inappropriate use case today, and searching is not specified well enough to yield a reliable alternative key."
+    },
+    {
+      "id": "Y09-012",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "Create a Firehose delivery stream with S3 as its destination, and configure suitable object lifecycle/retention. Data Streams itself also supports extended retention, but the question asks for external archival. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y09-015",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Independent replaying consumers distinguish Kinesis from work-distributing SQS, but ordering, volume, latency and message semantics also matter. The broad consideration question has multiple valid factors."
+    },
+    {
+      "id": "Y09-019",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "Each shard provides up to 2 MiB/s shared reads. Two shards provide 4 MiB/s; adding one yields 6 MiB/s. Enhanced fan-out has separate per-consumer capacity. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y10-002",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Assuming independent compute failures, the parallel tier has 1 - (1 - 0.90)^2 = 0.99 availability. Multiplying by the required database availability gives 0.99 times 0.95 = 0.9405. Shared-AZ failures violate independence, so this is illustrative mathematics."
+    },
+    {
+      "id": "Y10-003",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "DynamoDB global tables suit multi-Region key/value workloads; Aurora global databases suit relational workloads. Neither database is a unique maximum-availability recommendation without a data model, recovery objectives and write topology."
+    },
+    {
+      "id": "Y10-004",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice answer key corrected from B, D to A, B, D."
+      ],
+      "reason": "S3 can improve availability of static assets, sufficient instance capacity avoids overload, and scaling out adds redundant capacity. Scaling in alone removes capacity and does not establish improved availability. Practice answer key corrected from B, D to A, B, D."
+    },
+    {
+      "id": "Y10-005",
+      "status": "Reviewed",
+      "eligible": false,
+      "duplicate_of": "Y02-020",
+      "changes": [
+        "Exact duplicate of Y02-020; retained for study, excluded from scored selection."
+      ],
+      "reason": "Launch configurations cannot be edited. Create a launch template with the desired image/bootstrap settings, and configure the Auto Scaling group to use it. CloudFormation can manage this architecture if a stack is used. Exact duplicate of Y02-020; retained for study, excluded from scored selection."
+    },
+    {
+      "id": "Y10-006",
+      "status": "Reviewed",
+      "eligible": false,
+      "duplicate_of": "Y02-021",
+      "changes": [
+        "Exact duplicate of Y02-021; retained for study, excluded from scored selection."
+      ],
+      "reason": "Auto Scaling strives to maintain the number of instances specified in the desired capacity setting. If the desired capacity setting isn’t set, Auto Scaling will attempt to maintain the number of instances specified by the minimum group size. Given a desired capacity of 5, there should be five healthy instances. If you manually terminate two of them, Auto Scaling will create two new ones to replace them. Auto Scaling will not adjust the desired capacity or minimum group size. Exact duplicate of Y02-021; retained for study, excluded from scored selection."
+    },
+    {
+      "id": "Y10-008",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Scheduled actions pre-scale for the calendar spike. Target tracking and step scaling can both respond to CPU demand. The select-all source key omits a valid target-tracking policy and does not define a specific proportional adjustment requirement."
+    },
+    {
+      "id": "Y10-009",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Versioning protects recoverable previous versions. Standard-class durability does not protect against authorized deletion; policies and properly configured replication can also help. The supplied A/D pair is technically misleading."
+    },
+    {
+      "id": "Y10-010",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Daily snapshots retaining three and four-hour snapshots retaining eighteen both span a nominal three-day window. A precise backup cadence/RPO is missing. DLM snapshots EBS volumes, not entire instances or ephemeral instance stores."
+    },
+    {
+      "id": "Y10-012",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Automated backups plus transaction logs enable PITR near the latest restorable time; snapshots alone do not give a five-minute RPO. Multi-AZ and replica strategies address different failures and can also reduce data loss, so failure scope is necessary."
+    },
+    {
+      "id": "Y10-013",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Leaving subnet space supports future tiers, new AZs and database subnet-group needs. A, B and C can all be reasonable, so the required two-choice key lacks distinguishing requirements."
+    },
+    {
+      "id": "Y10-015",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Direct Connect offers private and often more consistent connectivity, but lower latency is not guaranteed, higher-than-10-Gbps options exist, and encryption is separate. The original two-choice ranking lacks link and threat requirements."
+    },
+    {
+      "id": "Y10-017",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "CloudFormation and user data enable reproducible rebuilding, while an Auto Scaling group can also replace the instance and update the image. The choose-all key omits a valid management mechanism."
+    },
+    {
+      "id": "Y10-025",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Both standard and current FIFO SQS queues support more than 50,000 in-flight messages. The historical FIFO limit used to select only standard queues is outdated."
+    },
+    {
+      "id": "Y10-026",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "FIFO preserves message-group order. Separate groups can be processed concurrently, and consumers must handle retry/redelivery safely. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y10-030",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "For a standard source queue, the original enqueue timestamp remains unchanged in the DLQ. Ten days minus six days leaves four. FIFO enqueue timestamps reset when moved to a DLQ. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y11-001",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "ECUs are historical and AES-NI applies to particular Intel families rather than all EC2 types. Preserve the comparison as historical specifications rather than a current universal three-parameter rule."
+    },
+    {
+      "id": "Y11-002",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "An Auto Scaling group needs a launch source, normally a launch template. A custom AMI and load balancer are optional depending on the workload; launch configurations are legacy. The book claims optional components are universally necessary."
+    },
+    {
+      "id": "Y11-006",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Replication creates a regional copy but does not automatically route readers to it. CloudFront lowers read latency but is not an independent durable regional replica. Access geography and failover design are missing."
+    },
+    {
+      "id": "Y11-008",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "RDS scaling is a major database design consideration, alongside indexes, schemas and queries/views. Managed operations do not remove scalability planning. B should not be memorized as an irrelevant consideration."
+    },
+    {
+      "id": "Y11-012",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below.",
+        "Practice option wording repaired; source options retained below."
+      ],
+      "reason": "Infrastructure Composer provides visual authoring; AWS sample templates can be adapted; custom JSON or YAML templates can be written. Practice stem clarified; original retained below. Practice option wording repaired; source options retained below."
+    },
+    {
+      "id": "Y11-013",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "A stack needs a name, but generic CloudFormation stacks do not require database names or users. A, C and D can all be absent depending on resources, so the single-answer question is flawed."
+    },
+    {
+      "id": "Y11-014",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Historical OpsWorks offerings integrated Chef and Puppet, but those managed offerings are discontinued. Keep the explanation as historical context rather than active service-selection practice."
+    },
+    {
+      "id": "Y11-015",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "CloudWatch dashboards and SNS alerts support operations, while Config dashboards can also support a broader monitoring protocol. The two-answer selection needs a specific operational-metric scope."
+    },
+    {
+      "id": "Y11-017",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "CloudTrail records actors/API actions; Config records resource configuration history. Both audit aspects of changes. The original broad wording does not uniquely identify one service."
+    },
+    {
+      "id": "Y11-019",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Redis supports sessions, rich structures and persistence; Memcached can suit simpler caches. Fastest and future flexibility cannot be ranked without a workload benchmark and functional requirements."
+    },
+    {
+      "id": "Y11-023",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "The parent template declares AWS::CloudFormation::Stack resources for nested children. The Auto Scaling child need not itself contain another Stack resource. Parameters can carry nested outputs without external exports/imports."
+    },
+    {
+      "id": "Y12-005",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Decryption requires S3 read permission plus KMS authorization. A key policy can grant key use directly, or delegate permissions to IAM policies. With an unspecified key policy, A and B are not mutually exclusive mechanisms."
+    },
+    {
+      "id": "Y12-008",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Unusual outbound traffic can trigger GuardDuty anomaly findings, but the exact current finding depends on destination, volume, service and threat evidence. Historical generic category names do not uniquely diagnose an authorized backup."
+    },
+    {
+      "id": "Y12-010",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "The question describes retired Inspector Classic assessment packages. Current Amazon Inspector uses continuous vulnerability/exposure scanning rather than this Windows package-selection workflow."
+    },
+    {
+      "id": "Y12-012",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "Allow inbound TCP 443 in the load-balancer security group and attach it to the ALB. Also configure an HTTPS listener/certificate and target rules allowing only the ALB group. The selected pair alone does not isolate targets. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y12-013",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Restricting allowed sources can reduce exposure, while DDoS protection depends on attack layer, traffic and protected resource types. Shield Standard is automatic rather than enabled as a separate step. A security group alone is not a complete volumetric DDoS solution."
+    },
+    {
+      "id": "Y12-016",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below.",
+        "Practice answer key corrected from A, D to A."
+      ],
+      "reason": "A customer-managed KMS key permits configuring rotation and disabling key use. AWS-managed keys cannot be disabled by you; SSE-C is not KMS encryption. Disabling also affects access to existing encrypted objects. Practice stem clarified; original retained below. Practice answer key corrected from A, D to A."
+    },
+    {
+      "id": "Y12-017",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Both DynamoDB and RDS support encryption with customer-managed KMS keys. For supported symmetric keys, configure an appropriate 90-day rotation period or a designed manual rotation process. KMS manages keys rather than stores application records; Redshift is an analytical warehouse."
+    },
+    {
+      "id": "Y12-020",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "Integrated CloudFront and ALB services can use non-exportable ACM certificates. S3 bucket endpoints cannot attach them, and direct EC2 installation requires an exportable certificate or another supported workflow. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y13-001",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "The 12-month offer describes the legacy Free Tier. Newer accounts use a credits-based program and a free plan lasting up to six months; no offered option accurately describes that current program."
+    },
+    {
+      "id": "Y13-002",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Archive classes lower storage cost, but retrieval, minimum duration, request and data-transfer charges depend on usage. There is no universal least-expensive storage-and-transfer class for every access pattern."
+    },
+    {
+      "id": "Y13-009",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below.",
+        "Practice answer key corrected from A, B to A."
+      ],
+      "reason": "Tags can take up to 24 hours to appear for billing activation. They can be added to existing resources; activate them in Billing and Cost Management rather than Tag Editor. Practice stem clarified; original retained below. Practice answer key corrected from A, B to A."
+    },
+    {
+      "id": "Y13-010",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below.",
+        "Practice option wording repaired; source options retained below."
+      ],
+      "reason": "Match a suitable one- or three-year RI/Savings Plans commitment to the steady three-instance baseline, and use three extra On-Demand instances only during the seasonal peak. Practice stem clarified; original retained below. Practice option wording repaired; source options retained below."
+    },
+    {
+      "id": "Y13-013",
+      "status": "Review only",
+      "eligible": false,
+      "duplicate_of": null,
+      "changes": [],
+      "reason": "Density and reduced per-workload overhead can save costs; fast launch can also reduce idle capacity. The comparison to physical-machine memory is imprecise, and the two-choice limit excludes another plausible cost benefit."
+    },
+    {
+      "id": "Y13-016",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "A Spot price above a configured maximum can cause interruption, but EC2 capacity reclamation is another important cause. Interruption can stop, hibernate or terminate according to configured behavior. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y13-017",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice stem clarified; original retained below."
+      ],
+      "reason": "Target capacity expresses desired fleet capacity in the configured unit. It is a capacity request, not a universal hard upper bound on all running instances. Practice stem clarified; original retained below."
+    },
+    {
+      "id": "Y13-019",
+      "status": "Corrected",
+      "eligible": true,
+      "duplicate_of": null,
+      "changes": [
+        "Practice option wording repaired; source options retained below."
+      ],
+      "reason": "request-spot-fleet invokes the Spot Fleet API with a JSON configuration document. The other listed subcommands are not the correct API command. Practice option wording repaired; source options retained below."
+    }
+  ]
+}

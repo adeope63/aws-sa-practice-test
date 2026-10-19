@@ -1,0 +1,114 @@
+import {test,expect} from '@playwright/test';
+test('dashboard, saved practice, feedback, submission and result review',async({page})=>{
+ await page.goto('/');await expect(page.getByRole('heading',{name:'Let’s build your confidence.'})).toBeVisible();
+ await page.getByRole('button',{name:'Quick Practice',exact:true}).click();
+ await page.getByRole('button',{name:'Start practice',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Practice session',exact:true})).toBeVisible();
+ const url=page.url();const option=page.locator('.answer').first();await option.click();
+ await expect(page.locator('.answer.chosen')).toHaveCount(1);
+ await page.reload();await expect(page.locator('.answer.chosen')).toHaveCount(1);
+ await page.getByRole('button',{name:'Flag for review',exact:true}).click();
+ await expect(page.getByRole('button',{name:'Flagged for review',exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Save & exit'}).click();
+ await page.getByRole('button',{name:'Exam History',exact:true}).click();await expect(page.locator('table')).toBeVisible();
+ await page.goto(url);await expect(page.getByRole('button',{name:'Flagged for review',exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Submit session'}).click();await page.getByRole('button',{name:'Submit & see results'}).click();
+ await expect(page.getByRole('heading',{name:'A decision made. A lesson learned.'})).toBeVisible();await expect(page.locator('.feedback')).toBeVisible();
+});
+test('question bank filters, bookmarks and comparisons work',async({page})=>{
+ await page.goto('/');await page.getByRole('button',{name:'Question Bank',exact:true}).click();
+ await expect(page.getByText(/1117 matching questions/)).toBeVisible();
+ await page.getByRole('textbox',{name:'Search questions'}).fill('Private CDN');
+ await expect(page.locator('.bank-list .card')).toHaveCount(4);
+ await page.getByRole('button',{name:'Study explanation'}).first().click();await expect(page.getByRole('dialog')).toBeVisible();await page.getByRole('button',{name:'Close explanation'}).click();
+ await page.getByRole('button',{name:'Bookmark question'}).first().click();await page.getByRole('button',{name:'Bookmarks',exact:true}).click();await expect(page.locator('.bank-list .card')).toHaveCount(1);
+ await page.getByRole('button',{name:'AWS Service Comparisons',exact:true}).click();await page.getByRole('button',{name:'Compare services'}).first().click();await expect(page.locator('.comparison-service')).toHaveCount(3);
+});
+test('mock deadline persists and answer keys stay hidden until submission',async({page})=>{
+ await page.goto('/');await page.getByRole('button',{name:'Full Mock Exam',exact:true}).click();await page.getByRole('button',{name:'Begin full mock exam'}).click();
+ await expect(page.locator('.timer')).toBeVisible();await expect(page.locator('.question-grid button')).toHaveCount(65);await expect(page.locator('.feedback')).toHaveCount(0);
+ await page.reload();await expect(page.locator('.timer')).toBeVisible();await expect(page.locator('.question-grid button')).toHaveCount(65);
+ await page.getByRole('button',{name:'Submit session'}).click();await page.getByRole('button',{name:'Submit & see results'}).click();
+ await expect(page.getByText('The 15 unscored items are now labeled. Only the other 50 count toward this result.')).toBeVisible();await expect(page.locator('.question-grid .unscored')).toHaveCount(15);
+});
+test('all sidebar pages and mobile navigation render',async({page})=>{
+ await page.goto('/');
+ for(const name of ['Domain-Based Practice','Architecture Challenges','Wrong Answers','Performance Analytics','Settings']){await page.getByRole('button',{name,exact:true}).click();await expect(page.getByRole('heading',{name,exact:true})).toBeVisible()}
+ await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Open menu'}).click();await page.getByRole('button',{name:'Dashboard',exact:true}).click();await expect(page.getByRole('heading',{name:'Let’s build your confidence.'})).toBeVisible();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
+});
+test('automatic deadline submission and theme preferences persist',async({page})=>{
+ await page.goto('/');await page.getByRole('button',{name:'Settings',exact:true}).click();
+ await page.getByLabel('Appearance').selectOption('light');await page.getByLabel('Daily question goal').fill('25');await page.getByRole('button',{name:'Save preferences'}).click();
+ await expect(page.locator('html')).toHaveAttribute('data-theme','light');await page.reload();
+ await expect(page.locator('html')).toHaveAttribute('data-theme','light');
+ await page.getByRole('button',{name:'Quick Practice',exact:true}).click();await page.getByText('Timed practice',{exact:true}).click();
+ await page.route('**/api/exams',async route=>{if(route.request().method()==='POST'){const response=await route.fetch();const data=await response.json();data.server_time=data.deadline-1;await route.fulfill({response,json:data})}else await route.continue()});
+ await page.getByRole('button',{name:'Start practice',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'A decision made. A lesson learned.'})).toBeVisible({timeout:10000});
+});
+test('book collection exposes corrections and keeps ambiguous items out of scored practice',async({page})=>{
+ await page.goto('/');await page.getByRole('button',{name:'Question Bank',exact:true}).click();
+ await page.getByRole('combobox',{name:'Filter collection'}).selectOption('howlett');
+ await expect(page.getByText(/400 matching questions · 292 eligible/)).toBeVisible();
+ await page.getByRole('textbox',{name:'Search questions'}).fill('temporary role credentials');
+ await expect(page.locator('.bank-list .card')).toHaveCount(1);
+ await page.getByRole('button',{name:'Study explanation'}).click();
+ await expect(page.getByRole('dialog')).toBeVisible();await page.getByText('Source & review · Howlett #3 · book answer B').click();
+ await expect(page.getByText('B. To allow services to interact securely without using credentials',{exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Close explanation'}).click();
+ await page.getByRole('textbox',{name:'Search questions'}).fill('');await page.getByRole('combobox',{name:'Filter eligibility'}).selectOption('review');
+ await expect(page.getByText(/108 matching questions · 0 eligible/)).toBeVisible();
+ await expect(page.getByRole('button',{name:'Practice this collection'})).toHaveCount(0);
+ await page.getByRole('combobox',{name:'Filter eligibility'}).selectOption('scored');
+ await expect(page.getByText(/292 matching questions · 292 eligible/)).toBeVisible();
+ await page.getByRole('button',{name:'Practice this collection'}).click();
+ await expect(page.getByRole('heading',{name:'Practice session',exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Submit session'}).click();await page.getByRole('button',{name:'Submit & see results'}).click();
+ await expect(page.locator('.feedback')).toBeVisible();await expect(page.locator('.source-review')).toBeVisible();
+});
+test('Study Guide flashcards flip, repeat, persist favorites and download the full guide',async({page})=>{
+ await page.goto('/');await page.getByRole('button',{name:'Study Guide',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Study Guide',exact:true})).toBeVisible();
+ await expect(page.getByText('100 matching flashcards',{exact:true})).toBeVisible();
+ const downloadPromise=page.waitForEvent('download');await page.getByRole('link',{name:'Download extracted guide'}).click();
+ const download=await downloadPromise;expect(download.suggestedFilename()).toContain('Ben Piper');
+ await page.getByRole('combobox',{name:'Flashcard domain'}).selectOption('1');await expect(page.getByText('30 matching flashcards',{exact:true})).toBeVisible();
+ await page.getByRole('textbox',{name:'Search flashcards'}).fill('explicit deny');await expect(page.getByText('1 matching flashcard',{exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Start quick study'}).click();
+ await expect(page.getByRole('button',{name:'Got it',exact:true})).toBeDisabled();
+ await page.getByRole('button',{name:'Favorite flashcard',exact:true}).click();
+ await page.getByRole('button',{name:'Reveal flashcard answer'}).click();
+ await expect(page.getByText(/An applicable explicit deny overrides an allow/)).toBeVisible();
+ await page.getByRole('button',{name:'Again',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Card 2 of 2'})).toBeVisible();
+ await page.getByRole('button',{name:'Reveal flashcard answer'}).click();await page.getByRole('button',{name:'Got it',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Session complete'})).toBeVisible();
+ await page.reload();await page.getByRole('button',{name:'Study Guide',exact:true}).click();
+ await page.getByRole('combobox',{name:'Flashcard collection'}).selectOption('favorites');await expect(page.getByText('1 matching flashcard',{exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Start quick study'}).click();await expect(page.getByText('2 saved reviews',{exact:true})).toBeVisible();
+ await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
+});
+
+test('Sybex collection shows per-option reasoning and corrected source key',async({page})=>{
+ await page.goto('/?page=Question%20Bank');
+ await page.getByRole('combobox',{name:'Filter collection'}).selectOption('sybex');
+ await expect(page.getByText(/317 matching questions · 235 eligible/)).toBeVisible();
+ await page.getByRole('textbox',{name:'Search questions'}).fill('How is an IAM role normally used');
+ await expect(page.locator('.bank-list .card')).toHaveCount(1);
+ await page.getByRole('button',{name:'Study explanation'}).click();
+ await expect(page.getByRole('dialog')).toBeVisible();
+ await expect(page.getByText(/An EC2 instance profile supplies temporary role credentials/)).toBeVisible();
+ await page.getByText(/Source & review · Sybex/).click();
+ await expect(page.getByText('Practice answer key corrected from D to A.',{exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Close explanation'}).click();
+ await page.getByRole('textbox',{name:'Search questions'}).fill('');
+ await page.getByRole('combobox',{name:'Filter eligibility'}).selectOption('review');
+ await expect(page.getByText(/82 matching questions · 0 eligible/)).toBeVisible();
+ await expect(page.getByRole('button',{name:'Practice this collection'})).toHaveCount(0);
+ await page.getByRole('combobox',{name:'Filter eligibility'}).selectOption('scored');
+ await expect(page.getByText(/235 matching questions · 235 eligible/)).toBeVisible();
+ await page.getByRole('button',{name:'Practice this collection'}).click();
+ await expect(page.getByRole('heading',{name:'Practice session',exact:true})).toBeVisible();
+ await expect(page.locator('.question-card .scenario')).toBeVisible();
+});
